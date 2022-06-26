@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/Installing_and_Configuring_Nginx_as_an_External_Web_Server by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:29:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />		<title>Installing and Configuring Nginx as an External Web Server - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Installing_and_Configuring_Nginx_as_an_External_Web_Server","wgTitle":"Installing and Configuring Nginx as an External Web Server","wgCurRevisionId":43198,"wgRevisionId":43198,"wgArticleId":8108,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Installing_and_Configuring_Nginx_as_an_External_Web_Server","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Installing_and_Configuring_Nginx_as_an_External_Web_Server","wgTitle":"Installing and Configuring Nginx as an External Web Server","wgCurRevisionId":43198,"wgRevisionId":43198,"wgArticleId":8108,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Installing_and_Configuring_Nginx_as_an_External_Web_Server","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Installing_and_Configuring_Nginx_as_an_External_Web_Server skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">Installing and Configuring Nginx as an External Web Server</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Internal_vs_External"><span class="tocnumber">1</span> <span class="toctext">Internal vs External</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#nginx_vs_Apache"><span class="tocnumber">2</span> <span class="toctext">nginx vs Apache</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Installing_nginx:"><span class="tocnumber">3</span> <span class="toctext">Installing nginx:</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Configuring_nginx:"><span class="tocnumber">4</span> <span class="toctext">Configuring nginx:</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Edit:_.2Fetc.2Fnginx.2Fsites-available.2Fdefault"><span class="tocnumber">4.1</span> <span class="toctext">Edit: /etc/nginx/sites-available/default</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Edit:_.2Fetc.2Fnginx.2Fnginx.conf"><span class="tocnumber">4.2</span> <span class="toctext">Edit: /etc/nginx/nginx.conf</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Testing_nginx:"><span class="tocnumber">5</span> <span class="toctext">Testing nginx:</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Test_.231"><span class="tocnumber">5.1</span> <span class="toctext">Test #1</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Test_.232"><span class="tocnumber">5.2</span> <span class="toctext">Test #2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Configure_NRP:SA_server:"><span class="tocnumber">6</span> <span class="toctext">Configure NRP:SA server:</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Edit_nrpserver.conf"><span class="tocnumber">6.1</span> <span class="toctext">Edit nrpserver.conf</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Test_it_all_works.21"><span class="tocnumber">7</span> <span class="toctext">Test it all works!</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Final_thing"><span class="tocnumber">8</span> <span class="toctext">Final thing</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Internal_vs_External">Internal vs External</span></h2>
+<p>The NRP:SA server comes with a built-in 'internal' HTTP server which clients use to automatically download resource files. It is only a basic HTTP server which does not support compression or multiple client connections. 
+By adding an external HTTP server such as <b>nginx</b> or <b>lighttpd</b>, resource download speed can be increased and bandwidth usage (and player waiting time) decreased.
+Note that the external HTTP server can be on the same machine as the NRP server.
+</p>
+<h2><span class="mw-headline" id="nginx_vs_Apache">nginx vs Apache</span></h2>
+<p>We recommend nginx or lighttpd as they are better suited to handle the hundreds of file requests that NRP:SA clients will generate. Apache can be used, but will require settings tweaking and the nrpsever.conf setting &lt;<b>httpmaxconnectionsperclient</b>&gt; may have to be reduced to prevent timeouts.
+</p><p>The following guide is for installing and configuring nginx solely for NRP:SA. It assumes:
+</p>
+<ul>
+<li> You are not already using nginx for other web sites on your server.
+</li>
+<li> NRP:SA server is installed on the same server.
+</li>
+<li> You are using Debian 7 (but should work on other distributions in a similar way.)
+</li>
+</ul>
+<h2><span class="mw-headline" id="Installing_nginx:">Installing nginx:</span></h2>
+<p>Update system:
+</p>
+<pre>apt-get update
+apt-get upgrade
+</pre>
+<p>Install nginx:
+</p>
+<pre>apt-get install nginx
+</pre>
+<p>Ensure nginx is not running:
+</p>
+<pre>/etc/init.d/nginx stop
+</pre>
+<h2><span class="mw-headline" id="Configuring_nginx:">Configuring nginx:</span></h2>
+<h4><span class="mw-headline" id="Edit:_.2Fetc.2Fnginx.2Fsites-available.2Fdefault">Edit: /etc/nginx/sites-available/default</span></h4>
+<p>Find the '<b>root'</b> line and change it to point to the <i><b>http-client-files</b></i> directory in your NRP:SA server install:
+</p>
+<pre>root /PATH_TO_NRP_SERVER/mods/deathmatch/resource-cache/http-client-files;
+</pre>
+<p>Find the '<b>listen'</b> and change it to use an unused server port: (Remove # if present)
+</p>
+<pre>listen 20080;
+</pre>
+<h4><span class="mw-headline" id="Edit:_.2Fetc.2Fnginx.2Fnginx.conf">Edit: /etc/nginx/nginx.conf</span></h4>
+<p>At the top of the file, add this line to increase the max number of files that can be opened:
+</p>
+<pre>worker_rlimit_nofile 5000;
+</pre>
+<p>Find the '<b>worker_connections'</b> line and change it to this:
+</p>
+<pre>worker_connections 5000;
+</pre>
+<p>Find the '<b>gzip'</b> settings and make sure gzip is on:
+</p>
+<pre>gzip on;
+</pre>
+<p>and '<b>gzip_types'</b> is set for any file type:
+</p>
+<pre>gzip_types *;
+</pre>
+<h2><span class="mw-headline" id="Testing_nginx:">Testing nginx:</span></h2>
+<p>Start nginx:
+</p>
+<pre>/etc/init.d/nginx start
+</pre>
+<h5><span class="mw-headline" id="Test_.231">Test #1</span></h5>
+<p>Open your internet browser, and try this address: <b>http://YOUR_SERVER_IP:20080/admin/client/admin_ACL.lua</b><br />
+If prompted to download a file - SUCCESS!
+</p>
+<h5><span class="mw-headline" id="Test_.232">Test #2</span></h5>
+<p>To test the compression is working, go here: <a rel="nofollow" class="external free" href="http://www.whatsmyip.org/http-compression-test/">http://www.whatsmyip.org/http-compression-test/</a> and enter <b>http://YOUR_SERVER_IP:20080/admin/client/admin_ACL.lua</b> in the white box and press 'Test'.<br />
+If green tick - SUCCESS!
+</p>
+<h2><span class="mw-headline" id="Configure_NRP:SA_server:">Configure NRP:SA server:</span></h2>
+<h4><span class="mw-headline" id="Edit_nrpserver.conf">Edit nrpserver.conf</span></h4>
+<p>Set <b>httpdownloadurl</b> to be like this:
+</p>
+<pre>   &lt;httpdownloadurl&gt;<b>http://YOUR_SERVER_IP:20080</b>&lt;/httpdownloadurl&gt;
+</pre>
+<p>And start NRP:SA server.
+</p>
+<h2><span class="mw-headline" id="Test_it_all_works.21">Test it all works!</span></h2>
+<p>Connect NRP:SA client and view nginx log files to confirm files are being downloaded: <b>/var/log/nginx/access.log</b>
+</p>
+<h2><span class="mw-headline" id="Final_thing">Final thing</span></h2>
+<p>To improve performance, and to avoid huge boring log files, edit <b>/etc/nginx/sites-available/default</b> and add this line under the <b>listen</b> one:
+</p>
+<pre>access_log off;
+</pre>
+<p>and reload the nginx configuration:
+</p>
+<pre>/etc/init.d/nginx reload
+</pre>
+<!-- 
+NewPP limit report
+CPU time usage: 0.011 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 77/1000000
+Preprocessor generated node count: 116/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:8108-0!*!*!!en!*!* and timestamp 20150826134640
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=Installing_and_Configuring_Nginx_as_an_External_Web_Server&amp;oldid=43198">/index.php?title=Installing_and_Configuring_Nginx_as_an_External_Web_Server&amp;oldid=43198</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Installing_and_Configuring_Nginx_as_an_External_Web_Server.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:Installing_and_Configuring_Nginx_as_an_External_Web_Server&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=Installing_and_Configuring_Nginx_as_an_External_Web_Server&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=Installing_and_Configuring_Nginx_as_an_External_Web_Server&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a index.html?title=Special:UserLogin&amp;returnto=Installing+and+Configuring+Nginx+as+an+External+Web+Server"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Installing_and_Configuring_Nginx_as_an_External_Web_Server.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Installing_and_Configuring_Nginx_as_an_External_Web_Server.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=Installing_and_Configuring_Nginx_as_an_External_Web_Server&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=Installing_and_Configuring_Nginx_as_an_External_Web_Server&amp;oldid=43198"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 5 December 2014, at 21:48.</li>
+					<li id="viewcount">This page has been accessed 2,033 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.039 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/Installing_and_Configuring_Nginx_as_an_External_Web_Server by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:29:10 GMT -->
+</html>

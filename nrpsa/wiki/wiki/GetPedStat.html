@@ -1,0 +1,771 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/GetPedStat by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:30:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />		<title>GetPedStat - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GetPedStat","wgTitle":"GetPedStat","wgCurRevisionId":20193,"wgRevisionId":20193,"wgArticleId":3980,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GetPedStat","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GetPedStat","wgTitle":"GetPedStat","wgCurRevisionId":20193,"wgRevisionId":20193,"wgArticleId":3980,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GetPedStat","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><style type="text/css">/*<![CDATA[*/
+.source-lua {line-height: normal;}
+.source-lua li, .source-lua pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for lua
+ * CSS class: source-lua, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.lua.source-lua .de1, .lua.source-lua .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.lua.source-lua  {font-family:monospace;}
+.lua.source-lua .imp {font-weight: bold; color: red;}
+.lua.source-lua li, .lua.source-lua .li1 {font-weight: normal; vertical-align:top;}
+.lua.source-lua .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.lua.source-lua .li2 {font-weight: bold; vertical-align:top;}
+.lua.source-lua .kw1 {color: #b1b100;}
+.lua.source-lua .co1 {color: #808080; font-style: italic;}
+.lua.source-lua .coMULTI {color: #808080; font-style: italic;}
+.lua.source-lua .es0 {color: #000099; font-weight: bold;}
+.lua.source-lua .br0 {color: #66cc66;}
+.lua.source-lua .sy0 {color: #66cc66;}
+.lua.source-lua .st0 {color: #00A600;}
+.lua.source-lua .nu0 {color: #cc66cc;}
+.lua.source-lua .me0 {color: #b1b100;}
+.lua.source-lua .ln-xtra, .lua.source-lua li.ln-xtra, .lua.source-lua div.ln-xtra {background-color: #ffc;}
+.lua.source-lua span.xtra { display:block; }
+
+/*]]>*/
+</style>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-GetPedStat skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">GetPedStat</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><script type='text/javascript'>setHeadingClass('both','Shared function');</script>
+<script type='text/javascript'>makeTitleLowercaseFirstLetter();</script>
+This function returns the value of the specified statistic of a specific <a href="Ped.html" title="Ped" class="mw-redirect">ped</a>.
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<!-- PLAIN TEXT CODE FOR BOTS |float getPedStat ( ped thePed, int stat )|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><a href="Float.html" class="kw3"><span class="kw3">float</span></a> <a href="GetPedStat.html" class="kw2"><span class="kw2">getPedStat</span></a> <span class="br0">&#40;</span> <a href="Ped.html" class="kw3"><span class="kw3">ped</span></a> thePed, <a href="Int.html" class="kw3"><span class="kw3">int</span></a> stat <span class="br0">&#41;</span></pre></div></div>
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul>
+<li><b>thePed</b>: The <a href="Ped.html" title="Ped" class="mw-redirect">ped</a> whose stat you want to retrieve.
+</li>
+<li><b>stat</b>: A whole number determining the stat ID.
+</li>
+</ul>
+<div style="border:3px solid red;margin-bottom:3px;padding-left:5px;"><div style="float:right;padding-right:5px;font-weight:bold;">Floating Point</div>
+<ul>
+<li><b>0:</b> PROGRESS_MADE
+</li>
+<li><b>1:</b> TOTAL_PROGRESS
+</li>
+<li><b>2:</b> LONGEST_BASKETBALL
+</li>
+</ul>
+<p><b>Distances:</b>
+</p>
+<ul>
+<li><b>3:</b> DIST_FOOT
+</li>
+<li><b>4:</b> DIST_CAR
+</li>
+<li><b>5:</b> DIST_BIKE
+</li>
+<li><b>6:</b> DIST_BOAT
+</li>
+<li><b>7:</b> DIST_GOLF_CART
+</li>
+<li><b>8:</b> DIST_HELICOPTOR
+</li>
+<li><b>9:</b> DIST_PLANE
+</li>
+</ul>
+<ul>
+<li><b>10:</b> LONGEST_WHEELIE_DIST
+</li>
+<li><b>11:</b> LONGEST_STOPPIE_DIST
+</li>
+<li><b>12:</b> LONGEST_2WHEEL_DIST
+</li>
+</ul>
+<p><b>Cash:</b>
+</p>
+<ul>
+<li><b>13:</b> WEAPON_BUDGET
+</li>
+<li><b>14:</b> FASHION_BUDGET
+</li>
+<li><b>15:</b> PROPERTY_BUDGET
+</li>
+<li><b>16:</b> SPRAYING_BUDGET
+</li>
+</ul>
+<p><b>Times:</b>
+</p>
+<ul>
+<li><b>17:</b> LONGEST_WHEELIE_TIME
+</li>
+<li><b>18:</b> LONGEST_STOPPIE_TIME
+</li>
+<li><b>19:</b> LONGEST_2WHEEL_TIME
+</li>
+</ul>
+<ul>
+<li><b>20:</b> FOOD_BUDGET
+</li>
+</ul>
+<p><b>Body:</b>
+</p>
+<ul>
+<li><b>21:</b> FAT
+</li>
+<li><b>22:</b> STAMINA
+</li>
+<li><b>23:</b> BODY_MUSCLE
+</li>
+<li><b>24:</b> MAX_HEALTH
+</li>
+<li><b>25:</b> SEX_APPEAL
+</li>
+</ul>
+<p><br />
+</p>
+<ul>
+<li><b>26:</b> DIST_SWIMMING
+</li>
+<li><b>27:</b> DIST_CYCLE
+</li>
+<li><b>28:</b> DIST_TREADMILL
+</li>
+<li><b>29:</b> DIST_EXCERSISE_BIKE
+</li>
+</ul>
+<ul>
+<li><b>30:</b> TATTOO_BUDGET
+</li>
+<li><b>31:</b> HAIRDRESSING_BUDGET
+</li>
+</ul>
+<ul>
+<li><b>33:</b> PROSTITUTE_BUDGET
+</li>
+</ul>
+<p><b>Gambling:</b>
+</p>
+<ul>
+<li><b>35:</b> MONEY_SPENT_GAMBLING
+</li>
+<li><b>36:</b> MONEY_MADE_PIMPING
+</li>
+<li><b>37:</b> MONEY_WON_GAMBLING
+</li>
+<li><b>38:</b> BIGGEST_GAMBLING_WIN
+</li>
+<li><b>39:</b> BIGGEST_GAMBLING_LOSS
+</li>
+</ul>
+<ul>
+<li><b>40:</b> LARGEST_BURGLARY_SWAG
+</li>
+<li><b>41:</b> MONEY_MADE_BURGLARY
+</li>
+</ul>
+<ul>
+<li><b>44:</b> LONGEST_TREADMILL_TIME
+</li>
+<li><b>45:</b> LONGEST_EXCERSISE_BIKE_TIME
+</li>
+</ul>
+<ul>
+<li><b>46:</b> HEAVIEST_WEIGHT_BENCH_PRESS
+</li>
+<li><b>47:</b> HEAVIEST_WEIGHT_DUMBELLS
+</li>
+</ul>
+<ul>
+<li><b>48:</b> BEST_TIME_HOTRING
+</li>
+<li><b>49:</b> BEST_TIME_BMX
+</li>
+</ul>
+<ul>
+<li><b>51:</b> LONGEST_CHASE_TIME
+</li>
+<li><b>52:</b> LAST_CHASE_TIME
+</li>
+</ul>
+<ul>
+<li><b>53:</b> WAGE_BILL
+</li>
+</ul>
+<ul>
+<li><b>54:</b> STRIP_CLUB_BUDGET
+</li>
+<li><b>55:</b> CAR_MOD_BUDGET
+</li>
+</ul>
+<ul>
+<li><b>56:</b> TIME_SPENT_SHOPPING
+</li>
+<li><b>62:</b> TOTAL_SHOPPING_BUDGET
+</li>
+</ul>
+<ul>
+<li><b>63:</b> TIME_SPENT_UNDERWATER
+</li>
+</ul>
+<p><b>Respect:</b>
+</p>
+<ul>
+<li><b>64:</b> RESPECT_TOTAL
+</li>
+<li><b>65:</b> RESPECT_GIRLFRIEND
+</li>
+<li><b>66:</b> RESPECT_CLOTHES
+</li>
+<li><b>67:</b> RESPECT_FITNESS
+</li>
+<li><b>68:</b> RESPECT
+</li>
+</ul>
+<p><b>Weapon skills:</b><br /> 
+<i>Note: see <a href="Weapon_skill_levels.html" title="Weapon skill levels">Weapon skill levels</a> for the values that advance weapon skills.</i>
+</p>
+<ul>
+<li><b>69:</b> WEAPONTYPE_PISTOL_SKILL
+</li>
+<li><b>70:</b> WEAPONTYPE_PISTOL_SILENCED_SKILL
+</li>
+<li><b>71:</b> WEAPONTYPE_DESERT_EAGLE_SKILL
+</li>
+<li><b>72:</b> WEAPONTYPE_SHOTGUN_SKILL
+</li>
+<li><b>73:</b> WEAPONTYPE_SAWNOFF_SHOTGUN_SKILL
+</li>
+<li><b>74:</b> WEAPONTYPE_SPAS12_SHOTGUN_SKILL
+</li>
+<li><b>75:</b> WEAPONTYPE_MICRO_UZI_SKILL
+</li>
+<li><b>76:</b> WEAPONTYPE_MP5_SKILL
+</li>
+<li><b>77:</b> WEAPONTYPE_AK47_SKILL
+</li>
+<li><b>78:</b> WEAPONTYPE_M4_SKILL
+</li>
+<li><b>79:</b> WEAPONTYPE_SNIPERRIFLE_SKILL
+</li>
+</ul>
+<ul>
+<li><b>80:</b> SEX_APPEAL_CLOTHES
+</li>
+</ul>
+<ul>
+<li><b>81:</b> GAMBLING
+</li>
+</ul>
+</div>
+<div style="border:3px solid green;margin-bottom:3px;padding-left:5px;"><div style="float:right;padding-right:5px;font-weight:bold;">Integer</div>
+<ul>
+<li><b>120:</b> PEOPLE_KILLED_BY_OTHERS
+</li>
+<li><b>121:</b> PEOPLE_KILLED_BY_PLAYER
+</li>
+</ul>
+<ul>
+<li><b>122:</b> CARS_DESTROYED
+</li>
+<li><b>123:</b> BOATS_DESTROYED
+</li>
+<li><b>124:</b> HELICOPTORS_DESTROYED
+</li>
+<li><b>125:</b> PROPERTY_DESTROYED
+</li>
+</ul>
+<ul>
+<li><b>126:</b> ROUNDS_FIRED
+</li>
+<li><b>127:</b> EXPLOSIVES_USED
+</li>
+</ul>
+<ul>
+<li><b>128:</b> BULLETS_HIT
+</li>
+<li><b>129:</b> TYRES_POPPED
+</li>
+<li><b>130:</b> HEADS_POPPED
+</li>
+</ul>
+<ul>
+<li><b>131:</b> WANTED_STARS_ATTAINED
+</li>
+<li><b>132:</b> WANTED_STARS_EVADED
+</li>
+<li><b>133:</b> TIMES_ARRESTED
+</li>
+</ul>
+<ul>
+<li><b>134:</b> DAYS_PASSED
+</li>
+<li><b>135:</b> TIMES_DIED
+</li>
+<li><b>136:</b> TIMES_SAVED
+</li>
+<li><b>137:</b> TIMES_CHEATED
+</li>
+</ul>
+<ul>
+<li><b>138:</b> SPRAYINGS
+</li>
+</ul>
+<ul>
+<li><b>139:</b> MAX_JUMP_DISTANCE
+</li>
+<li><b>140:</b> MAX_JUMP_HEIGHT
+</li>
+<li><b>141:</b> MAX_JUMP_FLIPS
+</li>
+<li><b>142:</b> MAX_JUMP_SPINS
+</li>
+</ul>
+<ul>
+<li><b>143:</b> BEST_STUNT
+</li>
+</ul>
+<ul>
+<li><b>144:</b> UNIQUE_JUMPS_FOUND
+</li>
+<li><b>145:</b> UNIQUE_JUMPS_DONE
+</li>
+</ul>
+<ul>
+<li><b>146:</b> MISSIONS_ATTEMPTED
+</li>
+<li><b>147:</b> MISSIONS_PASSED
+</li>
+<li><b>148:</b> TOTAL_MISSIONS
+</li>
+</ul>
+<ul>
+<li><b>149:</b> TAXI_MONEY_MADE
+</li>
+<li><b>150:</b> PASSENGERS_DELIVERED_IN_TAXI
+</li>
+<li><b>151:</b> LIVES_SAVED
+</li>
+<li><b>152:</b> CRIMINALS_CAUGHT
+</li>
+<li><b>153:</b> FIRES_EXTINGUISHED
+</li>
+<li><b>154:</b> PIZZAS_DELIVERED
+</li>
+<li><b>155:</b> ASSASSINATIONS
+</li>
+<li><b>156:</b> LATEST_DANCE_SCORE
+</li>
+</ul>
+<ul>
+<li><b>157:</b> VIGILANTE_LEVEL
+</li>
+<li><b>158:</b> AMBULANCE_LEVEL
+</li>
+<li><b>159:</b> FIREFIGHTER_LEVEL
+</li>
+</ul>
+<ul>
+<li><b>160:</b> DRIVING_SKILL
+</li>
+<li><b>161:</b> TRUCK_MISSIONS_PASSED
+</li>
+<li><b>162:</b> TRUCK_MONEY_MADE
+</li>
+</ul>
+<ul>
+<li><b>163:</b> RECRUITED_GANG_MEMBERS_KILLED
+</li>
+<li><b>164:</b> ARMOUR
+</li>
+<li><b>165:</b> ENERGY
+</li>
+</ul>
+<ul>
+<li><b>166:</b> PHOTOS_TAKEN
+</li>
+</ul>
+<ul>
+<li><b>167:</b> KILL_FRENZIES_ATTEMPTED
+</li>
+<li><b>168:</b> KILL_FRENZIES_PASSED
+</li>
+</ul>
+<ul>
+<li><b>169:</b> FLIGHT_TIME
+</li>
+<li><b>170:</b> TIMES_DROWNED
+</li>
+<li><b>171:</b> NUM_GIRLS_PIMPED
+</li>
+</ul>
+<ul>
+<li><b>172:</b> BEST_POSITION_HOTRING
+</li>
+<li><b>173:</b> FLIGHT_TIME_JETPACK
+</li>
+</ul>
+<ul>
+<li><b>174:</b> SHOOTING_RANGE_SCORE
+</li>
+<li><b>175:</b> VALET_CARS_PARKED
+</li>
+</ul>
+<ul>
+<li><b>176:</b> KILLS_SINCE_LAST_CHECKPOINT
+</li>
+<li><b>177:</b> TOTAL_LEGITIMATE_KILLS
+</li>
+</ul>
+<ul>
+<li><b>178:</b> BLOODRING_KILLS
+</li>
+<li><b>179:</b> BLOODRING_TIME
+</li>
+</ul>
+<ul>
+<li><b>180:</b> NO_MORE_HURRICANES
+</li>
+<li><b>181:</b> CITIES_PASSED
+</li>
+</ul>
+<ul>
+<li><b>182:</b> POLICE_BRIBES
+</li>
+<li><b>183:</b> CARS_STOLEN
+</li>
+<li><b>184:</b> CURRENT_GIRLFRIENDS
+</li>
+<li><b>185:</b> BAD_DATES
+</li>
+<li><b>186:</b> GIRLS_DATED
+</li>
+<li><b>187:</b> TIMES_SCORED_WITH_GIRL
+</li>
+<li><b>188:</b> DATES
+</li>
+<li><b>189:</b> GIRLS_DUMPED
+</li>
+<li><b>190:</b> TIMES_VISITED_PROSTITUTE
+</li>
+<li><b>191:</b> HOUSES_BURGLED
+</li>
+<li><b>192:</b> SAFES_CRACKED
+</li>
+</ul>
+<ul>
+<li><b>194:</b> STOLEN_ITEMS_SOLD
+</li>
+<li><b>195:</b> EIGHT_BALLS_IN_POOL
+</li>
+<li><b>196:</b> WINS_IN_POOL
+</li>
+<li><b>197:</b> LOSSES_IN_POOL
+</li>
+<li><b>198:</b> VISITS_TO_GYM
+</li>
+</ul>
+<ul>
+<li><b>200:</b> MEALS_EATEN
+</li>
+</ul>
+<ul>
+<li><b>225:</b> UNDERWATER_STAMINA
+</li>
+<li><b>229:</b> BIKE_SKILL
+</li>
+<li><b>230:</b> CYCLE_SKILL
+</li>
+</ul>
+</div>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns the value of the requested statistic.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<!-- BEGIN SECTION |1|server|Server|--><div class='serverHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Server</div><div style='display:;' class='serverContent' id='section1'>
+<p>This example announces whether a player is fat upon spawn
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function checkWeightOnSpawn ( ) local stat = getPedStat ( source, 21 ) if ( stat > 500 ) then outputChatBox ( getPlayerName ( source ) .. " needs to lose a bit of weight!" ) end end addEventHandler ( "onPlayerSpawn", getRootElement(), checkWeightOnSpawn )|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> checkWeightOnSpawn <span class="br0">&#40;</span> <span class="br0">&#41;</span>
+    <span class="kw1">local</span> stat <span class="sy0">=</span> <a href="GetPedStat.html" class="kw2"><span class="kw2">getPedStat</span></a> <span class="br0">&#40;</span> source, <span class="nu0">21</span> <span class="br0">&#41;</span>
+    <span class="co1">-- Check that getPedStat returned a value</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span> stat <span class="sy0">&gt;</span> <span class="nu0">500</span> <span class="br0">&#41;</span> <span class="kw1">then</span>
+        <span class="co1">-- Output the stat in the chat box</span>
+        <a href="OutputChatBox.html" class="kw6"><span class="kw6">outputChatBox</span></a> <span class="br0">&#40;</span> <a href="GetPlayerName.html" class="kw2"><span class="kw2">getPlayerName</span></a> <span class="br0">&#40;</span> source <span class="br0">&#41;</span> .. <span class="st0">&quot; needs to lose a bit of weight!&quot;</span> <span class="br0">&#41;</span>
+    <span class="kw1">end</span>
+<span class="kw1">end</span>
+<a href="AddEventHandler.html" class="kw2"><span class="kw2">addEventHandler</span></a> <span class="br0">&#40;</span> <span class="st0">&quot;onPlayerSpawn&quot;</span>, <a href="GetRootElement.html" class="kw2"><span class="kw2">getRootElement</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, checkWeightOnSpawn <span class="br0">&#41;</span></pre></div></div>
+</div><!-- END SECTION |1|-->
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul>
+<li><a href="AddPedClothes.html" title="AddPedClothes">addPedClothes</a>
+</li>
+<li><a href="CreatePed.html" title="CreatePed">createPed</a>
+</li>
+<li><a href="DoesPedHaveJetPack.html" title="DoesPedHaveJetPack">doesPedHaveJetPack</a>
+</li>
+<li><a href="GetPedAmmoInClip.html" title="GetPedAmmoInClip">getPedAmmoInClip</a>
+</li>
+<li><a href="GetPedAnalogControlState.html" title="GetPedAnalogControlState">getPedAnalogControlState</a>
+</li>
+<li><a href="GetPedArmor.html" title="GetPedArmor">getPedArmor</a>
+</li>
+<li><a href="GetPedClothes.html" title="GetPedClothes">getPedClothes</a>
+</li>
+<li><a href="GetPedContactElement.html" title="GetPedContactElement">getPedContactElement</a>
+</li>
+<li><a href="GetPedFightingStyle.html" title="GetPedFightingStyle">getPedFightingStyle</a>
+</li>
+<li><a href="GetPedGravity.html" title="GetPedGravity">getPedGravity</a>
+</li>
+<li><a href="GetPedOccupiedVehicle.html" title="GetPedOccupiedVehicle">getPedOccupiedVehicle</a>
+</li>
+<li><a href="GetPedOccupiedVehicleSeat.html" title="GetPedOccupiedVehicleSeat">getPedOccupiedVehicleSeat</a>
+</li>
+<li><strong class="selflink">getPedStat</strong>
+</li>
+<li><a href="GetPedTarget.html" title="GetPedTarget">getPedTarget</a>
+</li>
+<li><a href="GetPedTotalAmmo.html" title="GetPedTotalAmmo">getPedTotalAmmo</a>
+</li>
+<li><a href="GetPedWalkingStyle.html" title="GetPedWalkingStyle">getPedWalkingStyle</a>
+</li>
+<li><a href="GetPedWeapon.html" title="GetPedWeapon">getPedWeapon</a>
+</li>
+<li><a href="GetPedWeaponSlot.html" title="GetPedWeaponSlot">getPedWeaponSlot</a>
+</li>
+<li><a href="GetValidPedModels.html" title="GetValidPedModels">getValidPedModels</a>
+</li>
+<li><a href="GivePedJetPack.html" title="GivePedJetPack">givePedJetPack</a>
+</li>
+<li><a href="IsPedChoking.html" title="IsPedChoking">isPedChoking</a>
+</li>
+<li><a href="IsPedDead.html" title="IsPedDead">isPedDead</a>
+</li>
+<li><a href="IsPedDoingGangDriveby.html" title="IsPedDoingGangDriveby">isPedDoingGangDriveby</a>
+</li>
+<li><a href="IsPedDucked.html" title="IsPedDucked">isPedDucked</a>
+</li>
+<li><a href="IsPedFrozen.html" title="IsPedFrozen">isPedFrozen</a>
+</li>
+<li><a href="IsPedHeadless.html" title="IsPedHeadless">isPedHeadless</a>
+</li>
+<li><a href="IsPedInVehicle.html" title="IsPedInVehicle">isPedInVehicle</a>
+</li>
+<li><a href="IsPedInWater.html" title="IsPedInWater">isPedInWater</a>
+</li>
+<li><a href="IsPedOnFire.html" title="IsPedOnFire">isPedOnFire</a>
+</li>
+<li><a href="IsPedOnGround.html" title="IsPedOnGround">isPedOnGround</a>
+</li>
+<li><a href="KillPed.html" title="KillPed">killPed</a>
+</li>
+<li><a href="ReloadPedWeapon.html" title="ReloadPedWeapon">reloadPedWeapon</a>
+</li>
+<li><a href="RemovePedClothes.html" title="RemovePedClothes">removePedClothes</a>
+</li>
+<li><a href="RemovePedFromVehicle.html" title="RemovePedFromVehicle">removePedFromVehicle</a>
+</li>
+<li><a href="RemovePedJetPack.html" title="RemovePedJetPack">removePedJetPack</a>
+</li>
+<li><a href="SetPedAnimation.html" title="SetPedAnimation">setPedAnimation</a>
+</li>
+<li><a href="SetPedAnimationProgress.html" title="SetPedAnimationProgress">setPedAnimationProgress</a>
+</li>
+<li><a href="SetPedAnalogControlState.html" title="SetPedAnalogControlState">setPedAnalogControlState</a>
+</li>
+<li><a href="SetPedArmor.html" title="SetPedArmor">setPedArmor</a>
+</li>
+<li><a href="SetPedChoking.html" title="SetPedChoking">setPedChoking</a>
+</li>
+<li><a href="SetPedDoingGangDriveby.html" title="SetPedDoingGangDriveby">setPedDoingGangDriveby</a>
+</li>
+<li><a href="SetPedFightingStyle.html" title="SetPedFightingStyle">setPedFightingStyle</a>
+</li>
+<li><a href="SetPedFrozen.html" title="SetPedFrozen">setPedFrozen</a>
+</li>
+<li><a href="SetPedGravity.html" title="SetPedGravity">setPedGravity</a>
+</li>
+<li><a href="SetPedHeadless.html" title="SetPedHeadless">setPedHeadless</a>
+</li>
+<li><a href="SetPedOnFire.html" title="SetPedOnFire">setPedOnFire</a>
+</li>
+<li><a href="SetPedStat.html" title="SetPedStat">setPedStat</a>
+</li>
+<li><a href="SetPedWeaponSlot.html" title="SetPedWeaponSlot">setPedWeaponSlot</a>
+</li>
+</ul>
+<ul>
+<li><a href="SetPedWalkingStyle.html" title="SetPedWalkingStyle">setPedWalkingStyle</a>
+</li>
+<li><a href="WarpPedIntoVehicle.html" title="WarpPedIntoVehicle">warpPedIntoVehicle</a>
+</li>
+</ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.074 seconds
+Real time usage: 0.078 seconds
+Preprocessor visited node count: 75/1000000
+Preprocessor generated node count: 292/1000000
+Post‐expand include size: 6250/2097152 bytes
+Template argument size: 31/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:3980-0!*!0!!*!*!* and timestamp 20150826135526
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=GetPedStat&amp;oldid=20193">/index.php?title=GetPedStat&amp;oldid=20193</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Server_functions.html" title="Category:Server functions">Server functions</a></li><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="GetPedStat.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:GetPedStat&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=GetPedStat&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=GetPedStat&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a index.html?title=Special:UserLogin&amp;returnto=GetPedStat"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/GetPedStat.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/GetPedStat.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=GetPedStat&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=GetPedStat&amp;oldid=20193"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 24 June 2009, at 11:49.</li>
+					<li id="viewcount">This page has been accessed 12,274 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.040 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/GetPedStat by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:30:30 GMT -->
+</html>

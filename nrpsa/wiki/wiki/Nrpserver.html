@@ -1,0 +1,819 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/Nrpserver.conf by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:32:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="Server_nrpserver.html" />		<title>Server nrpserver.conf - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Server_nrpserver.conf","wgTitle":"Server nrpserver.conf","wgCurRevisionId":45390,"wgRevisionId":45390,"wgArticleId":5974,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Changes in 1.3.5","Changes in 1.3.4","Support"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Server_nrpserver.conf","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Nrpserver.conf"});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Server_nrpserver.conf","wgTitle":"Server nrpserver.conf","wgCurRevisionId":45390,"wgRevisionId":45390,"wgArticleId":5974,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Changes in 1.3.5","Changes in 1.3.4","Support"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Server_nrpserver.conf","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Nrpserver.conf"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Server_nrpserver_conf skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">Server nrpserver.conf</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub">(Redirected from <a index.html?title=Nrpserver.conf&amp;redirect=no" title="Nrpserver.conf">Nrpserver.conf</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page lists the settings that can be set in the settings file. <i>Setting from the default <b>nrpserver.conf</b> settings file is in italics</i>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#servername"><span class="tocnumber">1</span> <span class="toctext">servername</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#serverip"><span class="tocnumber">2</span> <span class="toctext">serverip</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#serverport"><span class="tocnumber">3</span> <span class="toctext">serverport</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#maxplayers"><span class="tocnumber">4</span> <span class="toctext">maxplayers</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#httpserver"><span class="tocnumber">5</span> <span class="toctext">httpserver</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#httpport"><span class="tocnumber">6</span> <span class="toctext">httpport</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#httpdownloadurl"><span class="tocnumber">7</span> <span class="toctext">httpdownloadurl</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#httpmaxconnectionsperclient"><span class="tocnumber">8</span> <span class="toctext">httpmaxconnectionsperclient</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#httpdosthreshold"><span class="tocnumber">9</span> <span class="toctext">httpdosthreshold</span></a></li>
+<li class="toclevel-1"><a href="#http_dos_exclude"><span class="tocnumber">10</span> <span class="toctext">http_dos_exclude</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#allow_gta3_img_mods"><span class="tocnumber">11</span> <span class="toctext">allow_gta3_img_mods</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#client_file"><span class="tocnumber">12</span> <span class="toctext">client_file</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#disableac"><span class="tocnumber">13</span> <span class="toctext">disableac</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#enablesd"><span class="tocnumber">14</span> <span class="toctext">enablesd</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#networkencryption"><span class="tocnumber">15</span> <span class="toctext">networkencryption</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#minclientversion"><span class="tocnumber">16</span> <span class="toctext">minclientversion</span></a></li>
+<li class="toclevel-1"><a href="#minclientversion_auto_update"><span class="tocnumber">17</span> <span class="toctext">minclientversion_auto_update</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#recommendedclientversion"><span class="tocnumber">18</span> <span class="toctext">recommendedclientversion</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#ase"><span class="tocnumber">19</span> <span class="toctext">ase</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#donotbroadcastlan"><span class="tocnumber">20</span> <span class="toctext">donotbroadcastlan</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#password"><span class="tocnumber">21</span> <span class="toctext">password</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#bandwidth_reduction"><span class="tocnumber">22</span> <span class="toctext">bandwidth_reduction</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#player_sync_interval"><span class="tocnumber">23</span> <span class="toctext">player_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#lightweight_sync_interval"><span class="tocnumber">24</span> <span class="toctext">lightweight_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#camera_sync_interval"><span class="tocnumber">25</span> <span class="toctext">camera_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#ped_sync_interval"><span class="tocnumber">26</span> <span class="toctext">ped_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#unoccupied_vehicle_sync_interval"><span class="tocnumber">27</span> <span class="toctext">unoccupied_vehicle_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#keysync_mouse_sync_interval"><span class="tocnumber">28</span> <span class="toctext">keysync_mouse_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#keysync_analog_sync_interval"><span class="tocnumber">29</span> <span class="toctext">keysync_analog_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#bullet_sync"><span class="tocnumber">30</span> <span class="toctext">bullet_sync</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#vehext_percent"><span class="tocnumber">31</span> <span class="toctext">vehext_percent</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#vehext_ping_limit"><span class="tocnumber">32</span> <span class="toctext">vehext_ping_limit</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#latency_reduction"><span class="tocnumber">33</span> <span class="toctext">latency_reduction</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#threadnet"><span class="tocnumber">34</span> <span class="toctext">threadnet</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#idfile"><span class="tocnumber">35</span> <span class="toctext">idfile</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="#logfile"><span class="tocnumber">36</span> <span class="toctext">logfile</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#authfile"><span class="tocnumber">37</span> <span class="toctext">authfile</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="#dbfile"><span class="tocnumber">38</span> <span class="toctext">dbfile</span></a></li>
+<li class="toclevel-1"><a href="#loadstringfile"><span class="tocnumber">39</span> <span class="toctext">loadstringfile</span></a></li>
+<li class="toclevel-1 tocsection-40"><a href="#acl"><span class="tocnumber">40</span> <span class="toctext">acl</span></a></li>
+<li class="toclevel-1 tocsection-41"><a href="#scriptdebuglogfile"><span class="tocnumber">41</span> <span class="toctext">scriptdebuglogfile</span></a></li>
+<li class="toclevel-1 tocsection-42"><a href="#scriptdebugloglevel"><span class="tocnumber">42</span> <span class="toctext">scriptdebugloglevel</span></a></li>
+<li class="toclevel-1 tocsection-43"><a href="#fpslimit"><span class="tocnumber">43</span> <span class="toctext">fpslimit</span></a></li>
+<li class="toclevel-1 tocsection-44"><a href="#autologin"><span class="tocnumber">44</span> <span class="toctext">autologin</span></a></li>
+<li class="toclevel-1 tocsection-45"><a href="#voice"><span class="tocnumber">45</span> <span class="toctext">voice</span></a></li>
+<li class="toclevel-1 tocsection-46"><a href="#voice_samplerate"><span class="tocnumber">46</span> <span class="toctext">voice_samplerate</span></a></li>
+<li class="toclevel-1 tocsection-47"><a href="#voice_quality"><span class="tocnumber">47</span> <span class="toctext">voice_quality</span></a></li>
+<li class="toclevel-1 tocsection-48"><a href="#voice_bitrate"><span class="tocnumber">48</span> <span class="toctext">voice_bitrate</span></a></li>
+<li class="toclevel-1 tocsection-49"><a href="#backup_path"><span class="tocnumber">49</span> <span class="toctext">backup_path</span></a></li>
+<li class="toclevel-1 tocsection-50"><a href="#backup_interval"><span class="tocnumber">50</span> <span class="toctext">backup_interval</span></a></li>
+<li class="toclevel-1 tocsection-51"><a href="#backup_copies"><span class="tocnumber">51</span> <span class="toctext">backup_copies</span></a></li>
+<li class="toclevel-1"><a href="#compact_internal_databases"><span class="tocnumber">52</span> <span class="toctext">compact_internal_databases</span></a></li>
+<li class="toclevel-1 tocsection-53"><a href="#module"><span class="tocnumber">53</span> <span class="toctext">module</span></a></li>
+<li class="toclevel-1 tocsection-54"><a href="#resource"><span class="tocnumber">54</span> <span class="toctext">resource</span></a></li>
+</ul>
+</div>
+
+<h4><span class="mw-headline" id="servername">servername</span></h4>
+<dl>
+<dd><i>&lt;servername&gt;Default NRP Server&lt;/servername&gt;</i>
+</dd>
+<dd>This parameter specifies the name the server will be visible as in the ingame server browser and on Game-Monitor. It is a required parameter.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="serverip">serverip</span></h4>
+<dl>
+<dd><i>&lt;serverip&gt;&lt;/serverip&gt;</i>
+</dd>
+<dd><b>ONLY USE THIS PARAMETER IF YOU ARE SURE OF WHAT YOU ARE DOING</b>
+</dd>
+<dd>It is generally only needed for professional servers and should be left blank otherwise. This parameter specifies the IP to use for servers that have multiple IP addresses. If left blank, it will default to server's standard local IP address.
+</dd>
+<dd>SERVERIP SHOULD BE LEFT BLANK UNLESS YOU ARE SURE OF WHAT YOU ARE DOING
+</dd>
+<dd>People who set this and then ask for support will be the first ones against the wall when the revolution comes
+</dd>
+</dl>
+<h4><span class="mw-headline" id="serverport">serverport</span></h4>
+<dl>
+<dd><i>&lt;serverport&gt;22003&lt;/serverport&gt; </i>
+</dd>
+<dd>This parameter specifies the UDP port on which the server will be accepting incoming player connections;
+</dd>
+<dd>default value: 22003. It is a required parameter.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="maxplayers">maxplayers</span></h4>
+<dl>
+<dd><i>&lt;maxplayers&gt;32&lt;/maxplayers&gt;</i>
+</dd>
+<dd>This parameter specifies the number of maximum player slots available on the server;
+</dd>
+<dd>default value: 32. It is a required parameter.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="httpserver">httpserver</span></h4>
+<dl>
+<dd><i>&lt;httpserver&gt;1&lt;/httpserver&gt;</i>
+</dd>
+<dd>This parameter specifies whether the builtin http server will be used.
+</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 1. Optional parameter.
+</dd>
+<dd>More information: <a href="Server_Manual.html#Using_the_web_interface" title="Server Manual">Using the web interface</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="httpport">httpport</span></h4>
+<dl>
+<dd><i>&lt;httpport&gt;22005&lt;/httpport&gt;</i>
+</dd>
+<dd>This parameter specifies the TCP port on which the server will be accepting incoming http connections. It can be set to the same value as &lt;serverport&gt;. It is a required parameter if &lt;httpserver&gt; is set to 1.
+</dd>
+<dd>More information: <a href="Server_Manual.html#Using_the_web_interface" title="Server Manual">Using the web interface</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="httpdownloadurl">httpdownloadurl</span></h4>
+<dl>
+<dd><i>&lt;httpdownloadurl&gt;&lt;/httpdownloadurl&gt;</i>
+</dd>
+<dd>If set, this parameter specifies the external URL from which clients will be able to download needed resources ingame. Otherwise they will download them directly from the server.
+</dd>
+<dd>More information: <a href="Server_Manual.html#Configuring_an_external_web_server" title="Server Manual">Configuring an external web server</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="httpmaxconnectionsperclient">httpmaxconnectionsperclient</span></h4>
+<dl>
+<dd><i>&lt;httpmaxconnectionsperclient&gt;5&lt;/httpmaxconnectionsperclient&gt;</i>
+</dd>
+<dd>This parameter limits the number of http connections each client can make. Depending on the type of http server that is used, a lower figure may reduce download timeouts. Only relevant when using an external http server.
+</dd>
+<dd>Available range: 1 to 8.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="httpdosthreshold">httpdosthreshold</span></h4>
+<dl>
+<dd><i>&lt;httpdosthreshold&gt;20&lt;/httpdosthreshold&gt;</i>
+</dd>
+<dd>This parameter limits the number http connections that an IP can initiate over a short period of time.
+</dd>
+<dd>Available range: 1 to 100. default value: 20
+</dd>
+</dl>
+<h4><span class="mw-headline" id="http_dos_exclude">http_dos_exclude</span></h4>
+<dl>
+<dd><i>&lt;http_dos_exclude&gt;&lt;/http_dos_exclude&gt;</i>
+</dd>
+<dd>This parameter lists the IP addresses that are to be excluded from http dos threshold limits.
+</dd>
+<dd>e.g. 88.11.22.33,101.2.3.4
+</dd>
+</dl>
+<h4><span class="mw-headline" id="allow_gta3_img_mods">allow_gta3_img_mods</span></h4>
+<dl>
+<dd><i>&lt;allow_gta3_img_mods&gt;none&lt;/allow_gta3_img_mods&gt;</i>
+</dd>
+<dd>By default, the server will block the use of locally customized gta3.img player skins. 
+</dd>
+<dd>This setting can be used to allow such mods. Not recommended for competitive servers.
+</dd>
+<dd>Values: none or peds&#160;; default value: none
+</dd>
+<dd><b>From server version 1.4.1-9.07268</b>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="client_file">client_file</span></h4>
+<dl>
+<dd><i>&lt;!-- &lt;client_file name=&quot;data/carmods.dat&quot; verify=&quot;0&quot; /&gt; --&gt;</i>
+</dd>
+<dd>By default, the server will block the use of customized GTA:SA data files.
+</dd>
+<dd>To allow specific client files, add one or more of the above lines.
+</dd>
+<dd>More information: <a href="Anti-cheat_guide.html" title="Anti-cheat guide">Anti-cheat guide</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="disableac">disableac</span></h4>
+<dl>
+<dd><i>&lt;disableac&gt;&lt;/disableac&gt;</i>
+</dd>
+<dd>Comma seperated list of disabled anti-cheats.
+</dd>
+<dd>e.g. To disable anti-cheat #2 and #3, use: 2,3
+</dd>
+<dd>More information: <a href="Anti-cheat_guide.html" title="Anti-cheat guide">Anti-cheat guide</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="enablesd">enablesd</span></h4>
+<dl>
+<dd><i>&lt;enablesd&gt;&lt;/enablesd&gt;</i>
+</dd>
+<dd>Comma seperated list of enabled special detections. A special detection is a type of anti-cheat for (usually) harmless game modifications. Competitive servers may wish to enable special detections, but most servers should leave this setting blank.
+</dd>
+<dd>e.g. To enable special detection #12 (disallow custom D3D9.DLL) use: 12
+</dd>
+<dd>More information: <a href="Anti-cheat_guide.html" title="Anti-cheat guide">Anti-cheat guide</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="networkencryption">networkencryption</span></h4>
+<dl>
+<dd><i>&lt;networkencryption&gt;1&lt;/networkencryption&gt;</i>
+</dd>
+<dd>This parameter specifies whether communications between the server and client is encrypted. Encryption can help prevent network data being viewed and modified.
+</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 1. Optional parameter.
+</dd>
+<dd>This parameter can changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="minclientversion">minclientversion</span></h4>
+<dl>
+<dd><i>&lt;minclientversion&gt;&lt;/minclientversion&gt;</i>
+</dd>
+<dd>Minimum client version. Clients with a lower version will not be allowed to connect. After disconnection, clients will be given an opportunity to download an update. If left blank, this setting is disabled and there are no restrictions on who can connect. Version numbers are described in <a href="GetPlayerVersion.html" title="GetPlayerVersion">getPlayerVersion</a> and look like this: 1.1.0-9.03100.0
+</dd>
+<dd>This parameter can changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd><b>Note that this setting only determines if the client should be prompted to update. The actual build number they receive will be the [<a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/ver">highest available</a>].</b>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="minclientversion_auto_update">minclientversion_auto_update</span></h4>
+<dl>
+<dd><i>&lt;minclientversion_auto_update&gt;&lt;/minclientversion_auto_update&gt;</i>
+</dd>
+<dd>This parameter specifies if/when the &lt;minclientversion&gt; setting is automatically updated.
+</dd>
+<dd>Keeping &lt;minclientversion&gt; updated can help reduce cheating.
+</dd>
+<dd>Note: The instant setting (2) is only recommened for competitive servers.
+</dd>
+<dd>Values: 0 - disabled, 1 - enabled (delayed by a few days), 2 - enabled (instant)&#160;; default value: 1.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="recommendedclientversion">recommendedclientversion</span></h4>
+<dl>
+<dd><i>&lt;recommendedclientversion&gt;&lt;/recommendedclientversion&gt;</i>
+</dd>
+<dd>Recommended client version. When connecting, if clients have a lower version, they will be given the option to download an update. If left blank, this setting is disabled.
+</dd>
+<dd>This parameter can changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd><b>Note that this setting only determines if the client should be prompted to update. The actual build number they receive will be the [<a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/ver">highest available</a>].</b>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="ase">ase</span></h4>
+<dl>
+<dd><i>&lt;ase&gt;1&lt;/ase&gt;</i>
+</dd>
+<dd>This parameter can be used to make the server report to Game-Monitor master servers, allowing it to be visible in the ingame server browser. An additional UDP port needs to be available for this to work (value from &lt;serverport&gt; + 123 , so on a default &lt;serverport&gt; value 22003 the right port will be 22126 ).
+</dd>
+<dd>Available values: 0 - disabled , 1 - enabled. Optional parameter, defaults to 0.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="donotbroadcastlan">donotbroadcastlan</span></h4>
+<dl>
+<dd><i>&lt;donotbroadcastlan&gt;0&lt;/donotbroadcastlan&gt;</i>
+</dd>
+<dd>This parameter allows you to disable LAN broadcasting.	
+</dd>
+</dl>
+<h4><span class="mw-headline" id="password">password</span></h4>
+<dl>
+<dd><i>&lt;password&gt;&lt;/password&gt; </i>
+</dd>
+<dd>If set, players will have to provide a password specified below, before they can connect to the server. If left blank, server doesn't require a password from them.
+</dd>
+<dd>This parameter can changed and saved while the server is running with <a href="SetServerPassword.html" title="SetServerPassword">setServerPassword</a> or <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="bandwidth_reduction">bandwidth_reduction</span></h4>
+<dl>
+<dd><i>&lt;bandwidth_reduction&gt;medium&lt;/bandwidth_reduction&gt; </i>
+</dd>
+<dd>This parameter reduces the server's bandwidth usage by using various optimizations.
+</dd>
+<dd>Values: none, medium or maximum&#160;; default value: medium
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="player_sync_interval">player_sync_interval</span></h4>
+<dl>
+<dd><i>&lt;player_sync_interval&gt;100&lt;/player_sync_interval&gt; </i>
+</dd>
+<dd>This parameter determines the time in milliseconds between player sync packets.
+</dd>
+<dd>Available range: 50 - 500; default value: 100
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="lightweight_sync_interval">lightweight_sync_interval</span></h4>
+<dl>
+<dd><i>&lt;lightweight_sync_interval&gt;1500&lt;/lightweight_sync_interval&gt; </i>
+</dd>
+<dd>This parameter determines the time in milliseconds between lightweight (player) sync packets.
+</dd>
+<dd>Available range: 200 - 40000; default value: 1500
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="camera_sync_interval">camera_sync_interval</span></h4>
+<dl>
+<dd><i>&lt;camera_sync_interval&gt;500&lt;/camera_sync_interval&gt; </i>
+</dd>
+<dd>This parameter determines the time in milliseconds between camera sync packets.
+</dd>
+<dd>Available range: 200 - 400; default value: 500
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="ped_sync_interval">ped_sync_interval</span></h4>
+<dl>
+<dd><i>&lt;ped_sync_interval&gt;400&lt;/ped_sync_interval&gt; </i>
+</dd>
+<dd>This parameter determines the time in milliseconds between ped sync packets.
+</dd>
+<dd>Available range: 200 - 4000; default value: 400
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="unoccupied_vehicle_sync_interval">unoccupied_vehicle_sync_interval</span></h4>
+<dl>
+<dd><i>&lt;unoccupied_vehicle_sync_interval&gt;1000&lt;/unoccupied_vehicle_sync_interval&gt; </i>
+</dd>
+<dd>This parameter determines the time in milliseconds between unoccupied vehicle sync packets.
+</dd>
+<dd>Available range: 200 - 4000; default value: 1000
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="keysync_mouse_sync_interval">keysync_mouse_sync_interval</span></h4>
+<dl>
+<dd><i>&lt;keysync_mouse_sync_interval&gt;100&lt;/keysync_mouse_sync_interval&gt; </i>
+</dd>
+<dd>This parameter determines the minimum time in milliseconds between key sync packets due to mouse movement.
+</dd>
+<dd>Available range: 50 - 500; default value: 100
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="keysync_analog_sync_interval">keysync_analog_sync_interval</span></h4>
+<dl>
+<dd><i>&lt;keysync_analog_sync_interval&gt;100&lt;/keysync_analog_sync_interval&gt; </i>
+</dd>
+<dd>This parameter determines the minimum time in milliseconds between key sync packets due to joystick movement.
+</dd>
+<dd>Available range: 50 - 500; default value: 100
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="bullet_sync">bullet_sync</span></h4>
+<dl>
+<dd><i>&lt;bullet_sync&gt;0&lt;/bullet_sync&gt; </i>
+</dd>
+<dd>This parameter can improve the reliability of shots when using certain weapons. However, it uses more bandwidth.
+</dd>
+<dd><b>It only works on server build 4247 or later, and when enabled, connecting clients will be auto-updated if required.</b>
+</dd>
+<dd>Note that bullet sync will be active regardless of this setting when certain <a href="SetGlitchEnabled.html" title="SetGlitchEnabled">glitches</a> are enabled.
+</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 0.
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="vehext_percent">vehext_percent</span></h4>
+<dl>
+<dd><i>&lt;vehext_percent&gt;0&lt;/vehext_percent&gt;</i>
+</dd>
+<dd>This parameter sets the amount of extrapolation that clients will apply to remote vehicles. 
+</dd>
+<dd>This can reduce some of the latency induced location disparency by predicting where the remote vehicles will probably be.
+</dd>
+<dd>Depending on the gamemode, an incorrect prediction may have a negative effect. 
+</dd>
+<dd>Therefore this setting should be considered expermental.
+</dd>
+<dd><b>It only works on server build 4456 or later.</b>
+</dd>
+<dd>Available range: 0 to 100.  Default - 0 --&gt;
+</dd>
+</dl>
+<h4><span class="mw-headline" id="vehext_ping_limit">vehext_ping_limit</span></h4>
+<dl>
+<dd><i>&lt;vehext_ping_limit&gt;150&lt;/vehext_ping_limit&gt;</i>
+</dd>
+<dd>This parameter places a limit on how much time (in milliseconds) the vehicle extrapolation will attempt to compensate for.
+</dd>
+<dd>Only relevant if &lt;vehext_percent&gt; is greater than zero.
+</dd>
+<dd><b>It only works on server build 4456 or later.</b>
+</dd>
+<dd>Available range: 50 to 500.  Default - 150
+</dd>
+</dl>
+<h4><span class="mw-headline" id="latency_reduction">latency_reduction</span></h4>
+<dl>
+<dd><i>&lt;latency_reduction&gt;0&lt;/latency_reduction&gt;</i>
+</dd>
+<dd>This parameter can reduce the delay of player actions appearing on remote clients by 2 frames (approx 50ms).
+</dd>
+<dd>Due to the impact this may have on shot lag compensation, it should be considered experimental.
+</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 0.
+</dd>
+<dd>Bugs caused by enabling latency_reduction: <a rel="nofollow" class="external free" href="http://bugs.nrp.us.to/view.php?id=8191">http://bugs.nrp.us.to/view.php?id=8191</a> + <a rel="nofollow" class="external free" href="http://bugs.nrp.us.to/view.php?id=8226">http://bugs.nrp.us.to/view.php?id=8226</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="threadnet">threadnet</span></h4>
+<dl>
+<dd><i>&lt;threadnet&gt;1&lt;/threadnet&gt; </i>
+</dd>
+<dd>This parameter specifies whether or not to run the network synchronization on another thread.
+</dd>
+<dd>Enabling will make the sync smoother, but may increase cpu usage slightly.
+</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 1.
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="idfile">idfile</span></h4>
+<dl>
+<dd><i>&lt;idfile&gt;server-id.keys&lt;/idfile&gt; </i>
+</dd>
+<dd>Specifies the location and file name of this servers unique private key. This is used to prevent private files saved on the client from being read by other servers. 
+</dd>
+<dd>Keep a backup of this file in a safe place. Default value: server-id.keys
+</dd>
+<dd>More information about client private files: <a href="Filepath.html" title="Filepath">Filepath</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="logfile">logfile</span></h4>
+<dl>
+<dd><i>&lt;logfile&gt;logs/server.log&lt;/logfile&gt;</i>
+</dd>
+<dd>Specifies the location and name of the main server log file. If left blank, server won't be saving this file.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="authfile">authfile</span></h4>
+<dl>
+<dd><i>&lt;authfile&gt;logs/server_auth.log&lt;/authfile&gt;</i>
+</dd>
+<dd>As well as the main log file, login successes and failures are logged here for easy reviewing of security issues. If left blank, this file is not used
+</dd>
+</dl>
+<h4><span class="mw-headline" id="dbfile">dbfile</span></h4>
+<dl>
+<dd><i>&lt;dbfile&gt;logs/db.log&lt;/dbfile&gt;</i>
+</dd>
+<dd>Specifies the location and name of the file used to log database queries. The server command <a href="Server_Commands.html#debugdb" title="Server Commands">debugdb</a> sets the amount of logging.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="loadstringfile">loadstringfile</span></h4>
+<dl>
+<dd>
+</dd>
+<dd>Specifies the location and name of the file used to log loadstring function calls. If left blank or not set, no logging is done.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="acl">acl</span></h4>
+<dl>
+<dd><i>&lt;acl&gt;acl.xml&lt;/acl&gt; </i>
+</dd>
+<dd>This parameter specifies the location and name of the Access Control List settings file. If left
+</dd>
+<dd>blank, server will use acl.xml file, located in the same folder as this configuration file.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="scriptdebuglogfile">scriptdebuglogfile</span></h4>
+<dl>
+<dd><i>&lt;scriptdebuglogfile&gt;logs/scripts.log&lt;/scriptdebuglogfile&gt; </i>
+</dd>
+<dd>Specifies the location and name of the debugscript log file. If left blank, server won't be saving this file.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="scriptdebugloglevel">scriptdebugloglevel</span></h4>
+<dl>
+<dd><i>&lt;scriptdebugloglevel&gt;0&lt;/scriptdebugloglevel&gt;</i>
+</dd>
+<dd>Specifies the level of the debugscript log file. Available values: 0, 1, 2, 3. When not set, defaults to 0.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="fpslimit">fpslimit</span></h4>
+<dl>
+<dd><i>&lt;fpslimit&gt;36&lt;/fpslimit&gt;</i>
+</dd>
+<dd>Specifies the frame rate limit that will be applied to connecting clients.
+</dd>
+<dd>Available range: 25 to 100. Default: 36.
+</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a>
+</dd>
+</dl>
+<h4><span class="mw-headline" id="autologin">autologin</span></h4>
+<dl>
+<dd><i>&lt;autologin&gt;0&lt;/autologin&gt;</i>
+</dd>
+<dd>Specifies whether or not players should automatically be logged in based on their IP adresses
+</dd>
+</dl>
+<h4><span class="mw-headline" id="voice">voice</span></h4>
+<dl>
+<dd><i>&lt;voice&gt;0&lt;/voice&gt;</i>
+</dd>
+<dd>This parameter specifies whether or not to enable player voice chat in-game
+</dd>
+<dd>Values: 0 - disabled , 1 - enabled
+</dd>
+</dl>
+<h4><span class="mw-headline" id="voice_samplerate">voice_samplerate</span></h4>
+<dl>
+<dd><i>&lt;voice_samplerate&gt;1&lt;/voice_samplerate&gt;</i>
+</dd>
+<dd>This parameter specifies the sample rate for voice chat.  'voice' parameter must be set to 1 for this to be effective. Higher settings use more bandwidth and increase the sampling quality of voice chat
+</dd>
+<dd>Values: 0 - Narrowband (8kHz), 1 - Wideband (16kHz), 2 - Ultrawideband (32kHz).  Default - 1
+</dd>
+</dl>
+<h4><span class="mw-headline" id="voice_quality">voice_quality</span></h4>
+<dl>
+<dd><i>&lt;voice_quality&gt;4&lt;/voice_quality&gt;</i>
+</dd>
+<dd>This parameter specifies the voice quality for voice chat.  'voice' parameter must be set to 1 for this to be effective. Higher settings use more bandwidth and increase the the overall quality of voice chat
+</dd>
+<dd>Available range: 0 to 10.  Default - 4
+</dd>
+</dl>
+<h4><span class="mw-headline" id="voice_bitrate">voice_bitrate</span></h4>
+<dl>
+<dd><i>&lt;!-- &lt;voice_bitrate&gt;24600&lt;/voice_bitrate&gt; --&gt;</i>
+</dd>
+<dd>Specifies the voice bitrate, in bps. This optional parameter overrides the previous two settings. If not set, NRP handles this automatically.  Use with care.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="backup_path">backup_path</span></h4>
+<dl>
+<dd><i>&lt;backup_path&gt;backups&lt;/backup_path&gt;</i>
+</dd>
+<dd>This parameter specifies the path to use for a basic backup of some server files. Note that basic backups are only made during server startup. Default value: backups
+</dd>
+</dl>
+<h4><span class="mw-headline" id="backup_interval">backup_interval</span></h4>
+<dl>
+<dd><i>&lt;backup_interval&gt;3&lt;/backup_interval&gt;</i>
+</dd>
+<dd>This parameter specifies the number of days between each basic backup. Backups are only made during server startup, so the actual interval maybe much longer. Setting backup_interval to 0 will disable backups
+</dd>
+<dd>Available range: 0 to 30.  Default - 3
+</dd>
+</dl>
+<h4><span class="mw-headline" id="backup_copies">backup_copies</span></h4>
+<dl>
+<dd><i>&lt;backup_copies&gt;5&lt;/backup_copies&gt;</i>
+</dd>
+<dd>This parameter specifies the maximum number of backup copies to keep. Setting backup_copies to 0 will disable backups
+</dd>
+<dd>Available range: 0 to 100.  Default - 5
+</dd>
+</dl>
+<h4><span class="mw-headline" id="compact_internal_databases">compact_internal_databases</span></h4>
+<dl>
+<dd><i>&lt;compact_internal_databases&gt;1&lt;/compact_internal_databases&gt;</i>
+</dd>
+<dd>This parameter specifies when the internal sqlite databases should be defragmented. Details: <a rel="nofollow" class="external free" href="http://www.sqlite.org/lang_vacuum.html">http://www.sqlite.org/lang_vacuum.html</a>
+</dd>
+<dd>Values: 0 - Never, 1 - On server start only after basic backup, 2 - On server start always.  Default - 1
+</dd>
+</dl>
+<h4><span class="mw-headline" id="module">module</span></h4>
+<dl>
+<dd><i>&lt;!-- &lt;module src=&quot;sample_win32.dll&quot;/&gt; --&gt;</i>
+</dd>
+<dd><i>&lt;!-- &lt;module src=&quot;sample_linux.so&quot;/&gt; --&gt;</i>
+</dd>
+<dd>Specifies the module(s) which are loaded with the server. To load several modules, add more &lt;module&gt; parameter(s). Optional parameter.
+</dd>
+</dl>
+<h4><span class="mw-headline" id="resource">resource</span></h4>
+<dl>
+<dd><i>&lt;resource src="admin" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="defaultstats" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="helpmanager" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="joinquit" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="mapcycler" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="mapmanager" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="parachute" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="resourcebrowser" startup="1" protected="1" default="true"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="resourcemanager" startup="1" protected="1"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="scoreboard" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="spawnmanager" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="voice" startup="1" protected="0" /&gt;</i>
+</dd>
+<dd><i>&lt;resource src="votemanager" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd><i>&lt;resource src="webadmin" startup="1" protected="0"/&gt;</i>
+</dd>
+<dd>Specifies resources that are loaded when the server starts and/or which are protected from being stopped. To specify several resources, add more &lt;resource&gt; parameter(s).
+</dd>
+</dl>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.051 seconds
+Real time usage: 0.052 seconds
+Preprocessor visited node count: 300/1000000
+Preprocessor generated node count: 619/1000000
+Post‐expand include size: 2366/2097152 bytes
+Template argument size: 1162/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:5974-0!*!0!!en!*!* and timestamp 20150826120224
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=Server_nrpserver.conf&amp;oldid=45390">/index.php?title=Server_nrpserver.conf&amp;oldid=45390</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a index.html?title=Category:Changes_in_1.3.5&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.5 (page does not exist)">Changes in 1.3.5</a></li><li><a index.html?title=Category:Changes_in_1.3.4&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.4 (page does not exist)">Changes in 1.3.4</a></li><li><a href="Category_Support.html" title="Category:Support">Support</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Server_nrpserver.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:Server_nrpserver.conf&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=Server_nrpserver.conf&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=Server_nrpserver.conf&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="User_75.81.255.html"Array class="new">75.81.255.73</a></li>
+				<li id="pt-anontalk"><a href="User_talk_75.81.255.html"Array class="new">Talk for this IP address</a></li>
+				<li id="pt-anonlogin"><a index.html?title=Special:UserLogin&amp;returnto=Server+nrpserver.conf"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Server_nrpserver.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Server_nrpserver.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=Server_nrpserver.conf&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=Server_nrpserver.conf&amp;oldid=45390"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+	<div id="p-lang" class="portlet">
+		<h5>In other languages</h5>
+		<div class="pBody">
+			<ul>
+				<li class="interwiki-ru"><a href="../wiki/RU/Server_nrpserver.conf">Русский</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 5 July 2015, at 22:39.</li>
+					<li id="viewcount">This page has been accessed 44,940 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.070 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/Nrpserver.conf by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:32:21 GMT -->
+</html>

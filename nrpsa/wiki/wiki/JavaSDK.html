@@ -1,0 +1,930 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/JavaSDK by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:29:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />		<title>JavaSDK - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"JavaSDK","wgTitle":"JavaSDK","wgCurRevisionId":32193,"wgRevisionId":32193,"wgArticleId":6532,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Scripting Concepts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"JavaSDK","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"JavaSDK","wgTitle":"JavaSDK","wgCurRevisionId":32193,"wgRevisionId":32193,"wgArticleId":6532,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Scripting Concepts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"JavaSDK","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><style type="text/css">/*<![CDATA[*/
+.source-java5 {line-height: normal;}
+.source-java5 li, .source-java5 pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for java5
+ * CSS class: source-java5, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.java5.source-java5 .de1, .java5.source-java5 .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.java5.source-java5  {font-family:monospace;}
+.java5.source-java5 .imp {font-weight: bold; color: red;}
+.java5.source-java5 li, .java5.source-java5 .li1 {font-weight: normal; vertical-align:top;}
+.java5.source-java5 .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.java5.source-java5 .li2 {font-weight: bold; vertical-align:top;}
+.java5.source-java5 .kw1 {color: #000000;  font-weight: bold;}
+.java5.source-java5 .kw2 {color: #000000; font-weight: bold;}
+.java5.source-java5 .kw3 {color: #006600; font-weight: bold;}
+.java5.source-java5 .kw4 {color: #006600; font-weight: bold;}
+.java5.source-java5 .kw5 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw6 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw7 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw8 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw9 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw10 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw11 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw12 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw13 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw14 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw15 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw16 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw17 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw18 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw19 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw20 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw21 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw22 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw23 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw24 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw25 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw26 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw27 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw28 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw29 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw30 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw31 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw32 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw33 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw34 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw35 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw36 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw37 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw38 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw39 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw40 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw41 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw42 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw43 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw44 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw45 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw46 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw47 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw48 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw49 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw50 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw51 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw52 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw53 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw54 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw55 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw56 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw57 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw58 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw59 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw60 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw61 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw62 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw63 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw64 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw65 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw66 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw67 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw68 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw69 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw70 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw71 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw72 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw73 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw74 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw75 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw76 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw77 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw78 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw79 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw80 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw81 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw82 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw83 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw84 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw85 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw86 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw87 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw88 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw89 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw90 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw91 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw92 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw93 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw94 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw95 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw96 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw97 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw98 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw99 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw100 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw101 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw102 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw103 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw104 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw105 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw106 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw107 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw108 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw109 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw110 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw111 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw112 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw113 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw114 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw115 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw116 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw117 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw118 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw119 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw120 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw121 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw122 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw123 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw124 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw125 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw126 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw127 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw128 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw129 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw130 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw131 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw132 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw133 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw134 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw135 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw136 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw137 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw138 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw139 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw140 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw141 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw142 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw143 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw144 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw145 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw146 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw147 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw148 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw149 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw150 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw151 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw152 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw153 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw154 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw155 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw156 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw157 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw158 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw159 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw160 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw161 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw162 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw163 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw164 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw165 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw166 {color: #003399; font-weight: bold;}
+.java5.source-java5 .co1 {color: #666666; font-style: italic;}
+.java5.source-java5 .co2 {color: #006699;}
+.java5.source-java5 .co3 {color: #008000; font-style: italic; font-weight: bold;}
+.java5.source-java5 .coMULTI {color: #666666; font-style: italic;}
+.java5.source-java5 .es0 {color: #000099; font-weight: bold;}
+.java5.source-java5 .br0 {color: #009900;}
+.java5.source-java5 .sy0 {color: #339933;}
+.java5.source-java5 .st0 {color: #0000ff;}
+.java5.source-java5 .nu0 {color: #cc66cc;}
+.java5.source-java5 .me1 {color: #006633;}
+.java5.source-java5 .me2 {color: #006633;}
+.java5.source-java5 .ln-xtra, .java5.source-java5 li.ln-xtra, .java5.source-java5 div.ln-xtra {background-color: #ffc;}
+.java5.source-java5 span.xtra { display:block; }
+
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-java {line-height: normal;}
+.source-java li, .source-java pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for java
+ * CSS class: source-java, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.java.source-java .de1, .java.source-java .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.java.source-java  {font-family:monospace;}
+.java.source-java .imp {font-weight: bold; color: red;}
+.java.source-java li, .java.source-java .li1 {font-weight: normal; vertical-align:top;}
+.java.source-java .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.java.source-java .li2 {font-weight: bold; vertical-align:top;}
+.java.source-java .kw1 {color: #000000; font-weight: bold;}
+.java.source-java .kw2 {color: #000066; font-weight: bold;}
+.java.source-java .kw3 {color: #003399;}
+.java.source-java .kw4 {color: #000066; font-weight: bold;}
+.java.source-java .co1 {color: #666666; font-style: italic;}
+.java.source-java .co2 {color: #006699;}
+.java.source-java .co3 {color: #008000; font-style: italic; font-weight: bold;}
+.java.source-java .coMULTI {color: #666666; font-style: italic;}
+.java.source-java .es0 {color: #000099; font-weight: bold;}
+.java.source-java .br0 {color: #009900;}
+.java.source-java .sy0 {color: #339933;}
+.java.source-java .st0 {color: #0000ff;}
+.java.source-java .nu0 {color: #cc66cc;}
+.java.source-java .me1 {color: #006633;}
+.java.source-java .me2 {color: #006633;}
+.java.source-java .ln-xtra, .java.source-java li.ln-xtra, .java.source-java div.ln-xtra {background-color: #ffc;}
+.java.source-java span.xtra { display:block; }
+
+/*]]>*/
+</style>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-JavaSDK skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">JavaSDK</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This SDK allows you to call exported NRP functions from Java over HTTP.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Getting_Started"><span class="tocnumber">1</span> <span class="toctext">Getting Started</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Classes"><span class="tocnumber">2</span> <span class="toctext">Classes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#com.nrpsa.elements.Resource"><span class="tocnumber">2.1</span> <span class="toctext">com.nrpsa.elements.Resource</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#com.nrpsa.elements.Element"><span class="tocnumber">2.2</span> <span class="toctext">com.nrpsa.elements.Element</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#com.nrpsa.elements.Ped_extends_Element"><span class="tocnumber">2.3</span> <span class="toctext">com.nrpsa.elements.Ped extends Element</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#com.nrpsa.elements.Player_extends_Ped"><span class="tocnumber">2.4</span> <span class="toctext">com.nrpsa.elements.Player extends Ped</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#com.nrpsa.elements.Blip_extends_Element"><span class="tocnumber">2.5</span> <span class="toctext">com.nrpsa.elements.Blip extends Element</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#com.nrpsa.elements.CollisionShape_extends_Element"><span class="tocnumber">2.6</span> <span class="toctext">com.nrpsa.elements.CollisionShape extends Element</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#com.nrpsa.elements.GTAObject_extends_Element"><span class="tocnumber">2.7</span> <span class="toctext">com.nrpsa.elements.GTAObject extends Element</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#com.nrpsa.elements.Pickup_extends_Element"><span class="tocnumber">2.8</span> <span class="toctext">com.nrpsa.elements.Pickup extends Element</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#com.nrpsa.elements.RadarArea_extends_Element"><span class="tocnumber">2.9</span> <span class="toctext">com.nrpsa.elements.RadarArea extends Element</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#com.nrpsa.elements.Team_extends_Element"><span class="tocnumber">2.10</span> <span class="toctext">com.nrpsa.elements.Team extends Element</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#com.nrpsa.elements.Vehicle_extends_Element"><span class="tocnumber">2.11</span> <span class="toctext">com.nrpsa.elements.Vehicle extends Element</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#com.nrpsa.functions.ElementFuncs"><span class="tocnumber">2.12</span> <span class="toctext">com.nrpsa.functions.ElementFuncs</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#com.nrpsa.functions.Output"><span class="tocnumber">2.13</span> <span class="toctext">com.nrpsa.functions.Output</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#com.nrpsa.functions.PlayerFuncs"><span class="tocnumber">2.14</span> <span class="toctext">com.nrpsa.functions.PlayerFuncs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#com.nrpsa.LuaArgs_extends_java.util.List"><span class="tocnumber">3</span> <span class="toctext">com.nrpsa.LuaArgs extends java.util.List</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#com.nrpsa.NRP"><span class="tocnumber">4</span> <span class="toctext">com.nrpsa.NRP</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#com.nrpsa.InputEvent.28_Interface_.29"><span class="tocnumber">5</span> <span class="toctext">com.nrpsa.InputEvent( Interface )</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#com.nrpsa.NRPException_extends_Exception"><span class="tocnumber">6</span> <span class="toctext">com.nrpsa.NRPException extends Exception</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Examples"><span class="tocnumber">7</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#More_complex_example"><span class="tocnumber">8</span> <span class="toctext">More complex example</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Caveats"><span class="tocnumber">9</span> <span class="toctext">Caveats</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#Download"><span class="tocnumber">10</span> <span class="toctext">Download</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#Contact"><span class="tocnumber">11</span> <span class="toctext">Contact</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Getting_Started">Getting Started</span></h2>
+<p>To use it, you need to add library to your class-path.
+It's included in the zip file below.
+</p><p>To get started, copy modules/ml_sockets into your modules folder.And load that.
+After that, copy resources/jsdk into your resources folder.And start that.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Classes">Classes</span></h2>
+<h3><span class="mw-headline" id="com.nrpsa.elements.Resource">com.nrpsa.elements.Resource</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |public String getName(); public com.nrpsa.NRP getServer(); public void setServer(com.nrpsa.NRP newServer); public String getResourceInfo(String attr); public boolean setResourceInfo(String attr, String newVal); public boolean stopResource(); public boolean startResource(); public com.nrpsa.LuaArgs call(String functionName,LuaArgs parameters); public String toString();|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw2">public</span> <span class="kw21">String</span> getName<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> com.<span class="me1">nrpsa</span>.<span class="me1">NRP</span> getServer<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setServer<span class="br0">&#40;</span>com.<span class="me1">nrpsa</span>.<span class="me1">NRP</span> newServer<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getResourceInfo<span class="br0">&#40;</span><span class="kw21">String</span> attr<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setResourceInfo<span class="br0">&#40;</span><span class="kw21">String</span> attr, <span class="kw21">String</span> newVal<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> stopResource<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> startResource<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> com.<span class="me1">nrpsa</span>.<span class="me1">LuaArgs</span> call<span class="br0">&#40;</span><span class="kw21">String</span> functionName,LuaArgs parameters<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> toString<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.Element">com.nrpsa.elements.Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |public String getType(); public boolean is_a(Class<?> compareElement); public boolean clearElementVisibleTo(Element visibleTo); public Element cloneElement(); public boolean destroyElement(); public Point3D getElementPosition(); public boolean setElementPosition(double x,double y,double z); public boolean setElementPosition(Point3D points); public Point3D getElementRotation(); public boolean setElementRotation(double x,double y,double z); public boolean setElementRotation(Point3D points); public int getElementAlpha(); public boolean setElementAlpha(int alpha); public float getElementHealth(); public boolean setElementHealth(float health); public int getElementModel(); public boolean setElementModel(int model); public int getElementInterior(); public boolean setElementInterior(int interior); public int getElementDimension(); public boolean setElementDimension(int dimension); public Point3D getElementVelocity(); public boolean setElementVelocity(double x,double y,double z); public boolean setElementVelocity(Point3D points); public boolean isElementVisibleTo(Element element); public boolean setElementVisibleTo(Element element,boolean visible); public boolean isElementFrozen(); public boolean setElementFrozen(boolean frozen); public String getElementID(); public boolean setElementID(String new_id); public String getElementData(String data_name); public boolean setElementData(String data_name,String newVal);|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw2">public</span> <span class="kw21">String</span> getType<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> is_a<span class="br0">&#40;</span><span class="kw21">Class</span><span class="sy0">&lt;?&gt;</span> compareElement<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> clearElementVisibleTo<span class="br0">&#40;</span><span class="kw166">Element</span> visibleTo<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw166">Element</span> cloneElement<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> destroyElement<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Point3D getElementPosition<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementPosition<span class="br0">&#40;</span><span class="kw3">double</span> x,<span class="kw3">double</span> y,<span class="kw3">double</span> z<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementPosition<span class="br0">&#40;</span>Point3D points<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Point3D getElementRotation<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementRotation<span class="br0">&#40;</span><span class="kw3">double</span> x,<span class="kw3">double</span> y,<span class="kw3">double</span> z<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementRotation<span class="br0">&#40;</span>Point3D points<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getElementAlpha<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementAlpha<span class="br0">&#40;</span><span class="kw3">int</span> alpha<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">float</span> getElementHealth<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementHealth<span class="br0">&#40;</span><span class="kw3">float</span> health<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getElementModel<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementModel<span class="br0">&#40;</span><span class="kw3">int</span> model<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getElementInterior<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementInterior<span class="br0">&#40;</span><span class="kw3">int</span> interior<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getElementDimension<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementDimension<span class="br0">&#40;</span><span class="kw3">int</span> dimension<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Point3D getElementVelocity<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementVelocity<span class="br0">&#40;</span><span class="kw3">double</span> x,<span class="kw3">double</span> y,<span class="kw3">double</span> z<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementVelocity<span class="br0">&#40;</span>Point3D points<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> isElementVisibleTo<span class="br0">&#40;</span><span class="kw166">Element</span> element<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementVisibleTo<span class="br0">&#40;</span><span class="kw166">Element</span> element,<span class="kw3">boolean</span> visible<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> isElementFrozen<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementFrozen<span class="br0">&#40;</span><span class="kw3">boolean</span> frozen<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getElementID<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementID<span class="br0">&#40;</span><span class="kw21">String</span> new_id<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getElementData<span class="br0">&#40;</span><span class="kw21">String</span> data_name<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setElementData<span class="br0">&#40;</span><span class="kw21">String</span> data_name,<span class="kw21">String</span> newVal<span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.Ped_extends_Element">com.nrpsa.elements.Ped extends Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; // Cloth Types public static final int CLOTH_SHIRT = 0; public static final int CLOTH_HEAD = 1; public static final int CLOTH_TROUSERS = 2; public static final int CLOTH_SHOES = 3; public static final int CLOTH_TATTOOS_LEFT_UPPER_ARM = 4; public static final int CLOTH_TATTOOS_LEFT_LOWER_ARM = 5; public static final int CLOTH_TATTOOS_RIGHT_UPPER_ARM = 6; public static final int CLOTH_TATTOOS_RIGHT_LOWER_ARM = 7; public static final int CLOTH_TATTOOS_BACK = 8; public static final int CLOTH_TATTOOS_LEFT_CHEST = 9; public static final int CLOTH_TATTOOS_RIGHT_CHEST = 10; public static final int CLOTH_TATTOOS_STOMACH = 11; public static final int CLOTH_TATTOOS_LOWER_BACK = 12; public static final int CLOTH_NECKLACE = 13; public static final int CLOTH_WATCH = 14; public static final int CLOTH_GLASSES = 15; public static final int CLOTH_HAT = 16; public static final int CLOTH_EXTRA = 17; // Fighting Styles public static final int STYLE_STANDARD = 4; public static final int STYLE_BOXING = 5; public static final int STYLE_KUNG_FU = 6; public static final int STYLE_KNEE_HEAD = 7; public static final int STYLE_GRAB_KICK = 15; public static final int STYLE_ELBOWS = 16; // Ped stats public static final int PROGRESS_MADE = 0; public static final int TOTAL_PROGRESS = 1; public static final int LONGEST_BASKETBALL = 2; public static final int DIST_FOOT = 3; public static final int DIST_CAR = 4; public static final int DIST_BIKE = 5; public static final int DIST_BOAT = 6; public static final int DIST_GOLF_CART = 7; public static final int DIST_HELICOPTOR = 8; public static final int DIST_PLANE = 9; public static final int LONGEST_WHEELIE_DIST = 10; public static final int LONGEST_STOPPIE_DIST = 11; public static final int LONGEST_2WHEEL_DIST = 12; public static final int WEAPON_BUDGET = 13; public static final int FASHION_BUDGET = 14; public static final int PROPERTY_BUDGET = 15; public static final int SPRAYING_BUDGET = 16; public static final int LONGEST_WHEELIE_TIME = 17; public static final int LONGEST_STOPPIE_TIME = 18; public static final int LONGEST_2WHEEL_TIME = 19; public static final int FOOD_BUDGET = 20; public static final int FAT = 21; public static final int STAMINA = 22; public static final int BODY_MUSCLE = 23; public static final int MAX_HEALTH = 24; public static final int SEX_APPEAL = 25; public static final int DIST_SWIMMING = 26; public static final int DIST_CYCLE = 27; public static final int DIST_TREADMILL = 28; public static final int DIST_EXCERSISE_BIKE = 29; public static final int TATTOO_BUDGET = 30; public static final int HAIRDRESSING_BUDGET = 31; public static final int PROSTITUTE_BUDGET = 33; public static final int MONEY_SPENT_GAMBLING = 35; public static final int MONEY_MADE_PIMPING = 36; public static final int MONEY_WON_GAMBLING = 37; public static final int BIGGEST_GAMBLING_WIN = 38; public static final int BIGGEST_GAMBLING_LOSS = 39; public static final int LARGEST_BURGLARY_SWAG = 40; public static final int MONEY_MADE_BURGLARY = 41; public static final int LONGEST_TREADMILL_TIME = 44; public static final int LONGEST_EXCERSISE_BIKE_TIME = 45; public static final int HEAVIEST_WEIGHT_BENCH_PRESS = 46; public static final int HEAVIEST_WEIGHT_DUMBELLS = 47; public static final int BEST_TIME_HOTRING = 48; public static final int BEST_TIME_BMX = 49; public static final int LONGEST_CHASE_TIME = 51; public static final int LAST_CHASE_TIME = 52; public static final int WAGE_BILL = 53; public static final int STRIP_CLUB_BUDGET = 54; public static final int CAR_MOD_BUDGET = 55; public static final int TIME_SPENT_SHOPPING = 56; public static final int TOTAL_SHOPPING_BUDGET = 62; public static final int TIME_SPENT_UNDERWATER = 63; public static final int RESPECT_TOTAL = 64; public static final int RESPECT_GIRLFRIEND = 65; public static final int RESPECT_CLOTHES = 66; public static final int RESPECT_FITNESS = 67; public static final int RESPECT = 68; public static final int WEAPONTYPE_PISTOL_SKILL = 69; public static final int WEAPONTYPE_PISTOL_SILENCED_SKILL = 70; public static final int WEAPONTYPE_DESERT_EAGLE_SKILL = 71; public static final int WEAPONTYPE_SHOTGUN_SKILL = 72; public static final int WEAPONTYPE_SAWNOFF_SHOTGUN_SKILL = 73; public static final int WEAPONTYPE_SPAS12_SHOTGUN_SKILL = 74; public static final int WEAPONTYPE_MICRO_UZI_SKILL = 75; public static final int WEAPONTYPE_MP5_SKILL = 76; public static final int WEAPONTYPE_AK47_SKILL = 77; public static final int WEAPONTYPE_M4_SKILL = 78; public static final int WEAPONTYPE_SNIPERRIFLE_SKILL = 79; public static final int SEX_APPEAL_CLOTHES = 80; public static final int GAMBLING = 81; public static final int PEOPLE_KILLED_BY_OTHERS = 120; public static final int PEOPLE_KILLED_BY_PLAYER = 121; public static final int CARS_DESTROYED = 122; public static final int BOATS_DESTROYED = 123; public static final int HELICOPTORS_DESTROYED = 124; public static final int PROPERTY_DESTROYED = 125; public static final int ROUNDS_FIRED = 126; public static final int EXPLOSIVES_USED = 127; public static final int BULLETS_HIT = 128; public static final int TYRES_POPPED = 129; public static final int HEADS_POPPED = 130; public static final int WANTED_STARS_ATTAINED = 131; public static final int WANTED_STARS_EVADED = 132; public static final int TIMES_ARRESTED = 133; public static final int DAYS_PASSED = 134; public static final int TIMES_DIED = 135; public static final int TIMES_SAVED = 136; public static final int TIMES_CHEATED = 137; public static final int SPRAYINGS = 138; public static final int MAX_JUMP_DISTANCE = 139; public static final int MAX_JUMP_HEIGHT = 140; public static final int MAX_JUMP_FLIPS = 141; public static final int MAX_JUMP_SPINS = 142; public static final int BEST_STUNT = 143; public static final int UNIQUE_JUMPS_FOUND = 144; public static final int UNIQUE_JUMPS_DONE = 145; public static final int MISSIONS_ATTEMPTED = 146; public static final int MISSIONS_PASSED = 147; public static final int TOTAL_MISSIONS = 148; public static final int TAXI_MONEY_MADE = 149; public static final int PASSENGERS_DELIVERED_IN_TAXI = 150; public static final int LIVES_SAVED = 151; public static final int CRIMINALS_CAUGHT = 152; public static final int FIRES_EXTINGUISHED = 153; public static final int PIZZAS_DELIVERED = 154; public static final int ASSASSINATIONS = 155; public static final int LATEST_DANCE_SCORE = 156; public static final int VIGILANTE_LEVEL = 157; public static final int AMBULANCE_LEVEL = 158; public static final int FIREFIGHTER_LEVEL = 159; public static final int DRIVING_SKILL = 160; public static final int TRUCK_MISSIONS_PASSED = 161; public static final int TRUCK_MONEY_MADE = 162; public static final int RECRUITED_GANG_MEMBERS_KILLED = 163; public static final int ARMOUR = 164; public static final int ENERGY = 165; public static final int PHOTOS_TAKEN = 166; public static final int KILL_FRENZIES_ATTEMPTED = 167; public static final int KILL_FRENZIES_PASSED = 168; public static final int FLIGHT_TIME = 169; public static final int TIMES_DROWNED = 170; public static final int NUM_GIRLS_PIMPED = 171; public static final int BEST_POSITION_HOTRING = 172; public static final int FLIGHT_TIME_JETPACK = 173; public static final int SHOOTING_RANGE_SCORE = 174; public static final int VALET_CARS_PARKED = 175; public static final int KILLS_SINCE_LAST_CHECKPOINT = 176; public static final int TOTAL_LEGITIMATE_KILLS = 177; public static final int BLOODRING_KILLS = 178; public static final int BLOODRING_TIME = 179; public static final int NO_MORE_HURRICANES = 180; public static final int CITIES_PASSED = 181; public static final int POLICE_BRIBES = 182; public static final int CARS_STOLEN = 183; public static final int CURRENT_GIRLFRIENDS = 184; public static final int BAD_DATES = 185; public static final int GIRLS_DATED = 186; public static final int TIMES_SCORED_WITH_GIRL = 187; public static final int DATES = 188; public static final int GIRLS_DUMPED = 189; public static final int TIMES_VISITED_PROSTITUTE = 190; public static final int HOUSES_BURGLED = 191; public static final int SAFES_CRACKED = 192; public static final int STOLEN_ITEMS_SOLD = 194; public static final int EIGHT_BALLS_IN_POOL = 195; public static final int WINS_IN_POOL = 196; public static final int LOSSES_IN_POOL = 197; public static final int VISITS_TO_GYM = 198; public static final int MEALS_EATEN = 200; public static final int UNDERWATER_STAMINA = 225; public static final int BIKE_SKILL = 229; public static final int CYCLE_SKILL = 230; // Functions: public boolean addPedClothes(String texture,String model, int type); public boolean doesPedHaveJetPack(); public String[] getPedClothes(int clothesType); public int getPedFightingStyle(); public boolean setPedFightingStyle(int style); public float getPedGravity(); public boolean setPedGravity(float style); public int getPedSkin(); public boolean setPedSkin(int skin); public float getPedRotation(); public boolean setPedRotation(float rot); public boolean givePedJetpack(); public boolean removePedJetpack(); public Vehicle getPedOccupiedVehicle(); public float getPedStat(int stat);|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+<span class="co1">// Cloth Types</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_SHIRT = <span class="nu0">0</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_HEAD = <span class="nu0">1</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TROUSERS = <span class="nu0">2</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_SHOES = <span class="nu0">3</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_LEFT_UPPER_ARM = <span class="nu0">4</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_LEFT_LOWER_ARM = <span class="nu0">5</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_RIGHT_UPPER_ARM = <span class="nu0">6</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_RIGHT_LOWER_ARM = <span class="nu0">7</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_BACK = <span class="nu0">8</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_LEFT_CHEST = <span class="nu0">9</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_RIGHT_CHEST = <span class="nu0">10</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_STOMACH = <span class="nu0">11</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_TATTOOS_LOWER_BACK = <span class="nu0">12</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_NECKLACE = <span class="nu0">13</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_WATCH = <span class="nu0">14</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_GLASSES = <span class="nu0">15</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_HAT = <span class="nu0">16</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CLOTH_EXTRA = <span class="nu0">17</span><span class="sy0">;</span>
+&#160;
+<span class="co1">// Fighting Styles</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STYLE_STANDARD = <span class="nu0">4</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STYLE_BOXING = <span class="nu0">5</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STYLE_KUNG_FU = <span class="nu0">6</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STYLE_KNEE_HEAD = <span class="nu0">7</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STYLE_GRAB_KICK = <span class="nu0">15</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STYLE_ELBOWS = <span class="nu0">16</span><span class="sy0">;</span>
+&#160;
+<span class="co1">// Ped stats</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PROGRESS_MADE = <span class="nu0">0</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TOTAL_PROGRESS = <span class="nu0">1</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_BASKETBALL = <span class="nu0">2</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_FOOT = <span class="nu0">3</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_CAR = <span class="nu0">4</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_BIKE = <span class="nu0">5</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_BOAT = <span class="nu0">6</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_GOLF_CART = <span class="nu0">7</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_HELICOPTOR = <span class="nu0">8</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_PLANE = <span class="nu0">9</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_WHEELIE_DIST = <span class="nu0">10</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_STOPPIE_DIST = <span class="nu0">11</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_2WHEEL_DIST = <span class="nu0">12</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPON_BUDGET = <span class="nu0">13</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> FASHION_BUDGET = <span class="nu0">14</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PROPERTY_BUDGET = <span class="nu0">15</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> SPRAYING_BUDGET = <span class="nu0">16</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_WHEELIE_TIME = <span class="nu0">17</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_STOPPIE_TIME = <span class="nu0">18</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_2WHEEL_TIME = <span class="nu0">19</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> FOOD_BUDGET = <span class="nu0">20</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> FAT = <span class="nu0">21</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STAMINA = <span class="nu0">22</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BODY_MUSCLE = <span class="nu0">23</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MAX_HEALTH = <span class="nu0">24</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> SEX_APPEAL = <span class="nu0">25</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_SWIMMING = <span class="nu0">26</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_CYCLE = <span class="nu0">27</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_TREADMILL = <span class="nu0">28</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DIST_EXCERSISE_BIKE = <span class="nu0">29</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TATTOO_BUDGET = <span class="nu0">30</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> HAIRDRESSING_BUDGET = <span class="nu0">31</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PROSTITUTE_BUDGET = <span class="nu0">33</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MONEY_SPENT_GAMBLING = <span class="nu0">35</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MONEY_MADE_PIMPING = <span class="nu0">36</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MONEY_WON_GAMBLING = <span class="nu0">37</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BIGGEST_GAMBLING_WIN = <span class="nu0">38</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BIGGEST_GAMBLING_LOSS = <span class="nu0">39</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LARGEST_BURGLARY_SWAG = <span class="nu0">40</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MONEY_MADE_BURGLARY = <span class="nu0">41</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_TREADMILL_TIME = <span class="nu0">44</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_EXCERSISE_BIKE_TIME = <span class="nu0">45</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> HEAVIEST_WEIGHT_BENCH_PRESS = <span class="nu0">46</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> HEAVIEST_WEIGHT_DUMBELLS = <span class="nu0">47</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BEST_TIME_HOTRING = <span class="nu0">48</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BEST_TIME_BMX = <span class="nu0">49</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LONGEST_CHASE_TIME = <span class="nu0">51</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LAST_CHASE_TIME = <span class="nu0">52</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WAGE_BILL = <span class="nu0">53</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STRIP_CLUB_BUDGET = <span class="nu0">54</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CAR_MOD_BUDGET = <span class="nu0">55</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIME_SPENT_SHOPPING = <span class="nu0">56</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TOTAL_SHOPPING_BUDGET = <span class="nu0">62</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIME_SPENT_UNDERWATER = <span class="nu0">63</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> RESPECT_TOTAL = <span class="nu0">64</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> RESPECT_GIRLFRIEND = <span class="nu0">65</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> RESPECT_CLOTHES = <span class="nu0">66</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> RESPECT_FITNESS = <span class="nu0">67</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> RESPECT = <span class="nu0">68</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_PISTOL_SKILL = <span class="nu0">69</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_PISTOL_SILENCED_SKILL = <span class="nu0">70</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_DESERT_EAGLE_SKILL = <span class="nu0">71</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_SHOTGUN_SKILL = <span class="nu0">72</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_SAWNOFF_SHOTGUN_SKILL = <span class="nu0">73</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_SPAS12_SHOTGUN_SKILL = <span class="nu0">74</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_MICRO_UZI_SKILL = <span class="nu0">75</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_MP5_SKILL = <span class="nu0">76</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_AK47_SKILL = <span class="nu0">77</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_M4_SKILL = <span class="nu0">78</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WEAPONTYPE_SNIPERRIFLE_SKILL = <span class="nu0">79</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> SEX_APPEAL_CLOTHES = <span class="nu0">80</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> GAMBLING = <span class="nu0">81</span><span class="sy0">;</span>
+&#160;
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PEOPLE_KILLED_BY_OTHERS = <span class="nu0">120</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PEOPLE_KILLED_BY_PLAYER = <span class="nu0">121</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CARS_DESTROYED = <span class="nu0">122</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BOATS_DESTROYED = <span class="nu0">123</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> HELICOPTORS_DESTROYED = <span class="nu0">124</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PROPERTY_DESTROYED = <span class="nu0">125</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> ROUNDS_FIRED = <span class="nu0">126</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> EXPLOSIVES_USED = <span class="nu0">127</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BULLETS_HIT = <span class="nu0">128</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TYRES_POPPED = <span class="nu0">129</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> HEADS_POPPED = <span class="nu0">130</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WANTED_STARS_ATTAINED = <span class="nu0">131</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WANTED_STARS_EVADED = <span class="nu0">132</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIMES_ARRESTED = <span class="nu0">133</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DAYS_PASSED = <span class="nu0">134</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIMES_DIED = <span class="nu0">135</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIMES_SAVED = <span class="nu0">136</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIMES_CHEATED = <span class="nu0">137</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> SPRAYINGS = <span class="nu0">138</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MAX_JUMP_DISTANCE = <span class="nu0">139</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MAX_JUMP_HEIGHT = <span class="nu0">140</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MAX_JUMP_FLIPS = <span class="nu0">141</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MAX_JUMP_SPINS = <span class="nu0">142</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BEST_STUNT = <span class="nu0">143</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> UNIQUE_JUMPS_FOUND = <span class="nu0">144</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> UNIQUE_JUMPS_DONE = <span class="nu0">145</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MISSIONS_ATTEMPTED = <span class="nu0">146</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MISSIONS_PASSED = <span class="nu0">147</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TOTAL_MISSIONS = <span class="nu0">148</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TAXI_MONEY_MADE = <span class="nu0">149</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PASSENGERS_DELIVERED_IN_TAXI = <span class="nu0">150</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LIVES_SAVED = <span class="nu0">151</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CRIMINALS_CAUGHT = <span class="nu0">152</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> FIRES_EXTINGUISHED = <span class="nu0">153</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PIZZAS_DELIVERED = <span class="nu0">154</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> ASSASSINATIONS = <span class="nu0">155</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LATEST_DANCE_SCORE = <span class="nu0">156</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> VIGILANTE_LEVEL = <span class="nu0">157</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> AMBULANCE_LEVEL = <span class="nu0">158</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> FIREFIGHTER_LEVEL = <span class="nu0">159</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DRIVING_SKILL = <span class="nu0">160</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TRUCK_MISSIONS_PASSED = <span class="nu0">161</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TRUCK_MONEY_MADE = <span class="nu0">162</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> RECRUITED_GANG_MEMBERS_KILLED = <span class="nu0">163</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> ARMOUR = <span class="nu0">164</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> ENERGY = <span class="nu0">165</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> PHOTOS_TAKEN = <span class="nu0">166</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> KILL_FRENZIES_ATTEMPTED = <span class="nu0">167</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> KILL_FRENZIES_PASSED = <span class="nu0">168</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> FLIGHT_TIME = <span class="nu0">169</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIMES_DROWNED = <span class="nu0">170</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> NUM_GIRLS_PIMPED = <span class="nu0">171</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BEST_POSITION_HOTRING = <span class="nu0">172</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> FLIGHT_TIME_JETPACK = <span class="nu0">173</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> SHOOTING_RANGE_SCORE = <span class="nu0">174</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> VALET_CARS_PARKED = <span class="nu0">175</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> KILLS_SINCE_LAST_CHECKPOINT = <span class="nu0">176</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TOTAL_LEGITIMATE_KILLS = <span class="nu0">177</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BLOODRING_KILLS = <span class="nu0">178</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BLOODRING_TIME = <span class="nu0">179</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> NO_MORE_HURRICANES = <span class="nu0">180</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CITIES_PASSED = <span class="nu0">181</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> POLICE_BRIBES = <span class="nu0">182</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CARS_STOLEN = <span class="nu0">183</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CURRENT_GIRLFRIENDS = <span class="nu0">184</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BAD_DATES = <span class="nu0">185</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> GIRLS_DATED = <span class="nu0">186</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIMES_SCORED_WITH_GIRL = <span class="nu0">187</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> DATES = <span class="nu0">188</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> GIRLS_DUMPED = <span class="nu0">189</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> TIMES_VISITED_PROSTITUTE = <span class="nu0">190</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> HOUSES_BURGLED = <span class="nu0">191</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> SAFES_CRACKED = <span class="nu0">192</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> STOLEN_ITEMS_SOLD = <span class="nu0">194</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> EIGHT_BALLS_IN_POOL = <span class="nu0">195</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> WINS_IN_POOL = <span class="nu0">196</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LOSSES_IN_POOL = <span class="nu0">197</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> VISITS_TO_GYM = <span class="nu0">198</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> MEALS_EATEN = <span class="nu0">200</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> UNDERWATER_STAMINA = <span class="nu0">225</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> BIKE_SKILL = <span class="nu0">229</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> CYCLE_SKILL = <span class="nu0">230</span><span class="sy0">;</span>
+<span class="co1">// Functions:</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> addPedClothes<span class="br0">&#40;</span><span class="kw21">String</span> texture,<span class="kw21">String</span> model, <span class="kw3">int</span> type<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> doesPedHaveJetPack<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span><span class="br0">&#91;</span><span class="br0">&#93;</span> getPedClothes<span class="br0">&#40;</span><span class="kw3">int</span> clothesType<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getPedFightingStyle<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setPedFightingStyle<span class="br0">&#40;</span><span class="kw3">int</span> style<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">float</span> getPedGravity<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setPedGravity<span class="br0">&#40;</span><span class="kw3">float</span> style<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getPedSkin<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setPedSkin<span class="br0">&#40;</span><span class="kw3">int</span> skin<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">float</span> getPedRotation<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setPedRotation<span class="br0">&#40;</span><span class="kw3">float</span> rot<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> givePedJetpack<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> removePedJetpack<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Vehicle getPedOccupiedVehicle<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">float</span> getPedStat<span class="br0">&#40;</span><span class="kw3">int</span> stat<span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.Player_extends_Ped">com.nrpsa.elements.Player extends Ped</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; All Ped Functions; public String getPlayerName(); public String getPlayerName(boolean removecolorcodes); public String getPlayerIP(); public String getPlayerSerial(); public int getPlayerMoney(); public int getPlayerPing(); public Team getPlayerTeam(); public int getPlayerWantedLevel(); public boolean givePlayerMoney(int money); public boolean isPlayerMuted(); public boolean setPlayerMoney(int money); public boolean setPlayerMuted(boolean muted); public boolean setPlayerTeam(Team team); public boolean spawnPlayer(double x,double y,double z); public boolean spawnPlayer(Point3D p); public boolean spawnPlayer(Point3D point,double rot,int skin,int interior,int dimension,Team team);|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+All Ped Functions<span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getPlayerName<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getPlayerName<span class="br0">&#40;</span><span class="kw3">boolean</span> removecolorcodes<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getPlayerIP<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getPlayerSerial<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getPlayerMoney<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getPlayerPing<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Team getPlayerTeam<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getPlayerWantedLevel<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> givePlayerMoney<span class="br0">&#40;</span><span class="kw3">int</span> money<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> isPlayerMuted<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setPlayerMoney<span class="br0">&#40;</span><span class="kw3">int</span> money<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setPlayerMuted<span class="br0">&#40;</span><span class="kw3">boolean</span> muted<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> setPlayerTeam<span class="br0">&#40;</span>Team team<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> spawnPlayer<span class="br0">&#40;</span><span class="kw3">double</span> x,<span class="kw3">double</span> y,<span class="kw3">double</span> z<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> spawnPlayer<span class="br0">&#40;</span>Point3D p<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> spawnPlayer<span class="br0">&#40;</span>Point3D point,<span class="kw3">double</span> rot,<span class="kw3">int</span> skin,<span class="kw3">int</span> interior,<span class="kw3">int</span> dimension,Team team<span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.Blip_extends_Element">com.nrpsa.elements.Blip extends Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; // Functions will be added soon..|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+<span class="co1">// Functions will be added soon..</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.CollisionShape_extends_Element">com.nrpsa.elements.CollisionShape extends Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; // Functions will be added soon..|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+<span class="co1">// Functions will be added soon..</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.GTAObject_extends_Element">com.nrpsa.elements.GTAObject extends Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; // Functions will be added soon..|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+<span class="co1">// Functions will be added soon..</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.Pickup_extends_Element">com.nrpsa.elements.Pickup extends Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; // Functions will be added soon..|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+<span class="co1">// Functions will be added soon..</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.RadarArea_extends_Element">com.nrpsa.elements.RadarArea extends Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; // Functions will be added soon..|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+<span class="co1">// Functions will be added soon..</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.Team_extends_Element">com.nrpsa.elements.Team extends Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; // Functions will be added soon..|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+<span class="co1">// Functions will be added soon..</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.elements.Vehicle_extends_Element">com.nrpsa.elements.Vehicle extends Element</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |All Element Functions; // Functions will be added soon..|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All <span class="kw166">Element</span> Functions<span class="sy0">;</span>
+<span class="co1">// Functions will be added soon..</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.functions.ElementFuncs">com.nrpsa.functions.ElementFuncs</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |public NRP getServer(); public void setServer(NRP server); public static String type_to_string(Class<? extends Element> type); public <E extends Element> E[] getElementsByType(Class<E> type); public Object[] getElementsByType(String type); public Element createElement(String type); public Element getElementByID(String id);|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw2">public</span> NRP getServer<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setServer<span class="br0">&#40;</span>NRP server<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw21">String</span> type_to_string<span class="br0">&#40;</span><span class="kw21">Class</span><span class="sy0">&lt;?</span> <span class="kw2">extends</span> <span class="kw166">Element</span><span class="sy0">&gt;</span> type<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="sy0">&lt;</span>E <span class="kw2">extends</span> <span class="kw166">Element</span><span class="sy0">&gt;</span> E<span class="br0">&#91;</span><span class="br0">&#93;</span> getElementsByType<span class="br0">&#40;</span><span class="kw21">Class</span><span class="sy0">&lt;</span>E<span class="sy0">&gt;</span> type<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> getElementsByType<span class="br0">&#40;</span><span class="kw21">String</span> type<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw166">Element</span> createElement<span class="br0">&#40;</span><span class="kw21">String</span> type<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw166">Element</span> getElementByID<span class="br0">&#40;</span><span class="kw21">String</span> id<span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.functions.Output">com.nrpsa.functions.Output</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |public static final int LEVEL_CUSTOM = 0; public static final int LEVEL_ERROR = 1; public static final int LEVEL_WARNING = 2; public static final int LEVEL_INFO = 3; // Functions: public NRP getServer(); public void setServer(NRP server); public boolean outputChatBox(Object message); public boolean outputChatBox(Object message,Element toElement); public boolean outputChatBox(Object message,Element toElement,int r,int g,int b); public boolean outputChatBox(Object message,Element toElement,int r,int g,int b,boolean colorcoded); public boolean outputConsole(Object message); public boolean outputConsole(Object message,Element toElement); public boolean outputDebugString(Object message); public boolean outputDebugString(Object message,int dlevel); public boolean outputDebugString(Object message,int dlevel,int r,int g,int b); public boolean outputServerLog(Object message);|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LEVEL_CUSTOM = <span class="nu0">0</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LEVEL_ERROR = <span class="nu0">1</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LEVEL_WARNING = <span class="nu0">2</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw3">int</span> LEVEL_INFO = <span class="nu0">3</span><span class="sy0">;</span>
+&#160;
+<span class="co1">// Functions:</span>
+&#160;
+<span class="kw2">public</span> NRP getServer<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setServer<span class="br0">&#40;</span>NRP server<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputChatBox<span class="br0">&#40;</span><span class="kw166">Object</span> message<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputChatBox<span class="br0">&#40;</span><span class="kw166">Object</span> message,<span class="kw166">Element</span> toElement<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputChatBox<span class="br0">&#40;</span><span class="kw166">Object</span> message,<span class="kw166">Element</span> toElement,<span class="kw3">int</span> r,<span class="kw3">int</span> g,<span class="kw3">int</span> b<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputChatBox<span class="br0">&#40;</span><span class="kw166">Object</span> message,<span class="kw166">Element</span> toElement,<span class="kw3">int</span> r,<span class="kw3">int</span> g,<span class="kw3">int</span> b,<span class="kw3">boolean</span> colorcoded<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputConsole<span class="br0">&#40;</span><span class="kw166">Object</span> message<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputConsole<span class="br0">&#40;</span><span class="kw166">Object</span> message,<span class="kw166">Element</span> toElement<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputDebugString<span class="br0">&#40;</span><span class="kw166">Object</span> message<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputDebugString<span class="br0">&#40;</span><span class="kw166">Object</span> message,<span class="kw3">int</span> dlevel<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputDebugString<span class="br0">&#40;</span><span class="kw166">Object</span> message,<span class="kw3">int</span> dlevel,<span class="kw3">int</span> r,<span class="kw3">int</span> g,<span class="kw3">int</span> b<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">boolean</span> outputServerLog<span class="br0">&#40;</span><span class="kw166">Object</span> message<span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h3><span class="mw-headline" id="com.nrpsa.functions.PlayerFuncs">com.nrpsa.functions.PlayerFuncs</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |public NRP getServer(); public void setServer(NRP server); public Player getPlayerFromName(String name); public Player getPlayerFromNamePart(String name); public Player[] getAlivePlayers(); public Player[] getDeadPlayers(); public Player getRandomPlayer(); public int getPlayerCount()|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw2">public</span> NRP getServer<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setServer<span class="br0">&#40;</span>NRP server<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Player getPlayerFromName<span class="br0">&#40;</span><span class="kw21">String</span> name<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Player getPlayerFromNamePart<span class="br0">&#40;</span><span class="kw21">String</span> name<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Player<span class="br0">&#91;</span><span class="br0">&#93;</span> getAlivePlayers<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Player<span class="br0">&#91;</span><span class="br0">&#93;</span> getDeadPlayers<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Player getRandomPlayer<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getPlayerCount<span class="br0">&#40;</span><span class="br0">&#41;</span></pre></div></div>
+<h2><span class="mw-headline" id="com.nrpsa.LuaArgs_extends_java.util.List">com.nrpsa.LuaArgs extends java.util.List</span></h2>
+<!-- PLAIN TEXT CODE FOR BOTS |All list functions.So, you can use in generic for. public NRP getServer(); public void setServer(NRP server); public Element parseElement(int index); public Player parsePlayer(int index); public Pickup parsePickup(int index); public Ped parsePed(int index); public Blip parseBlip(int index); public CollisionShape parseCollisionShape(int index); public GTAObject parseGTAObject(int index); public RadarArea parseRadarArea(int index); public Team parseTeam(int index); public Vehicle parseVehicle(int index)&#160;; public Resource parseResource(int index)&#160;; public String parseString(int index); public Boolean parseBoolean(int index); public Double parseDouble(int index); public Float parseFloat(int index); public Integer parseInt (int index); public String toJson(); public void loadFromJSON(String json); public Object[] jsonToObject(String json); public static String toJson(Object o); public static Object[] fromJson(String j); public Object get(int index);|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All list functions.<span class="me1">So</span>, you can use in generic <span class="kw1">for</span>.
+<span class="kw2">public</span> NRP getServer<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setServer<span class="br0">&#40;</span>NRP server<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw166">Element</span> parseElement<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Player parsePlayer<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Pickup parsePickup<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Ped parsePed<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Blip parseBlip<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> CollisionShape parseCollisionShape<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> GTAObject parseGTAObject<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> RadarArea parseRadarArea<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Team parseTeam<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Vehicle parseVehicle<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span> <span class="sy0">;</span>
+<span class="kw2">public</span> Resource parseResource<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span> <span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> parseString<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">Boolean</span> parseBoolean<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">Double</span> parseDouble<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">Float</span> parseFloat<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">Integer</span> parseInt <span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> toJson<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> loadFromJSON<span class="br0">&#40;</span><span class="kw21">String</span> json<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> jsonToObject<span class="br0">&#40;</span><span class="kw21">String</span> json<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw21">String</span> toJson<span class="br0">&#40;</span><span class="kw166">Object</span> o<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> fromJson<span class="br0">&#40;</span><span class="kw21">String</span> j<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw166">Object</span> get<span class="br0">&#40;</span><span class="kw3">int</span> index<span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h2><span class="mw-headline" id="com.nrpsa.NRP">com.nrpsa.NRP</span></h2>
+<!-- PLAIN TEXT CODE FOR BOTS |public Output out; public Element rootElement; public PlayerFuncs players; public ElementFuncs elements; public static final String RESOURCE = "jsdk"; // JavaSDK Resource Name. // Functions; public void sockOpen(); // Port will used in callJava (Changed) public Element parseElement(Object o); public Resource parseResource(Object o); public void sockClose(); public int getSocketPort(); public LuaArgs call(String resource,String function,LuaArgs args); // Function must be exported and given http="true" public LuaArgs callFunction(String function,LuaArgs args); // This is for calling server-side functions.(etc:getElementByType) public LuaArgs luaArg(Object i); // This is for only 1 parameter arguments. // callJava Functions; public void addInputEvent(InputEvent e); // Only usable with callJava and sockOpen public void removeInputEvent(InputEvent e); // Only usable with callJava and sockOpen public void clearInputEvent(); // Only usable with callJava and sockOpen public ArrayList<InputEvent> getInputEvents(InputEvent e); // Only usable with callJava and sockOpen // Getter-Setter; public void setHost(String host); public String getHost(); public void setPort(int port); public int getPort(); public void setUsername(String username); public String getUsername(); public void setPassword(String password); public String getPassword(); public String getCharset(); public void setCharset(String charset);|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw2">public</span> Output out<span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw166">Element</span> rootElement<span class="sy0">;</span>
+<span class="kw2">public</span> PlayerFuncs players<span class="sy0">;</span>
+<span class="kw2">public</span> ElementFuncs elements<span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw2">final</span> <span class="kw21">String</span> RESOURCE = <span class="st0">&quot;jsdk&quot;</span><span class="sy0">;</span> <span class="co1">// JavaSDK Resource Name.</span>
+&#160;
+<span class="co1">// Functions;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> sockOpen<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Port will used in callJava (Changed)</span>
+<span class="kw2">public</span> <span class="kw166">Element</span> parseElement<span class="br0">&#40;</span><span class="kw166">Object</span> o<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> Resource parseResource<span class="br0">&#40;</span><span class="kw166">Object</span> o<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> sockClose<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getSocketPort<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> LuaArgs call<span class="br0">&#40;</span><span class="kw21">String</span> resource,<span class="kw21">String</span> function,LuaArgs args<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Function must be exported and given http=&quot;true&quot;</span>
+<span class="kw2">public</span> LuaArgs callFunction<span class="br0">&#40;</span><span class="kw21">String</span> function,LuaArgs args<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// This is for calling server-side functions.(etc:getElementByType)</span>
+<span class="kw2">public</span> LuaArgs luaArg<span class="br0">&#40;</span><span class="kw166">Object</span> i<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// This is for only 1 parameter arguments.</span>
+<span class="co1">// callJava Functions;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> addInputEvent<span class="br0">&#40;</span><span class="kw10">InputEvent</span> e<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Only usable with callJava and sockOpen</span>
+<span class="kw2">public</span> <span class="kw3">void</span> removeInputEvent<span class="br0">&#40;</span><span class="kw10">InputEvent</span> e<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Only usable with callJava and sockOpen</span>
+<span class="kw2">public</span> <span class="kw3">void</span> clearInputEvent<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Only usable with callJava and sockOpen</span>
+<span class="kw2">public</span> <span class="kw46">ArrayList</span><span class="sy0">&lt;</span><span class="kw10">InputEvent</span><span class="sy0">&gt;</span> getInputEvents<span class="br0">&#40;</span><span class="kw10">InputEvent</span> e<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Only usable with callJava and sockOpen</span>
+&#160;
+<span class="co1">// Getter-Setter;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setHost<span class="br0">&#40;</span><span class="kw21">String</span> host<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getHost<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setPort<span class="br0">&#40;</span><span class="kw3">int</span> port<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">int</span> getPort<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setUsername<span class="br0">&#40;</span><span class="kw21">String</span> username<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getUsername<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setPassword<span class="br0">&#40;</span><span class="kw21">String</span> password<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getPassword<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw21">String</span> getCharset<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw2">public</span> <span class="kw3">void</span> setCharset<span class="br0">&#40;</span><span class="kw21">String</span> charset<span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h2><span class="mw-headline" id="com.nrpsa.InputEvent.28_Interface_.29">com.nrpsa.InputEvent( Interface )</span></h2>
+<!-- PLAIN TEXT CODE FOR BOTS |public void onAction(LuaArgs args, String input) throws NRPException|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw2">public</span> <span class="kw3">void</span> onAction<span class="br0">&#40;</span>LuaArgs args, <span class="kw21">String</span> input<span class="br0">&#41;</span> <span class="kw2">throws</span> NRPException</pre></div></div>
+<h2><span class="mw-headline" id="com.nrpsa.NRPException_extends_Exception">com.nrpsa.NRPException extends Exception</span></h2>
+<!-- PLAIN TEXT CODE FOR BOTS |All exception functions;|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1">All exception functions<span class="sy0">;</span></pre></div></div>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<!-- PLAIN TEXT CODE FOR BOTS |NRP server = new NRP("localhost",22005,"admin","12345"); // Sweet, we are creating a new instance and connection.|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java source-java"><pre class="de1">NRP server <span class="sy0">=</span> <span class="kw1">new</span> NRP<span class="br0">&#40;</span><span class="st0">&quot;localhost&quot;</span>,<span class="nu0">22005</span>,<span class="st0">&quot;admin&quot;</span>,<span class="st0">&quot;12345&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Sweet, we are creating a new instance and connection.</span></pre></div></div>
+<!-- PLAIN TEXT CODE FOR BOTS |/* Example 1: */ Player[] players = server.elements.getElementsByType(Player.class); // ElementFuncs deployed in server.elements&#160;:) server.out.outputChatBox("There are "+players.length+" players",server.rootElement,180,25,25,false); // You don't need getRootElement(), it's deployed in server.rootElement variable. LuaArgs ret = server.call("rcon","getThisResource",null); // We are calling getThisResource in rcon bot.It's exported&#160;:) Resource thisRes = ret.parseResource(0); // Now, we parsed argument to Resource object. Player playerRancho = server.players.getPlayerFromName("Rancho"); // We're getting player named Rancho, if he has a colorcode. We must add this if (playerRancho&#160;!= null){ // If playerRancho exists server.out.outputChatBox("<PM> JavaSDK: #0055FFHello Sweety",playerRancho,255,255,255,true); }else{ // else server.out.outputDebugString("There is no named player RANCHO!"); }|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java source-java"><pre class="de1"><span class="coMULTI">/* Example 1: */</span>
+Player<span class="br0">&#91;</span><span class="br0">&#93;</span> players <span class="sy0">=</span> server.<span class="me1">elements</span>.<span class="me1">getElementsByType</span><span class="br0">&#40;</span>Player.<span class="kw1">class</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// ElementFuncs deployed in server.elements&#160;:)</span>
+server.<span class="me1">out</span>.<span class="me1">outputChatBox</span><span class="br0">&#40;</span><span class="st0">&quot;There are &quot;</span><span class="sy0">+</span>players.<span class="me1">length</span><span class="sy0">+</span><span class="st0">&quot; players&quot;</span>,server.<span class="me1">rootElement</span>,<span class="nu0">180</span>,<span class="nu0">25</span>,<span class="nu0">25</span>,<span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// You don't need getRootElement(), it's deployed in server.rootElement variable.</span>
+LuaArgs ret <span class="sy0">=</span> server.<span class="me1">call</span><span class="br0">&#40;</span><span class="st0">&quot;rcon&quot;</span>,<span class="st0">&quot;getThisResource&quot;</span>,<span class="kw2">null</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// We are calling getThisResource in rcon bot.It's exported&#160;:)</span>
+Resource thisRes <span class="sy0">=</span> ret.<span class="me1">parseResource</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Now, we parsed argument to Resource object.</span>
+Player playerRancho <span class="sy0">=</span> server.<span class="me1">players</span>.<span class="me1">getPlayerFromName</span><span class="br0">&#40;</span><span class="st0">&quot;Rancho&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// We're getting player named Rancho, if he has a colorcode. We must add this </span>
+<span class="kw1">if</span> <span class="br0">&#40;</span>playerRancho <span class="sy0">!=</span> <span class="kw2">null</span><span class="br0">&#41;</span><span class="br0">&#123;</span> <span class="co1">// If playerRancho exists</span>
+	server.<span class="me1">out</span>.<span class="me1">outputChatBox</span><span class="br0">&#40;</span><span class="st0">&quot;&lt;PM&gt; JavaSDK: #0055FFHello Sweety&quot;</span>,playerRancho,<span class="nu0">255</span>,<span class="nu0">255</span>,<span class="nu0">255</span>,<span class="kw2">true</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span><span class="kw1">else</span><span class="br0">&#123;</span> <span class="co1">// else</span>
+	server.<span class="me1">out</span>.<span class="me1">outputDebugString</span><span class="br0">&#40;</span><span class="st0">&quot;There is no named player RANCHO!&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<!-- PLAIN TEXT CODE FOR BOTS |/* Example 2&#160;: */ Ped[] peds = server.elements.getElementsByType(Ped.class); // We deployed Peds in the peds variable. for (Ped ped: peds){ // Generic for, (foreach) if (ped.doesPedHaveJetPack()) // If ped has a jetpack ped.removePedJetpack(); // remove him jetpack else // else ped.givePedJetpack(); // give him jetpack }|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java source-java"><pre class="de1"><span class="coMULTI">/* Example 2&#160;: */</span>
+Ped<span class="br0">&#91;</span><span class="br0">&#93;</span> peds <span class="sy0">=</span> server.<span class="me1">elements</span>.<span class="me1">getElementsByType</span><span class="br0">&#40;</span>Ped.<span class="kw1">class</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// We deployed Peds in the peds variable.</span>
+<span class="kw1">for</span> <span class="br0">&#40;</span>Ped ped<span class="sy0">:</span> peds<span class="br0">&#41;</span><span class="br0">&#123;</span> <span class="co1">// Generic for, (foreach)</span>
+	<span class="kw1">if</span> <span class="br0">&#40;</span>ped.<span class="me1">doesPedHaveJetPack</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="co1">// If ped has a jetpack</span>
+		ped.<span class="me1">removePedJetpack</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// remove him jetpack</span>
+	<span class="kw1">else</span> <span class="co1">// else</span>
+		ped.<span class="me1">givePedJetpack</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// give him jetpack </span>
+<span class="br0">&#125;</span></pre></div></div>
+<!-- PLAIN TEXT CODE FOR BOTS |/* Example 3: */ Element[] myElements = server.elements.getElementsByType("myElement"); // Now we get elements by the string type // To do&#160;:)|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java source-java"><pre class="de1"><span class="coMULTI">/* Example 3: */</span>
+<span class="kw3">Element</span><span class="br0">&#91;</span><span class="br0">&#93;</span> myElements <span class="sy0">=</span> server.<span class="me1">elements</span>.<span class="me1">getElementsByType</span><span class="br0">&#40;</span><span class="st0">&quot;myElement&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Now we get elements by the string type</span>
+<span class="co1">// To do&#160;:)</span></pre></div></div>
+<!-- PLAIN TEXT CODE FOR BOTS |/* Example 4: for callJava */ server.sockOpen(); // callJava open ports server.addInputEvent(new InputEvent(){ @Override public void onAction(LuaArgs args, String input) throws NRPException{ String event = args.parseString(0); // Argumant 1&#160;:) It's not default argument&#160;:) if (event.equals("onMyCall")){ System.out.println("onMyCall: "+args.parseString(1)); } } }); // lua file: for k,v in ipairs(exports.jsdk:getConnections()) do exports.jsdk:callJava(v,"onMyCall","Hello"); end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java source-java"><pre class="de1"><span class="coMULTI">/* Example 4: for callJava */</span>
+server.<span class="me1">sockOpen</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// callJava open ports</span>
+server.<span class="me1">addInputEvent</span><span class="br0">&#40;</span><span class="kw1">new</span> <span class="kw3">InputEvent</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+	@Override
+	<span class="kw1">public</span> <span class="kw4">void</span> onAction<span class="br0">&#40;</span>LuaArgs args, <span class="kw3">String</span> input<span class="br0">&#41;</span> <span class="kw1">throws</span> NRPException<span class="br0">&#123;</span>
+		<span class="kw3">String</span> event <span class="sy0">=</span> args.<span class="me1">parseString</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// Argumant 1&#160;:) It's not default argument&#160;:)</span>
+		<span class="kw1">if</span> <span class="br0">&#40;</span>event.<span class="me1">equals</span><span class="br0">&#40;</span><span class="st0">&quot;onMyCall&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+			<span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;onMyCall: &quot;</span><span class="sy0">+</span>args.<span class="me1">parseString</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+		<span class="br0">&#125;</span>
+	<span class="br0">&#125;</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co1">// lua file:</span>
+<span class="kw1">for</span> k,v in ipairs<span class="br0">&#40;</span>exports.<span class="me1">jsdk</span><span class="sy0">:</span>getConnections<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="kw1">do</span>
+    exports.<span class="me1">jsdk</span><span class="sy0">:</span>callJava<span class="br0">&#40;</span>v,<span class="st0">&quot;onMyCall&quot;</span>,<span class="st0">&quot;Hello&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+end</pre></div></div>
+<!-- PLAIN TEXT CODE FOR BOTS |/* Example 5: is_a */ Player playerRancho = server.players.getPlayerFromName("Rancho"); // We're getting player named Rancho, if he has a colorcode. We must add this if (playerRancho&#160;!= null){ // If playerRancho exists LuaArgs myCallbackargs = new LuaArgs(server); // create new instance myCallbackargs.add(playerRancho); // add a new argument myCallbackargs.add("How are u?"); // add a new argument LuaArgs ret = server.call("rcon","returnElement",myCallbackargs); // call the howAre function into rcon resource, and send the 2 parameter&#160;:) myCallbackargs for (Object o: ret){ // generic for returns Element e = (Element)o; server.out.outputServerLog("Returned value is a player?: "+o.is_a(Player.class)); } }else{ // else server.out.outputDebugString("There is no named player RANCHO!"); }|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java source-java"><pre class="de1"><span class="coMULTI">/* Example 5: is_a */</span>
+Player playerRancho <span class="sy0">=</span> server.<span class="me1">players</span>.<span class="me1">getPlayerFromName</span><span class="br0">&#40;</span><span class="st0">&quot;Rancho&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// We're getting player named Rancho, if he has a colorcode. We must add this </span>
+&#160;
+<span class="kw1">if</span> <span class="br0">&#40;</span>playerRancho <span class="sy0">!=</span> <span class="kw2">null</span><span class="br0">&#41;</span><span class="br0">&#123;</span> <span class="co1">// If playerRancho exists</span>
+	LuaArgs myCallbackargs <span class="sy0">=</span> <span class="kw1">new</span> LuaArgs<span class="br0">&#40;</span>server<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// create new instance</span>
+	myCallbackargs.<span class="me1">add</span><span class="br0">&#40;</span>playerRancho<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// add a new argument</span>
+	myCallbackargs.<span class="me1">add</span><span class="br0">&#40;</span><span class="st0">&quot;How are u?&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// add a new argument</span>
+	LuaArgs ret <span class="sy0">=</span> server.<span class="me1">call</span><span class="br0">&#40;</span><span class="st0">&quot;rcon&quot;</span>,<span class="st0">&quot;returnElement&quot;</span>,myCallbackargs<span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// call the howAre function into rcon resource, and send the 2 parameter&#160;:) myCallbackargs</span>
+	<span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw3">Object</span> o<span class="sy0">:</span> ret<span class="br0">&#41;</span><span class="br0">&#123;</span> <span class="co1">// generic for returns</span>
+		<span class="kw3">Element</span> e <span class="sy0">=</span> <span class="br0">&#40;</span><span class="kw3">Element</span><span class="br0">&#41;</span>o<span class="sy0">;</span>
+		server.<span class="me1">out</span>.<span class="me1">outputServerLog</span><span class="br0">&#40;</span><span class="st0">&quot;Returned value is a player?: &quot;</span><span class="sy0">+</span>o.<span class="me1">is_a</span><span class="br0">&#40;</span>Player.<span class="kw1">class</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="br0">&#125;</span>
+<span class="br0">&#125;</span><span class="kw1">else</span><span class="br0">&#123;</span> <span class="co1">// else</span>
+	server.<span class="me1">out</span>.<span class="me1">outputDebugString</span><span class="br0">&#40;</span><span class="st0">&quot;There is no named player RANCHO!&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://forum.nrp.us.to/viewtopic.php?f=148&amp;t=46367">For more examples / tutorials</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="More_complex_example">More complex example</span></h2>
+<p><a href="File_ExamplaSDK.html" class="image"><img alt="ExamplaSDK.png" src="../images/7/7a/ExamplaSDK.png" width="1033" height="795" /></a>
+</p>
+<h2><span class="mw-headline" id="Caveats">Caveats</span></h2>
+<ul>
+<li> You cannot currently compare two Resource or Element objects that you expect to be identical - you need to do a "deep compare", comparing either the "id" fields or the "name" fields.
+</li>
+<li> The zip contains src, and javadoc
+</li>
+</ul>
+<h2><span class="mw-headline" id="Download">Download</span></h2>
+<ul>
+<li> <a rel="nofollow" class="external text" href="https://rapidshare.com/files/3674532513/JavaSDK.zip">Download Version 0.2</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.solidfiles.com/d/7713c8510b/">Download Version 0.1</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Contact">Contact</span></h2>
+<p>If you have any questions/suggestions you can contact author on NRP forum.
+</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://forum.nrp.us.to/memberlist.php?mode=viewprofile&amp;u=51246">Skyline (laserlaser)</a>
+</li>
+</ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 1.145 seconds
+Real time usage: 1.148 seconds
+Preprocessor visited node count: 315/1000000
+Preprocessor generated node count: 584/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:6532-0!*!*!!en!2!* and timestamp 20150826134947
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=JavaSDK&amp;oldid=32193">/index.php?title=JavaSDK&amp;oldid=32193</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Scripting_Concepts.html" title="Category:Scripting Concepts">Scripting Concepts</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="JavaSDK.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:JavaSDK&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=JavaSDK&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=JavaSDK&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a index.html?title=Special:UserLogin&amp;returnto=JavaSDK"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/JavaSDK.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/JavaSDK.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=JavaSDK&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=JavaSDK&amp;oldid=32193"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 7 August 2012, at 15:06.</li>
+					<li id="viewcount">This page has been accessed 5,084 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.047 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/JavaSDK by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:29:44 GMT -->
+</html>

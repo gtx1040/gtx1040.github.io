@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/Client_Scripting_Events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:28:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />		<title>Client Scripting Events - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Client_Scripting_Events","wgTitle":"Client Scripting Events","wgCurRevisionId":45516,"wgRevisionId":45516,"wgArticleId":2483,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Client_Scripting_Events","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Client_Scripting_Events","wgTitle":"Client Scripting Events","wgCurRevisionId":45516,"wgRevisionId":45516,"wgArticleId":2483,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Client_Scripting_Events","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Client_Scripting_Events skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">Client Scripting Events</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><script type='text/javascript'>setHeadingClass('client','');</script>
+This page lists all <b>client-side</b> scripting <a href="Event.html" title="Event" class="mw-redirect">events</a> that have been implemented and are available in the Deathmatch mod.
+</p><p>To request a function or event, use <a href="Requested_Functions_and_Events.html" title="Requested Functions and Events">Requested Functions and Events</a>.
+</p><p><b>Server-side scripting events can be found here: <a href="Server_Scripting_Events.html" title="Server Scripting Events">Server Scripting Events</a></b>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Browser_events"><span class="tocnumber">1</span> <span class="toctext">Browser events</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Colshape_events"><span class="tocnumber">2</span> <span class="toctext">Colshape events</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Element_events"><span class="tocnumber">3</span> <span class="toctext">Element events</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#GUI_events"><span class="tocnumber">4</span> <span class="toctext">GUI events</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Marker_events"><span class="tocnumber">5</span> <span class="toctext">Marker events</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Ped_events"><span class="tocnumber">6</span> <span class="toctext">Ped events</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Pickup_events"><span class="tocnumber">7</span> <span class="toctext">Pickup events</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Player_events"><span class="tocnumber">8</span> <span class="toctext">Player events</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Object_events"><span class="tocnumber">9</span> <span class="toctext">Object events</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Projectile_events"><span class="tocnumber">10</span> <span class="toctext">Projectile events</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Resource_events"><span class="tocnumber">11</span> <span class="toctext">Resource events</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Sound_events"><span class="tocnumber">12</span> <span class="toctext">Sound events</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Vehicle_events"><span class="tocnumber">13</span> <span class="toctext">Vehicle events</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Weapon_creation_events"><span class="tocnumber">14</span> <span class="toctext">Weapon creation events</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Other_events"><span class="tocnumber">15</span> <span class="toctext">Other events</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Browser_events">Browser events</span></h2>
+<ul>
+<li><a href="OnClientBrowserCreated.html" title="OnClientBrowserCreated">onClientBrowserCreated</a>
+</li>
+<li><a index.html?title=OnClientBrowserLoadingStart&amp;action=edit&amp;redlink=1" class="new" title="OnClientBrowserLoadingStart (page does not exist)">onClientBrowserLoadingStart</a>
+</li>
+<li><a href="OnClientBrowserDocumentReady.html" title="OnClientBrowserDocumentReady">onClientBrowserDocumentReady</a>
+</li>
+<li><a href="OnClientBrowserLoadingFailed.html" title="OnClientBrowserLoadingFailed">onClientBrowserLoadingFailed</a>
+</li>
+<li><a href="OnClientBrowserNavigate.html" title="OnClientBrowserNavigate">onClientBrowserNavigate</a>
+</li>
+<li><a href="OnClientBrowserPopup.html" title="OnClientBrowserPopup">onClientBrowserPopup</a>
+</li>
+<li><a href="OnClientBrowserCursorChange.html" title="OnClientBrowserCursorChange">onClientBrowserCursorChange</a>
+</li>
+<li><a index.html?title=OnClientBrowserTooltip&amp;action=edit&amp;redlink=1" class="new" title="OnClientBrowserTooltip (page does not exist)">onClientBrowserTooltip</a>
+</li>
+<li><a href="OnClientBrowserInputFocusChanged.html" title="OnClientBrowserInputFocusChanged">onClientBrowserInputFocusChanged</a>
+</li>
+<li><a href="OnClientBrowserResourceBlocked.html" title="OnClientBrowserResourceBlocked">onClientBrowserResourceBlocked</a>
+</li>
+<li><a href="OnClientBrowserWhitelistChange.html" title="OnClientBrowserWhitelistChange">onClientBrowserWhitelistChange</a>
+</li>
+</ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Colshape_events">Colshape events</span></h2>
+<ul>
+<li><a href="OnClientColShapeHit.html" title="OnClientColShapeHit">onClientColShapeHit</a>
+</li>
+<li><a href="OnClientColShapeLeave.html" title="OnClientColShapeLeave">onClientColShapeLeave</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Element_events">Element events</span></h2>
+<ul>
+<li><a href="OnClientElementDestroy.html" title="OnClientElementDestroy">onClientElementDestroy</a>
+</li>
+</ul>
+<ul>
+<li><a href="OnClientElementColShapeHit.html" title="OnClientElementColShapeHit">onClientElementColShapeHit</a>
+</li>
+<li><a href="OnClientElementColShapeLeave.html" title="OnClientElementColShapeLeave">onClientElementColShapeLeave</a>
+</li>
+<li><a href="OnClientElementDataChange.html" title="OnClientElementDataChange">onClientElementDataChange</a>
+</li>
+<li><a href="OnClientElementStreamIn.html" title="OnClientElementStreamIn">onClientElementStreamIn</a>
+</li>
+<li><a href="OnClientElementStreamOut.html" title="OnClientElementStreamOut">onClientElementStreamOut</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="GUI_events">GUI events</span></h2>
+<ul>
+<li><a href="OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a>
+</li>
+<li><a href="OnClientGUIDoubleClick.html" title="OnClientGUIDoubleClick">onClientGUIDoubleClick</a>
+</li>
+<li><a href="OnClientGUIChanged.html" title="OnClientGUIChanged">onClientGUIChanged</a>
+</li>
+<li><a href="OnClientGUIAccepted.html" title="OnClientGUIAccepted">onClientGUIAccepted</a>
+</li>
+<li><a href="OnClientGUIScroll.html" title="OnClientGUIScroll">onClientGUIScroll</a>
+</li>
+<li><a href="OnClientClick.html" title="OnClientClick">onClientClick</a>
+</li>
+</ul>
+<ul>
+<li><a href="OnClientDoubleClick.html" title="OnClientDoubleClick">onClientDoubleClick</a>
+</li>
+<li><a href="OnClientKey.html" title="OnClientKey">onClientKey</a>
+</li>
+<li><a href="OnClientCharacter.html" title="OnClientCharacter">onClientCharacter</a>
+</li>
+<li><a href="OnClientMouseEnter.html" title="OnClientMouseEnter">onClientMouseEnter</a>
+</li>
+<li><a href="OnClientMouseLeave.html" title="OnClientMouseLeave">onClientMouseLeave</a>
+</li>
+<li><a href="OnClientMouseMove.html" title="OnClientMouseMove">onClientMouseMove</a>
+</li>
+<li><a href="OnClientMouseWheel.html" title="OnClientMouseWheel">onClientMouseWheel</a>
+</li>
+<li><a href="OnClientCursorMove.html" title="OnClientCursorMove">onClientCursorMove</a>
+</li>
+<li><a href="OnClientGUIMouseDown.html" title="OnClientGUIMouseDown">onClientGUIMouseDown</a>
+</li>
+<li><a href="OnClientGUIMouseUp.html" title="OnClientGUIMouseUp">onClientGUIMouseUp</a>
+</li>
+<li><a href="OnClientGUIMove.html" title="OnClientGUIMove">onClientGUIMove</a>
+</li>
+<li><a href="OnClientGUISize.html" title="OnClientGUISize">onClientGUISize</a>
+</li>
+<li><a href="OnClientGUITabSwitched.html" title="OnClientGUITabSwitched">onClientGUITabSwitched</a>
+</li>
+</ul>
+<ul>
+<li><a href="OnClientGUIComboBoxAccepted.html" title="OnClientGUIComboBoxAccepted">onClientGUIComboBoxAccepted</a>
+</li>
+<li><a href="OnClientGUIFocus.html" title="OnClientGUIFocus">onClientGUIFocus</a>
+</li>
+<li><a href="OnClientGUIBlur.html" title="OnClientGUIBlur">onClientGUIBlur</a>
+</li>
+</ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Marker_events">Marker events</span></h2>
+<ul>
+<li><a href="OnClientMarkerHit.html" title="OnClientMarkerHit">onClientMarkerHit</a>
+</li>
+<li><a href="OnClientMarkerLeave.html" title="OnClientMarkerLeave">onClientMarkerLeave</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Ped_events">Ped events</span></h2>
+<ul>
+<li><a href="OnClientPedDamage.html" title="OnClientPedDamage">onClientPedDamage</a>
+</li>
+<li><a href="OnClientPedWasted.html" title="OnClientPedWasted">onClientPedWasted</a>
+</li>
+<li><a href="OnClientPedWeaponFire.html" title="OnClientPedWeaponFire">onClientPedWeaponFire</a>
+</li>
+<li><a href="OnClientPedChoke.html" title="OnClientPedChoke">onClientPedChoke</a>
+</li>
+<li><a href="OnClientPedHeliKilled.html" title="OnClientPedHeliKilled">onClientPedHeliKilled</a>
+</li>
+<li><a href="OnClientPedHitByWaterCannon.html" title="OnClientPedHitByWaterCannon">onClientPedHitByWaterCannon</a>
+</li>
+</ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Pickup_events">Pickup events</span></h2>
+<ul>
+<li><a href="OnClientPickupHit.html" title="OnClientPickupHit">onClientPickupHit</a>
+</li>
+<li><a href="OnClientPickupLeave.html" title="OnClientPickupLeave">onClientPickupLeave</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Player_events">Player events</span></h2>
+<ul>
+<li><a href="OnClientPlayerJoin.html" title="OnClientPlayerJoin">onClientPlayerJoin</a>
+</li>
+<li><a href="OnClientPlayerQuit.html" title="OnClientPlayerQuit">onClientPlayerQuit</a>
+</li>
+<li><a href="OnClientPlayerWeaponFire.html" title="OnClientPlayerWeaponFire">onClientPlayerWeaponFire</a>
+</li>
+<li><a href="OnClientPlayerWeaponSwitch.html" title="OnClientPlayerWeaponSwitch">onClientPlayerWeaponSwitch</a>
+</li>
+<li><a href="OnClientPlayerTarget.html" title="OnClientPlayerTarget">onClientPlayerTarget</a>
+</li>
+<li><a href="OnClientPlayerDamage.html" title="OnClientPlayerDamage">onClientPlayerDamage</a>
+</li>
+<li><a href="OnClientPlayerSpawn.html" title="OnClientPlayerSpawn">onClientPlayerSpawn</a>
+</li>
+<li><a href="OnClientPlayerWasted.html" title="OnClientPlayerWasted">onClientPlayerWasted</a>
+</li>
+<li><a href="OnClientPlayerVehicleEnter.html" title="OnClientPlayerVehicleEnter">onClientPlayerVehicleEnter</a>
+</li>
+<li><a href="OnClientPlayerVehicleExit.html" title="OnClientPlayerVehicleExit">onClientPlayerVehicleExit</a>
+</li>
+<li><a href="OnClientPlayerChangeNick.html" title="OnClientPlayerChangeNick">onClientPlayerChangeNick</a>
+</li>
+<li><a href="OnClientPlayerStuntStart.html" title="OnClientPlayerStuntStart">onClientPlayerStuntStart</a>
+</li>
+<li><a href="OnClientPlayerStuntFinish.html" title="OnClientPlayerStuntFinish">onClientPlayerStuntFinish</a>
+</li>
+<li><a href="OnClientPlayerChoke.html" title="OnClientPlayerChoke">onClientPlayerChoke</a>
+</li>
+<li><a href="OnClientPlayerRadioSwitch.html" title="OnClientPlayerRadioSwitch">onClientPlayerRadioSwitch</a>
+</li>
+<li><a href="OnClientPlayerStealthKill.html" title="OnClientPlayerStealthKill">onClientPlayerStealthKill</a>
+</li>
+<li><a href="OnClientPlayerVoiceStart.html" title="OnClientPlayerVoiceStart">onClientPlayerVoiceStart</a>
+</li>
+<li><a href="OnClientPlayerVoiceStop.html" title="OnClientPlayerVoiceStop">onClientPlayerVoiceStop</a>
+</li>
+<li><a href="OnClientPlayerVoicePause.html" title="OnClientPlayerVoicePause">onClientPlayerVoicePause</a>
+</li>
+<li><a index.html?title=OnClientPlayerVoiceResumed&amp;action=edit&amp;redlink=1" class="new" title="OnClientPlayerVoiceResumed (page does not exist)">onClientPlayerVoiceResumed</a>
+</li>
+<li><a href="OnClientPlayerHeliKilled.html" title="OnClientPlayerHeliKilled">onClientPlayerHeliKilled</a>
+</li>
+<li><a href="OnClientPlayerHitByWaterCannon.html" title="OnClientPlayerHitByWaterCannon">onClientPlayerHitByWaterCannon</a>
+</li>
+<li><a href="OnClientPlayerPickupHit.html" title="OnClientPlayerPickupHit">onClientPlayerPickupHit</a>
+</li>
+<li><a href="OnClientPlayerPickupLeave.html" title="OnClientPlayerPickupLeave">onClientPlayerPickupLeave</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Object_events">Object events</span></h2>
+<ul>
+<li><a href="OnClientObjectDamage.html" title="OnClientObjectDamage">onClientObjectDamage</a>
+</li>
+<li><a href="OnClientObjectBreak.html" title="OnClientObjectBreak">onClientObjectBreak</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Projectile_events">Projectile events</span></h2>
+<ul>
+<li><a href="OnClientProjectileCreation.html" title="OnClientProjectileCreation">onClientProjectileCreation</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Resource_events">Resource events</span></h2>
+<ul>
+<li><a href="OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a>
+</li>
+<li><a href="OnClientResourceStop.html" title="OnClientResourceStop">onClientResourceStop</a>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Sound_events">Sound events</span></h2>
+<ul>
+<li> <a href="OnClientSoundChangedMeta.html" title="OnClientSoundChangedMeta">onClientSoundChangedMeta</a>
+</li>
+<li> <a href="OnClientSoundFinishedDownload.html" title="OnClientSoundFinishedDownload">onClientSoundFinishedDownload</a>
+</li>
+<li> <a href="OnClientSoundStream.html" title="OnClientSoundStream">onClientSoundStream</a>
+</li>
+<li> <a href="OnClientSoundBeat.html" title="OnClientSoundBeat">onClientSoundBeat</a>
+</li>
+</ul>
+<ul>
+<li> <a href="OnClientSoundStarted.html" title="OnClientSoundStarted">onClientSoundStarted</a>
+</li>
+<li> <a href="OnClientSoundStopped.html" title="OnClientSoundStopped">onClientSoundStopped</a>
+</li>
+</ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Vehicle_events">Vehicle events</span></h2>
+<ul>
+<li><a href="OnClientVehicleRespawn.html" title="OnClientVehicleRespawn">onClientVehicleRespawn</a>
+</li>
+<li><a href="OnClientVehicleEnter.html" title="OnClientVehicleEnter">onClientVehicleEnter</a>
+</li>
+<li><a href="OnClientVehicleExit.html" title="OnClientVehicleExit">onClientVehicleExit</a>
+</li>
+<li><a href="OnClientVehicleExplode.html" title="OnClientVehicleExplode">onClientVehicleExplode</a>
+</li>
+<li><a href="OnClientVehicleStartEnter.html" title="OnClientVehicleStartEnter">onClientVehicleStartEnter</a>
+</li>
+<li><a href="OnClientVehicleStartExit.html" title="OnClientVehicleStartExit">onClientVehicleStartExit</a>
+</li>
+<li><a href="OnClientTrailerAttach.html" title="OnClientTrailerAttach">onClientTrailerAttach</a>
+</li>
+<li><a href="OnClientTrailerDetach.html" title="OnClientTrailerDetach">onClientTrailerDetach</a>
+</li>
+</ul>
+<ul>
+<li><a href="OnClientVehicleCollision.html" title="OnClientVehicleCollision">onClientVehicleCollision</a>
+</li>
+</ul>
+<ul>
+<li><a href="OnClientVehicleNitroStateChange.html" title="OnClientVehicleNitroStateChange">onClientVehicleNitroStateChange</a>
+</li>
+</ul>
+<ul>
+<li><a href="OnClientVehicleDamage.html" title="OnClientVehicleDamage">onClientVehicleDamage</a>
+</li>
+</ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Weapon_creation_events">Weapon creation events</span></h2>
+<ul>
+<li><a href="OnClientWeaponFire.html" title="OnClientWeaponFire">onClientWeaponFire</a>
+</li>
+</ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Other_events">Other events</span></h2>
+<ul>
+<li><a href="OnClientConsole.html" title="OnClientConsole">onClientConsole</a>
+</li>
+<li><a href="OnClientDebugMessage.html" title="OnClientDebugMessage">onClientDebugMessage</a>
+</li>
+<li><a href="OnClientHUDRender.html" title="OnClientHUDRender">onClientHUDRender</a>
+</li>
+<li><a href="OnClientMinimize.html" title="OnClientMinimize">onClientMinimize</a>
+</li>
+<li><a href="OnClientRestore.html" title="OnClientRestore">onClientRestore</a>
+</li>
+<li><a href="OnClientRender.html" title="OnClientRender">onClientRender</a>
+</li>
+<li><a href="OnClientExplosion.html" title="OnClientExplosion">onClientExplosion</a>
+</li>
+<li><a href="OnClientChatMessage.html" title="OnClientChatMessage">onClientChatMessage</a>
+</li>
+<li><a href="OnClientPreRender.html" title="OnClientPreRender">onClientPreRender</a>
+</li>
+<li><a href="OnClientFileDownloadComplete.html" title="OnClientFileDownloadComplete">onClientFileDownloadComplete</a>
+</li>
+</ul>
+<ul>
+<li><a href="OnClientPlayerNetworkStatus.html" title="OnClientPlayerNetworkStatus">onClientPlayerNetworkStatus</a>
+</li>
+</ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.058 seconds
+Real time usage: 0.067 seconds
+Preprocessor visited node count: 211/1000000
+Preprocessor generated node count: 548/1000000
+Post‐expand include size: 4408/2097152 bytes
+Template argument size: 740/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:2483-0!*!0!!en!*!* and timestamp 20150826120137
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=Client_Scripting_Events&amp;oldid=45516">/index.php?title=Client_Scripting_Events&amp;oldid=45516</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Client_Scripting_Events.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:Client_Scripting_Events&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=Client_Scripting_Events&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=Client_Scripting_Events&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a index.html?title=Special:UserLogin&amp;returnto=Client+Scripting+Events"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Client_Scripting_Events.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Client_Scripting_Events.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=Client_Scripting_Events&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=Client_Scripting_Events&amp;oldid=45516"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+	<div id="p-lang" class="portlet">
+		<h5>In other languages</h5>
+		<div class="pBody">
+			<ul>
+				<li class="interwiki-pl"><a href="../wiki/PL/PL/Client_Scripting_Events">Polski</a></li>
+				<li class="interwiki-ru"><a href="../wiki/RU/Client_Scripting_Events">Русский</a></li>
+				<li class="interwiki-es"><a href="../wiki/ES/Client_Scripting_Events">Español</a></li>
+				<li class="interwiki-fr"><a href="../wiki/FR/Client_Scripting_Events">Français</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 27 July 2015, at 10:33.</li>
+					<li id="viewcount">This page has been accessed 246,339 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.044 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/Client_Scripting_Events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:28:27 GMT -->
+</html>

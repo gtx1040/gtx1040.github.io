@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/GuiCreateGridList by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:30:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />		<title>GuiCreateGridList - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GuiCreateGridList","wgTitle":"GuiCreateGridList","wgCurRevisionId":26378,"wgRevisionId":26378,"wgArticleId":2525,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.3.5","Changes in 1.4.1","Changes in 1.3.1"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GuiCreateGridList","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GuiCreateGridList","wgTitle":"GuiCreateGridList","wgCurRevisionId":26378,"wgRevisionId":26378,"wgArticleId":2525,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.3.5","Changes in 1.4.1","Changes in 1.3.1"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GuiCreateGridList","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><style type="text/css">/*<![CDATA[*/
+.source-lua {line-height: normal;}
+.source-lua li, .source-lua pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for lua
+ * CSS class: source-lua, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.lua.source-lua .de1, .lua.source-lua .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.lua.source-lua  {font-family:monospace;}
+.lua.source-lua .imp {font-weight: bold; color: red;}
+.lua.source-lua li, .lua.source-lua .li1 {font-weight: normal; vertical-align:top;}
+.lua.source-lua .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.lua.source-lua .li2 {font-weight: bold; vertical-align:top;}
+.lua.source-lua .kw1 {color: #b1b100;}
+.lua.source-lua .co1 {color: #808080; font-style: italic;}
+.lua.source-lua .coMULTI {color: #808080; font-style: italic;}
+.lua.source-lua .es0 {color: #000099; font-weight: bold;}
+.lua.source-lua .br0 {color: #66cc66;}
+.lua.source-lua .sy0 {color: #66cc66;}
+.lua.source-lua .st0 {color: #00A600;}
+.lua.source-lua .nu0 {color: #cc66cc;}
+.lua.source-lua .me0 {color: #b1b100;}
+.lua.source-lua .ln-xtra, .lua.source-lua li.ln-xtra, .lua.source-lua div.ln-xtra {background-color: #ffc;}
+.lua.source-lua span.xtra { display:block; }
+
+/*]]>*/
+</style>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-GuiCreateGridList skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">GuiCreateGridList</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><script type='text/javascript'>setHeadingClass('client','Client-only function');</script>
+<script type='text/javascript'>makeTitleLowercaseFirstLetter();</script>
+This function creates a grid list GUI element.  These are menu's which are designed in lists and can have multiple columns.  A good example of a gridlist element can be found in NRP's settings box, under <i>Controls</i>.
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<!-- PLAIN TEXT CODE FOR BOTS |element guiCreateGridList ( float x, float y, float width, float height, bool relative, [ element parent = nil ] )|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><a href="Element.html" class="kw3"><span class="kw3">element</span></a> <a href="GuiCreateGridList.html" class="kw4"><span class="kw4">guiCreateGridList</span></a> <span class="br0">&#40;</span> <a href="Float.html" class="kw3"><span class="kw3">float</span></a> x, <a href="Float.html" class="kw3"><span class="kw3">float</span></a> y, <a href="Float.html" class="kw3"><span class="kw3">float</span></a> width, <a href="Float.html" class="kw3"><span class="kw3">float</span></a> height, <a href="Bool.html" class="kw3"><span class="kw3">bool</span></a> relative, <span class="br0">&#91;</span> <a href="Element.html" class="kw3"><span class="kw3">element</span></a> parent <span class="sy0">=</span> <span class="kw1">nil</span> <span class="br0">&#93;</span> <span class="br0">&#41;</span></pre></div></div> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:184px;"><a href="File_Gui-gridlist.html" class="image"><img alt="" src="../images/9/9f/Gui-gridlist.png" width="182" height="149" class="thumbimage" /></a>  <div class="thumbcaption">Example GUI gridlist.</div></div></div>
+<ul>
+<li><b>x:</b> A float of the 2D x position of the GUI gridlist on a player's screen.  This is affected by the <i>relative</i> argument.
+</li>
+<li><b>y:</b> A float of the 2D y position of the GUI gridlist on a player's screen. This is affected by the <i>relative</i> argument.
+</li>
+<li><b>width:</b> A float of the width of the GUI gridlist. This is affected by the <i>relative</i> argument.
+</li>
+<li><b>height:</b> A float of the height of the GUI gridlist. This is affected by the <i>relative</i> argument.
+</li>
+<li><b>relative:</b> This is whether sizes and positioning are relative.  If this is <i>true</i>, then all x,y,width,height floats must be between 0 and 1, representing sizes relative to the parent.
+</li>
+</ul>
+<h3><span class="mw-headline" id="Optional_Arguments">Optional Arguments</span></h3>
+<p><i>NOTE:</i> When using optional arguments, you must supply all arguments before the one you wish to use. For more information on optional arguments, see <a href="Optional_Arguments.html" title="Optional Arguments">Optional Arguments</a>. 
+</p>
+<ul>
+<li><b>parent:</b> This is the parent that the gui gridlist is attached to.  If the <i>relative</i> argument is true, sizes and positioning will be made relative to this parent. If the <i>relative</i> argument is false, positioning will be the number of offset pixels from the parent's origin. If no parent is passed, the parent will become the screen - causing positioning and sizing according to screen positioning.
+</li>
+</ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns an element of the created gridlist if it was successfully created, false otherwise.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p><b>Example 1:</b> This example creates a player list on the right of the screen and fills it
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function createPlayerList () local playerList = guiCreateGridList ( 0.80, 0.10, 0.15, 0.60, true ) local column = guiGridListAddColumn( playerList, "Player", 0.85 ) if ( column ) then for id, player in ipairs(getElementsByType("player")) do local row = guiGridListAddRow ( playerList ) guiGridListSetItemText ( playerList, row, column, getPlayerName ( player ), false, false ) end end end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> createPlayerList <span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="co1">--Create the grid list element</span>
+	<span class="kw1">local</span> playerList <span class="sy0">=</span> <a href="GuiCreateGridList.html" class="kw4"><span class="kw4">guiCreateGridList</span></a> <span class="br0">&#40;</span> <span class="nu0">0.80</span>, <span class="nu0">0.10</span>, <span class="nu0">0.15</span>, <span class="nu0">0.60</span>, <span class="kw1">true</span> <span class="br0">&#41;</span>
+	<span class="co1">--Create a players column in the list</span>
+	<span class="kw1">local</span> column <span class="sy0">=</span> <a href="GuiGridListAddColumn.html" class="kw4"><span class="kw4">guiGridListAddColumn</span></a><span class="br0">&#40;</span> playerList, <span class="st0">&quot;Player&quot;</span>, <span class="nu0">0.85</span> <span class="br0">&#41;</span>
+	<span class="kw1">if</span> <span class="br0">&#40;</span> column <span class="br0">&#41;</span> <span class="kw1">then</span> <span class="co1">--If the column has been created, fill it with players</span>
+		<span class="kw1">for</span> id, <a href="Player.html" class="kw3"><span class="kw3">player</span></a> <span class="kw1">in</span> <span class="kw1">ipairs</span><span class="br0">&#40;</span>getElementsByType<span class="br0">&#40;</span><span class="st0">&quot;player&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="kw1">do</span>
+			<span class="kw1">local</span> row <span class="sy0">=</span> <a href="GuiGridListAddRow.html" class="kw4"><span class="kw4">guiGridListAddRow</span></a> <span class="br0">&#40;</span> playerList <span class="br0">&#41;</span>
+			<a href="GuiGridListSetItemText.html" class="kw4"><span class="kw4">guiGridListSetItemText</span></a> <span class="br0">&#40;</span> playerList, row, column, <a href="GetPlayerName.html" class="kw2"><span class="kw2">getPlayerName</span></a> <span class="br0">&#40;</span> <a href="Player.html" class="kw3"><span class="kw3">player</span></a> <span class="br0">&#41;</span>, <span class="kw1">false</span>, <span class="kw1">false</span> <span class="br0">&#41;</span>
+		<span class="kw1">end</span>
+	<span class="kw1">end</span>
+<span class="kw1">end</span></pre></div></div>
+<p><b>Example 2:</b> This example creates a weapon selection screen, complete with a window, gridlist and a button.  Users can select a shotgun or a machine gun.  The window is not movable or sizable.
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |shotguns = { "chrome", "sawn-off", "combat" } machineGun = { "m4", "ak-47" } function setupWeaponSelection () spawnScreenMenu = guiCreateWindow ( 0.15, 0.33, 0.7, 0.34, "Select your weapons", true ) spawnScreenOKButton = guiCreateButton ( 0.4, 0.85, 0.20, 0.15, "OK", true, spawnScreenMenu ) guiWindowSetMovable ( spawnScreenMenu, false ) guiWindowSetSizable ( spawnScreenMenu, false ) spawnScreenGridList = guiCreateGridList ( 0, 0.1, 1, 0.9, true, spawnScreenMenu ) guiGridListSetSelectionMode ( spawnScreenGridList, 2 ) guiGridListAddColumn ( spawnScreenGridList, "Shotguns", 0.3 ) guiGridListAddColumn ( spawnScreenGridList, "Machine guns", 0.3 ) for key,weaponName in pairs(shotguns) do local row = guiGridListAddRow ( spawnScreenGridList ) guiGridListSetItemText ( spawnScreenGridList, row, 1, weaponName, false, false ) end row = 0 for key,weaponName in pairs(machineGun) do guiGridListSetItemText ( spawnScreenGridList, row, 2, weaponName, false, false ) row = row + 1 end end addEventHandler ( "onClientResourceStart", getResourceRootElement(), setupWeaponSelection )|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="co1">--Setup some tables</span>
+shotguns <span class="sy0">=</span> <span class="br0">&#123;</span>
+<span class="st0">&quot;chrome&quot;</span>,
+<span class="st0">&quot;sawn-off&quot;</span>,
+<span class="st0">&quot;combat&quot;</span> <span class="br0">&#125;</span>
+&#160;
+machineGun <span class="sy0">=</span> <span class="br0">&#123;</span>
+<span class="st0">&quot;m4&quot;</span>,
+<span class="st0">&quot;ak-47&quot;</span>
+ <span class="br0">&#125;</span>
+&#160;
+<span class="kw1">function</span> setupWeaponSelection <span class="br0">&#40;</span><span class="br0">&#41;</span>
+        <span class="co1">---Create a window for our spawnscreen, with the title &quot;Select your weaposn&quot;.</span>
+        spawnScreenMenu <span class="sy0">=</span> <a href="GuiCreateWindow.html" class="kw4"><span class="kw4">guiCreateWindow</span></a> <span class="br0">&#40;</span> <span class="nu0">0.15</span>, <span class="nu0">0.33</span>, <span class="nu0">0.7</span>, <span class="nu0">0.34</span>, <span class="st0">&quot;Select your weapons&quot;</span>, <span class="kw1">true</span> <span class="br0">&#41;</span>
+        <span class="co1">--create an OK button to allow the user to confirm their seclections, and attach it to the confirmSelection funnction</span>
+        spawnScreenOKButton <span class="sy0">=</span> <a href="GuiCreateButton.html" class="kw4"><span class="kw4">guiCreateButton</span></a> <span class="br0">&#40;</span> <span class="nu0">0.4</span>, <span class="nu0">0.85</span>, <span class="nu0">0.20</span>, <span class="nu0">0.15</span>, <span class="st0">&quot;OK&quot;</span>, <span class="kw1">true</span>, spawnScreenMenu <span class="br0">&#41;</span>
+        <span class="co1">--ensure the user doesnt move or resize our spawnscreen.</span>
+        <a href="GuiWindowSetMovable.html" class="kw4"><span class="kw4">guiWindowSetMovable</span></a> <span class="br0">&#40;</span> spawnScreenMenu, <span class="kw1">false</span> <span class="br0">&#41;</span>
+        <a href="GuiWindowSetSizable.html" class="kw4"><span class="kw4">guiWindowSetSizable</span></a> <span class="br0">&#40;</span> spawnScreenMenu, <span class="kw1">false</span> <span class="br0">&#41;</span>
+        <span class="co1">--create our gridlist, which fills up most of the window.</span>
+        spawnScreenGridList <span class="sy0">=</span> <a href="GuiCreateGridList.html" class="kw4"><span class="kw4">guiCreateGridList</span></a> <span class="br0">&#40;</span> <span class="nu0">0</span>, <span class="nu0">0.1</span>, <span class="nu0">1</span>, <span class="nu0">0.9</span>, <span class="kw1">true</span>, spawnScreenMenu <span class="br0">&#41;</span>
+		<a href="GuiGridListSetSelectionMode.html" class="kw4"><span class="kw4">guiGridListSetSelectionMode</span></a> <span class="br0">&#40;</span> spawnScreenGridList, <span class="nu0">2</span> <span class="br0">&#41;</span><span class="co1">--ensure the selection mode is one per column</span>
+        <span class="co1">--Since we have 2 sets of weapons, create one for shotguns and one for machine guns</span>
+        <a href="GuiGridListAddColumn.html" class="kw4"><span class="kw4">guiGridListAddColumn</span></a> <span class="br0">&#40;</span> spawnScreenGridList, <span class="st0">&quot;Shotguns&quot;</span>, <span class="nu0">0.3</span> <span class="br0">&#41;</span>
+        <a href="GuiGridListAddColumn.html" class="kw4"><span class="kw4">guiGridListAddColumn</span></a> <span class="br0">&#40;</span> spawnScreenGridList, <span class="st0">&quot;Machine guns&quot;</span>, <span class="nu0">0.3</span> <span class="br0">&#41;</span>
+        <span class="co1">-- next, we loop through our handguns table to add handgun items to the gridlist</span>
+        <span class="kw1">for</span> key,weaponName <span class="kw1">in</span> <span class="kw1">pairs</span><span class="br0">&#40;</span>shotguns<span class="br0">&#41;</span> <span class="kw1">do</span>
+                <span class="co1">--add a new row to our gridlist each time</span>
+                <span class="kw1">local</span> row <span class="sy0">=</span> <a href="GuiGridListAddRow.html" class="kw4"><span class="kw4">guiGridListAddRow</span></a> <span class="br0">&#40;</span> spawnScreenGridList <span class="br0">&#41;</span> <span class="co1">--get our new row</span>
+                <span class="co1">--next, we set that rows text to the weapon name.  Column is 1 since the &quot;Shotguns&quot; column was created first.</span>
+                <a href="GuiGridListSetItemText.html" class="kw4"><span class="kw4">guiGridListSetItemText</span></a> <span class="br0">&#40;</span> spawnScreenGridList, row, <span class="nu0">1</span>, weaponName, <span class="kw1">false</span>, <span class="kw1">false</span> <span class="br0">&#41;</span>
+        <span class="kw1">end</span>
+        <span class="co1">--we repeat the process for other weapon lists, changing the column number</span>
+        row <span class="sy0">=</span> <span class="nu0">0</span>
+        <span class="kw1">for</span> key,weaponName <span class="kw1">in</span> <span class="kw1">pairs</span><span class="br0">&#40;</span>machineGun<span class="br0">&#41;</span> <span class="kw1">do</span>
+                <span class="co1">--we dont bother creating new rows, since we already have done that</span>
+                <span class="co1">--next, we set that rows text to the weapon name.  Column is 2 since the &quot;Machine guns&quot; column was created second.</span>
+                <a href="GuiGridListSetItemText.html" class="kw4"><span class="kw4">guiGridListSetItemText</span></a> <span class="br0">&#40;</span> spawnScreenGridList, row, <span class="nu0">2</span>, weaponName, <span class="kw1">false</span>, <span class="kw1">false</span> <span class="br0">&#41;</span>
+                row <span class="sy0">=</span> row + <span class="nu0">1</span> <span class="co1">--increase the row number</span>
+        <span class="kw1">end</span>
+<span class="kw1">end</span>
+<a href="AddEventHandler.html" class="kw2"><span class="kw2">addEventHandler</span></a> <span class="br0">&#40;</span> <span class="st0">&quot;onClientResourceStart&quot;</span>, <a href="GetResourceRootElement.html" class="kw2"><span class="kw2">getResourceRootElement</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>, setupWeaponSelection <span class="br0">&#41;</span></pre></div></div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul>
+<li> <a href="GetChatboxLayout.html" title="GetChatboxLayout">getChatboxLayout</a>
+</li>
+<li> <a href="GuiBringToFront.html" title="GuiBringToFront">guiBringToFront</a>
+</li>
+<li> <a href="GuiCreateFont.html" title="GuiCreateFont">guiCreateFont</a>
+</li>
+<li> <a href="GuiGetAlpha.html" title="GuiGetAlpha">guiGetAlpha</a>
+</li>
+<li> <a href="GuiGetEnabled.html" title="GuiGetEnabled">guiGetEnabled</a>
+</li>
+<li> <a href="GuiGetFont.html" title="GuiGetFont">guiGetFont</a>
+</li>
+<li> <a href="GuiGetInputEnabled.html" title="GuiGetInputEnabled">guiGetInputEnabled</a>
+</li>
+<li> <a href="GuiGetInputMode.html" title="GuiGetInputMode">guiGetInputMode</a>
+</li>
+<li> <a href="GuiGetPosition.html" title="GuiGetPosition">guiGetPosition</a>
+</li>
+<li> <a href="GuiGetProperties.html" title="GuiGetProperties">guiGetProperties</a>
+</li>
+<li> <a href="GuiGetProperty.html" title="GuiGetProperty">guiGetProperty</a>
+</li>
+<li> <a href="GuiGetScreenSize.html" title="GuiGetScreenSize">guiGetScreenSize</a>
+</li>
+<li> <a href="GuiGetSize.html" title="GuiGetSize">guiGetSize</a>
+</li>
+<li> <a href="GuiGetText.html" title="GuiGetText">guiGetText</a>
+</li>
+<li> <a href="GuiGetVisible.html" title="GuiGetVisible">guiGetVisible</a>
+</li>
+<li> <a href="GuiMoveToBack.html" title="GuiMoveToBack">guiMoveToBack</a>
+</li>
+<li> <a href="GuiSetAlpha.html" title="GuiSetAlpha">guiSetAlpha</a>
+</li>
+<li> <a href="GuiSetEnabled.html" title="GuiSetEnabled">guiSetEnabled</a>
+</li>
+<li> <a href="GuiSetFont.html" title="GuiSetFont">guiSetFont</a>
+</li>
+<li> <a href="GuiSetInputEnabled.html" title="GuiSetInputEnabled">guiSetInputEnabled</a>
+</li>
+<li> <a href="GuiSetInputMode.html" title="GuiSetInputMode">guiSetInputMode</a>
+</li>
+<li> <a href="GuiSetPosition.html" title="GuiSetPosition">guiSetPosition</a>
+</li>
+<li> <a href="GuiSetProperty.html" title="GuiSetProperty">guiSetProperty</a>
+</li>
+<li> <a href="GuiSetSize.html" title="GuiSetSize">guiSetSize</a>
+</li>
+<li> <a href="GuiSetText.html" title="GuiSetText">guiSetText</a>
+</li>
+<li> <a href="GuiSetVisible.html" title="GuiSetVisible">guiSetVisible</a>
+</li>
+<li> <a href="IsChatBoxInputActive.html" title="IsChatBoxInputActive">isChatBoxInputActive</a>
+</li>
+<li> <a href="IsConsoleActive.html" title="IsConsoleActive">isConsoleActive</a>
+</li>
+<li> <a href="IsDebugViewActive.html" title="IsDebugViewActive">isDebugViewActive</a>
+</li>
+<li> <a href="IsMainMenuActive.html" title="IsMainMenuActive">isMainMenuActive</a>
+</li>
+<li> <a href="IsMTAWindowActive.html" title="IsMTAWindowActive">isMTAWindowActive</a>
+</li>
+<li> <a href="IsTransferBoxActive.html" title="IsTransferBoxActive">isTransferBoxActive</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Buttons">Buttons</span></h3>
+<ul>
+<li> <a href="GuiCreateButton.html" title="GuiCreateButton">guiCreateButton</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Checkboxess">Checkboxess</span></h3>
+<ul>
+<li> <a href="GuiCheckBoxGetSelected.html" title="GuiCheckBoxGetSelected">guiCheckBoxGetSelected</a>
+</li>
+<li> <a href="GuiCheckBoxSetSelected.html" title="GuiCheckBoxSetSelected">guiCheckBoxSetSelected</a>
+</li>
+<li> <a href="GuiCreateCheckBox.html" title="GuiCreateCheckBox">guiCreateCheckBox</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Comboboxes">Comboboxes</span></h3>
+<ul>
+<li> <a href="GuiCreateComboBox.html" title="GuiCreateComboBox">guiCreateComboBox</a>
+</li>
+<li> <a href="GuiComboBoxAddItem.html" title="GuiComboBoxAddItem">guiComboBoxAddItem</a>
+</li>
+<li> <a href="GuiComboBoxClear.html" title="GuiComboBoxClear">guiComboBoxClear</a>
+</li>
+<li> <a href="GuiComboBoxGetItemText.html" title="GuiComboBoxGetItemText">guiComboBoxGetItemText</a>
+</li>
+<li> <a href="GuiComboBoxSetItemText.html" title="GuiComboBoxSetItemText">guiComboBoxSetItemText</a>
+</li>
+<li> <a href="GuiComboBoxRemoveItem.html" title="GuiComboBoxRemoveItem">guiComboBoxRemoveItem</a>
+</li>
+<li> <a href="GuiComboBoxGetSelected.html" title="GuiComboBoxGetSelected">guiComboBoxGetSelected</a>
+</li>
+<li> <a href="GuiComboBoxSetSelected.html" title="GuiComboBoxSetSelected">guiComboBoxSetSelected</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Edit_Fields">Edit Fields</span></h3>
+<ul>
+<li> <a href="GuiCreateEdit.html" title="GuiCreateEdit">guiCreateEdit</a>
+</li>
+<li> <a href="GuiEditSetMasked.html" title="GuiEditSetMasked">guiEditSetMasked</a>
+</li>
+<li> <a href="GuiEditSetMaxLength.html" title="GuiEditSetMaxLength">guiEditSetMaxLength</a>
+</li>
+<li> <a href="GuiEditSetReadOnly.html" title="GuiEditSetReadOnly">guiEditSetReadOnly</a>
+</li>
+<li> <a href="GuiEditSetCaretindex.html" title="GuiEditSetCaretIndex">guiEditSetCaretIndex</a>
+</li>
+</ul>
+<ul>
+<li> <a href="GuiEditGetCaretindex.html" title="GuiEditGetCaretIndex">guiEditGetCaretIndex</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Gridlists">Gridlists</span></h3>
+<ul>
+<li> <strong class="selflink">guiCreateGridList</strong>
+</li>
+<li> <a href="GuiGridListAddColumn.html" title="GuiGridListAddColumn">guiGridListAddColumn</a>
+</li>
+<li> <a href="GuiGridListAddRow.html" title="GuiGridListAddRow">guiGridListAddRow</a>
+</li>
+<li> <a href="GuiGridListAutoSizeColumn.html" title="GuiGridListAutoSizeColumn">guiGridListAutoSizeColumn</a>
+</li>
+<li> <a href="GuiGridListClear.html" title="GuiGridListClear">guiGridListClear</a>
+</li>
+<li> <a href="GuiGridListGetItemData.html" title="GuiGridListGetItemData">guiGridListGetItemData</a>
+</li>
+<li> <a href="GuiGridListGetItemText.html" title="GuiGridListGetItemText">guiGridListGetItemText</a>
+</li>
+<li> <a href="GuiGridListGetRowCount.html" title="GuiGridListGetRowCount">guiGridListGetRowCount</a>
+</li>
+<li> <a href="GuiGridListGetSelectedItem.html" title="GuiGridListGetSelectedItem">guiGridListGetSelectedItem</a>
+</li>
+<li> <a href="GuiGridListInsertRowAfter.html" title="GuiGridListInsertRowAfter">guiGridListInsertRowAfter</a>
+</li>
+<li> <a href="GuiGridListRemoveColumn.html" title="GuiGridListRemoveColumn">guiGridListRemoveColumn</a>
+</li>
+<li> <a href="GuiGridListRemoveRow.html" title="GuiGridListRemoveRow">guiGridListRemoveRow</a>
+</li>
+<li> <a href="GuiGridListSetItemData.html" title="GuiGridListSetItemData">guiGridListSetItemData</a>
+</li>
+<li> <a href="GuiGridListSetItemText.html" title="GuiGridListSetItemText">guiGridListSetItemText</a>
+</li>
+<li> <a href="GuiGridListSetScrollBars.html" title="GuiGridListSetScrollBars">guiGridListSetScrollBars</a>
+</li>
+<li> <a href="GuiGridListSetSelectedItem.html" title="GuiGridListSetSelectedItem">guiGridListSetSelectedItem</a>
+</li>
+<li> <a href="GuiGridListSetSelectionMode.html" title="GuiGridListSetSelectionMode">guiGridListSetSelectionMode</a>
+</li>
+<li> <a href="GuiGridListSetSortingEnabled.html" title="GuiGridListSetSortingEnabled">guiGridListSetSortingEnabled</a>
+</li>
+<li> <a href="GuiGridListGetSelectedCount.html" title="GuiGridListGetSelectedCount">guiGridListGetSelectedCount</a>
+</li>
+<li> <a href="GuiGridListGetSelectedItems.html" title="GuiGridListGetSelectedItems">guiGridListGetSelectedItems</a>
+</li>
+<li> <a href="GuiGridListSetColumnWidth.html" title="GuiGridListSetColumnWidth">guiGridListSetColumnWidth</a>
+</li>
+<li> <a href="GuiGridListGetColumnCount.html" title="GuiGridListGetColumnCount">guiGridListGetColumnCount</a>
+</li>
+<li> <a href="GuiGridListGetItemColor.html" title="GuiGridListGetItemColor">guiGridListGetItemColor</a>
+</li>
+<li> <a href="GuiGridListSetItemColor.html" title="GuiGridListSetItemColor">guiGridListSetItemColor</a>
+</li>
+<li> <a href="GuiGridListGetColumnTitle.html" title="GuiGridListGetColumnTitle">guiGridListGetColumnTitle</a>
+</li>
+<li> <a href="GuiGridListSetColumnTitle.html" title="GuiGridListSetColumnTitle">guiGridListSetColumnTitle</a>
+</li>
+<li> <a href="GuiGridListGetHorizontalScrollPosition.html" title="GuiGridListGetHorizontalScrollPosition">guiGridListGetHorizontalScrollPosition</a>
+</li>
+<li> <a href="GuiGridListSetHorizontalScrollPosition.html" title="GuiGridListSetHorizontalScrollPosition">guiGridListSetHorizontalScrollPosition</a>
+</li>
+<li> <a href="GuiGridListGetVerticalScrollPosition.html" title="GuiGridListGetVerticalScrollPosition">guiGridListGetVerticalScrollPosition</a>
+</li>
+<li> <a href="GuiGridListSetVerticalScrollPosition.html" title="GuiGridListSetVerticalScrollPosition">guiGridListSetVerticalScrollPosition</a>
+</li>
+</ul>
+<ul>
+<li> <a index.html?title=GuiGridListGetColumnWidth&amp;action=edit&amp;redlink=1" class="new" title="GuiGridListGetColumnWidth (page does not exist)">guiGridListGetColumnWidth</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Memos">Memos</span></h3>
+<ul>
+<li> <a href="GuiCreateMemo.html" title="GuiCreateMemo">guiCreateMemo</a>
+</li>
+<li> <a href="GuiMemoSetReadOnly.html" title="GuiMemoSetReadOnly">guiMemoSetReadOnly</a>
+</li>
+<li> <a href="GuiMemoSetCaretindex.html" title="GuiMemoSetCaretIndex">guiMemoSetCaretIndex</a>
+</li>
+</ul>
+<ul>
+<li> <a href="GuiMemoGetCaretindex.html" title="GuiMemoGetCaretIndex">guiMemoGetCaretIndex</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Progressbars">Progressbars</span></h3>
+<ul>
+<li> <a href="GuiCreateProgressBar.html" title="GuiCreateProgressBar">guiCreateProgressBar</a>
+</li>
+<li> <a href="GuiProgressBarGetProgress.html" title="GuiProgressBarGetProgress">guiProgressBarGetProgress</a>
+</li>
+<li> <a href="GuiProgressBarSetProgress.html" title="GuiProgressBarSetProgress">guiProgressBarSetProgress</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Radio_Buttons">Radio Buttons</span></h3>
+<ul>
+<li> <a href="GuiCreateRadioButton.html" title="GuiCreateRadioButton">guiCreateRadioButton</a>
+</li>
+<li> <a href="GuiRadioButtonGetSelected.html" title="GuiRadioButtonGetSelected">guiRadioButtonGetSelected</a>
+</li>
+<li> <a href="GuiRadioButtonSetSelected.html" title="GuiRadioButtonSetSelected">guiRadioButtonSetSelected</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Scrollbars">Scrollbars</span></h3>
+<ul>
+<li> <a href="GuiCreateScrollBar.html" title="GuiCreateScrollBar">guiCreateScrollBar</a>
+</li>
+<li> <a href="GuiScrollBarGetScrollPosition.html" title="GuiScrollBarGetScrollPosition">guiScrollBarGetScrollPosition</a>
+</li>
+<li> <a href="GuiScrollBarSetScrollPosition.html" title="GuiScrollBarSetScrollPosition">guiScrollBarSetScrollPosition</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Scrollpanes">Scrollpanes</span></h3>
+<ul>
+<li> <a href="GuiCreateScrollPane.html" title="GuiCreateScrollPane">guiCreateScrollPane</a>
+</li>
+<li> <a href="GuiScrollPaneGetHorizontalScrollPosition.html" title="GuiScrollPaneGetHorizontalScrollPosition">guiScrollPaneGetHorizontalScrollPosition</a>
+</li>
+<li> <a href="GuiScrollPaneGetVerticalScrollPosition.html" title="GuiScrollPaneGetVerticalScrollPosition">guiScrollPaneGetVerticalScrollPosition</a>
+</li>
+<li> <a href="GuiScrollPaneSetHorizontalScrollPosition.html" title="GuiScrollPaneSetHorizontalScrollPosition">guiScrollPaneSetHorizontalScrollPosition</a>
+</li>
+<li> <a href="GuiScrollPaneSetScrollBars.html" title="GuiScrollPaneSetScrollBars">guiScrollPaneSetScrollBars</a>
+</li>
+<li> <a href="GuiScrollPaneSetVerticalScrollPosition.html" title="GuiScrollPaneSetVerticalScrollPosition">guiScrollPaneSetVerticalScrollPosition</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Static_Images">Static Images</span></h3>
+<ul>
+<li> <a href="GuiCreateStaticImage.html" title="GuiCreateStaticImage">guiCreateStaticImage</a>
+</li>
+<li> <a href="GuiStaticImageGetNativeSize.html" title="GuiStaticImageGetNativeSize">guiStaticImageGetNativeSize</a>
+</li>
+<li> <a href="GuiStaticImageLoadImage.html" title="GuiStaticImageLoadImage">guiStaticImageLoadImage</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Tab_Panels">Tab Panels</span></h3>
+<ul>
+<li> <a href="GuiCreateTabPanel.html" title="GuiCreateTabPanel">guiCreateTabPanel</a>
+</li>
+<li> <a href="GuiGetSelectedTab.html" title="GuiGetSelectedTab">guiGetSelectedTab</a>
+</li>
+<li> <a href="GuiSetSelectedTab.html" title="GuiSetSelectedTab">guiSetSelectedTab</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Tabs">Tabs</span></h3>
+<ul>
+<li> <a href="GuiCreateTab.html" title="GuiCreateTab">guiCreateTab</a>
+</li>
+<li> <a href="GuiDeleteTab.html" title="GuiDeleteTab">guiDeleteTab</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Text_Labels">Text Labels</span></h3>
+<ul>
+<li> <a href="GuiCreateLabel.html" title="GuiCreateLabel">guiCreateLabel</a>
+</li>
+<li> <a href="GuiLabelGetFontHeight.html" title="GuiLabelGetFontHeight">guiLabelGetFontHeight</a>
+</li>
+<li> <a href="GuiLabelGetTextExtent.html" title="GuiLabelGetTextExtent">guiLabelGetTextExtent</a>
+</li>
+<li> <a href="GuiLabelSetColor.html" title="GuiLabelSetColor">guiLabelSetColor</a>
+</li>
+<li> <a href="GuiLabelSetHorizontalAlign.html" title="GuiLabelSetHorizontalAlign">guiLabelSetHorizontalAlign</a>
+</li>
+<li> <a href="GuiLabelSetVerticalAlign.html" title="GuiLabelSetVerticalAlign">guiLabelSetVerticalAlign</a>
+</li>
+</ul>
+<ul>
+<li> <a href="GuiLabelGetColor.html" title="GuiLabelGetColor">guiLabelGetColor</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Windows">Windows</span></h3>
+<ul>
+<li> <a href="GuiCreateWindow.html" title="GuiCreateWindow">guiCreateWindow</a>
+</li>
+<li> <a href="GuiWindowSetMovable.html" title="GuiWindowSetMovable">guiWindowSetMovable</a>
+</li>
+<li> <a href="GuiWindowSetSizable.html" title="GuiWindowSetSizable">guiWindowSetSizable</a>
+</li>
+</ul>
+<h3><span class="mw-headline" id="Webbrowser">Webbrowser</span></h3>
+<ul>
+<li> <a href="GuiCreateBrowser.html" title="GuiCreateBrowser">guiCreateBrowser</a>
+</li>
+<li> <a href="GuiGetBrowser.html" title="GuiGetBrowser">guiGetBrowser</a>
+</li>
+</ul>
+<p><br />
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.123 seconds
+Real time usage: 0.130 seconds
+Preprocessor visited node count: 131/1000000
+Preprocessor generated node count: 395/1000000
+Post‐expand include size: 4863/2097152 bytes
+Template argument size: 157/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:2525-0!*!0!!*!2!* and timestamp 20150826120543
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=GuiCreateGridList&amp;oldid=26378">/index.php?title=GuiCreateGridList&amp;oldid=26378</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a index.html?title=Category:Changes_in_1.3.5&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.5 (page does not exist)">Changes in 1.3.5</a></li><li><a index.html?title=Category:Changes_in_1.4.1&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.4.1 (page does not exist)">Changes in 1.4.1</a></li><li><a index.html?title=Category:Changes_in_1.3.1&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.1 (page does not exist)">Changes in 1.3.1</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="GuiCreateGridList.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:GuiCreateGridList&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=GuiCreateGridList&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=GuiCreateGridList&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a index.html?title=Special:UserLogin&amp;returnto=GuiCreateGridList"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/GuiCreateGridList.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/GuiCreateGridList.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=GuiCreateGridList&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=GuiCreateGridList&amp;oldid=26378"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 19 July 2011, at 05:10.</li>
+					<li id="viewcount">This page has been accessed 25,969 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.048 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/GuiCreateGridList by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:30:15 GMT -->
+</html>

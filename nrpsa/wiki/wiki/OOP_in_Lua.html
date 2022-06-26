@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/OOP_in_Lua by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:33:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />		<title>OOP in Lua - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OOP_in_Lua","wgTitle":"OOP in Lua","wgCurRevisionId":44024,"wgRevisionId":44024,"wgArticleId":8161,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OOP_in_Lua","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OOP_in_Lua","wgTitle":"OOP in Lua","wgCurRevisionId":44024,"wgRevisionId":44024,"wgArticleId":8161,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OOP_in_Lua","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><style type="text/css">/*<![CDATA[*/
+.source-lua {line-height: normal;}
+.source-lua li, .source-lua pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for lua
+ * CSS class: source-lua, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.lua.source-lua .de1, .lua.source-lua .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.lua.source-lua  {font-family:monospace;}
+.lua.source-lua .imp {font-weight: bold; color: red;}
+.lua.source-lua li, .lua.source-lua .li1 {font-weight: normal; vertical-align:top;}
+.lua.source-lua .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.lua.source-lua .li2 {font-weight: bold; vertical-align:top;}
+.lua.source-lua .kw1 {color: #b1b100;}
+.lua.source-lua .co1 {color: #808080; font-style: italic;}
+.lua.source-lua .coMULTI {color: #808080; font-style: italic;}
+.lua.source-lua .es0 {color: #000099; font-weight: bold;}
+.lua.source-lua .br0 {color: #66cc66;}
+.lua.source-lua .sy0 {color: #66cc66;}
+.lua.source-lua .st0 {color: #00A600;}
+.lua.source-lua .nu0 {color: #cc66cc;}
+.lua.source-lua .me0 {color: #b1b100;}
+.lua.source-lua .ln-xtra, .lua.source-lua li.ln-xtra, .lua.source-lua div.ln-xtra {background-color: #ffc;}
+.lua.source-lua span.xtra { display:block; }
+
+/*]]>*/
+</style>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-OOP_in_Lua skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">OOP in Lua</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Glossary"><span class="tocnumber">1</span> <span class="toctext">Glossary</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Initialising"><span class="tocnumber">2</span> <span class="toctext">Initialising</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Our_first_environment"><span class="tocnumber">2.1</span> <span class="toctext">Our first environment</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Variables"><span class="tocnumber">2.2</span> <span class="toctext">Variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Metatables"><span class="tocnumber">3</span> <span class="toctext">Metatables</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#index"><span class="tocnumber">3.1</span> <span class="toctext">__index</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#newindex"><span class="tocnumber">3.2</span> <span class="toctext">__newindex</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#rawget_and_rawset"><span class="tocnumber">3.3</span> <span class="toctext">rawget and rawset</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Operators"><span class="tocnumber">3.4</span> <span class="toctext">Operators</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#call"><span class="tocnumber">3.5</span> <span class="toctext">__call</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#tostring"><span class="tocnumber">3.6</span> <span class="toctext">__tostring</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Building_the_Vector_Class"><span class="tocnumber">3.7</span> <span class="toctext">Building the Vector Class</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Advanced_examples"><span class="tocnumber">4</span> <span class="toctext">Advanced examples</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Useful_links"><span class="tocnumber">5</span> <span class="toctext">Useful links</span></a></li>
+</ul>
+</div>
+
+<p>This is a scripting tutorial teaches you the basics about how to start using an Object-Oriented developing interface with Lua. Originally created by <a rel="nofollow" class="external text" href="http://forum.nrp.us.to/memberlist.php?mode=viewprofile&amp;u=53356">novo</a> @adam.nrp. - <a rel="nofollow" class="external text" href="http://forum.nrp.us.to/viewtopic.php?f=148&amp;t=84365">Forum topic</a>.
+</p>
+<h2><span class="mw-headline" id="Glossary">Glossary</span></h2>
+<ul>
+<li> environment: either a table or an array containing values.
+</li>
+<li> self: predefined variable referring to the environment within which we are executing the code.
+</li>
+</ul>
+<h2><span class="mw-headline" id="Initialising">Initialising</span></h2>
+<p>There is a basic and simple predefined variables we should recognize and know: <b><a href="#Glossary">self</a></b>.
+</p>
+<h3><span class="mw-headline" id="Our_first_environment">Our first environment</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |local array = {} function array:example (argument) return "Hello" .. argument end function array.example(self, argument) return "Hello" .. argument end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> array <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>
+<span class="kw1">function</span> array:example <span class="br0">&#40;</span>argument<span class="br0">&#41;</span>
+    <span class="kw1">return</span> <span class="st0">&quot;Hello&quot;</span> .. argument
+<span class="kw1">end</span>
+&#160;
+<span class="co1">-- The above is syntactic sugar for:</span>
+<span class="kw1">function</span> array.example<span class="br0">&#40;</span>self, argument<span class="br0">&#41;</span>
+    <span class="kw1">return</span> <span class="st0">&quot;Hello&quot;</span> .. argument
+<span class="kw1">end</span></pre></div></div>
+<p>What we do upon above is defining a <i>local</i> environment and then declaring the function <b>example</b> as part of it. So how do we call <i>example</i>? This is how:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |array:example(", world!") array.example(array, ", world!")|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">array:example<span class="br0">&#40;</span><span class="st0">&quot;, world!&quot;</span><span class="br0">&#41;</span>
+&#160;
+<span class="co1">-- The above is syntactic sugar for the</span>
+<span class="co1">-- following line of code. This makes it</span>
+<span class="co1">-- easier and faster to use OOP in Lua.</span>
+array.example<span class="br0">&#40;</span>array, <span class="st0">&quot;, world!&quot;</span><span class="br0">&#41;</span></pre></div></div>
+<p>We're able to call a function using two ways: "<b>:</b>" and "<b>.</b>". As you can see on the example above, if we use a dot we're directly accessing the function. We need to manually send the <i>self</i> value . But if use a colon, <i>self</i> will be the environment the function is under, i.e. <b>array</b>. We can send the self value in case we want a function to override the object, read ahead to <a href="#Advanced_examples">advanced examples</a> for more information about this.
+</p>
+<h3><span class="mw-headline" id="Variables">Variables</span></h3>
+<!-- PLAIN TEXT CODE FOR BOTS |local array = {text = "none"} function array:setKey (key, value) self[key] = value end function array:getKey (key) return self[key] end array:getKey("text") array:setKey("text", "something") array:getKey("text") -- returns "something"|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> array <span class="sy0">=</span> <span class="br0">&#123;</span>text <span class="sy0">=</span> <span class="st0">&quot;none&quot;</span><span class="br0">&#125;</span>
+<span class="kw1">function</span> array:setKey <span class="br0">&#40;</span>key, value<span class="br0">&#41;</span>
+    self<span class="br0">&#91;</span>key<span class="br0">&#93;</span> <span class="sy0">=</span> value
+<span class="kw1">end</span>
+<span class="kw1">function</span> array:getKey <span class="br0">&#40;</span>key<span class="br0">&#41;</span>
+    <span class="kw1">return</span> self<span class="br0">&#91;</span>key<span class="br0">&#93;</span>
+<span class="kw1">end</span>
+&#160;
+array:getKey<span class="br0">&#40;</span><span class="st0">&quot;text&quot;</span><span class="br0">&#41;</span> <span class="co1">-- returns &quot;none&quot;</span>
+array:setKey<span class="br0">&#40;</span><span class="st0">&quot;text&quot;</span>, <span class="st0">&quot;something&quot;</span><span class="br0">&#41;</span> <span class="co1">-- sets &quot;text&quot;'s value to 'something'</span>
+array:getKey<span class="br0">&#40;</span><span class="st0">&quot;text&quot;</span><span class="br0">&#41;</span> <span class="co1">-- returns &quot;something&quot;</span></pre></div></div>
+<p>Since we are doing <i><b>array</b>:setKey(..)</i>, the "secret" self variable set in both functions are set to <b>array</b>. This means that <b>self[key] = value</b> is actually setting <b>array[key] = value</b>.
+</p>
+<h2><span class="mw-headline" id="Metatables">Metatables</span></h2>
+<p>Content's provenance: <a rel="nofollow" class="external text" href="http://nova-fusion.com/2011/06/30/lua-metatables-tutorial/">NovaFusion</a>
+</p>
+<hr />
+<p>Knowledge of the usage of metatables will allow you to create much more powerful scripts. Every table can have a metatable attached to it. A metatable is a table that can change the behaviour of the table it's attached to. Let's see an example.
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |local t = {} local mt = {} setmetatable(t, mt) getmetatable(t) -- this will return mt|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> t <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span> <span class="co1">-- our normal table</span>
+<span class="kw1">local</span> mt <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span> <span class="co1">-- our metatable, which contains nothing right now</span>
+<span class="kw1">setmetatable</span><span class="br0">&#40;</span>t, mt<span class="br0">&#41;</span> <span class="co1">-- set the metatable of *t* to *mt*</span>
+<span class="kw1">getmetatable</span><span class="br0">&#40;</span>t<span class="br0">&#41;</span> <span class="co1">-- this will return mt</span></pre></div></div>
+<p>As you can see, <b>getmetatable</b> and <b>setmetatable</b> are the main functions here. This is pretty much self explanatory. A shortened version of this code is this:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |local t = setmetatable({}, {})|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> t <span class="sy0">=</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span><span class="br0">&#125;</span>, <span class="br0">&#123;</span><span class="br0">&#125;</span><span class="br0">&#41;</span></pre></div></div>
+<p>The function <b>setmetatable</b> returns its first argument, therefore we can use this shorter form.
+</p><p>Now, what do we put in these metatables? Metatables can contain anything, like a regular table, but certain keys that always start with __ (two underscores in a row), such as <b>__index</b> and <b>__newindex</b> help modify the behaviour of the <i>target table</i>. The values corresponding to these keys will usually be functions or other tables. Here's an example:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |local t = setmetatable({}, { __index = function(tab, key) if key == "foo" then return 0 else return rawget(table, key) end end })|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> t <span class="sy0">=</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span><span class="br0">&#125;</span>, <span class="br0">&#123;</span>
+    __index <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">&#40;</span>tab, key<span class="br0">&#41;</span>
+        <span class="kw1">if</span> key <span class="sy0">==</span> <span class="st0">&quot;foo&quot;</span> <span class="kw1">then</span>
+            <span class="kw1">return</span> <span class="nu0">0</span>
+        <span class="kw1">else</span>
+            <span class="kw1">return</span> <span class="kw1">rawget</span><span class="br0">&#40;</span><a href="Table.html" class="kw3"><span class="kw3">table</span></a>, key<span class="br0">&#41;</span>
+        <span class="kw1">end</span>
+    <span class="kw1">end</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span></pre></div></div>
+<p>So as you can see, we assign a function to the <b>__index</b> key. Now let's have a look at what this key is all about.
+</p>
+<h3><span class="mw-headline" id="index">__index</span></h3>
+<p>The most used metatable key is most likely <b>__index</b>; it can contain either a function or table.
+</p><p>When you look up a table with a key, regardless of what the key is (t[4], t.foo, and t["foo"], for example), and a value hasn't been assigned for that key, Lua will look for an <b>__index</b> key in the table's metatable (if it has a metatable). If <b>__index</b> contains a table, Lua will look up the key originally used in the table belonging to <b>__index</b>. This probably sounds confusing, so here's an example:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |other = { foo = 3 } t = setmetatable({hello = "world"}, { __index = other }) t.foo t.bar t.hello -- "world"|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">other <span class="sy0">=</span> <span class="br0">&#123;</span> foo <span class="sy0">=</span> <span class="nu0">3</span> <span class="br0">&#125;</span>
+t <span class="sy0">=</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span>hello <span class="sy0">=</span> <span class="st0">&quot;world&quot;</span><span class="br0">&#125;</span>, <span class="br0">&#123;</span> __index <span class="sy0">=</span> other <span class="br0">&#125;</span><span class="br0">&#41;</span>
+t.foo <span class="co1">-- 3</span>
+t.bar <span class="co1">-- nil</span>
+t.hello <span class="co1">-- &quot;world&quot;</span></pre></div></div>
+<p>If <b>__index</b> contains a function, then it's called, with the table that is being looked up and the key used as parameters. By default, this function is "rawget". As we saw in the code example above the last one, this allows us to use conditionals on the key, and basically anything else that Lua code can do. Therefore, in that example, if the key was equal to the string "foo" we would return 0, otherwise we look up the <b>table</b> table with the key that was used; this makes <b>t</b> an alias of <b>table</b> that returns 0 when the key "foo" is used.
+</p><p>You may be wondering why the table is passed as a first parameter to the <b>__index</b> function. This comes in handy if you use the same metatable for multiple tables, supporting code re-use and saving computer resources. We'll see an example of this when we take a look at the <b>Vector</b> class.
+</p>
+<h3><span class="mw-headline" id="newindex">__newindex</span></h3>
+<p>Next in line is <b>__newindex</b>, which is similar to <b>__index</b>. Like <b>__index</b>, it can contain either a function or table.
+</p><p>When you try to set a value in a table that is not already present, Lua will look for a <b>__newindex</b> key in the metatable. It's the same sort of situation as <b>__index</b>; if <b>__newindex</b> is a table, the key and value will be set in the table specified:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |other = {} t = setmetatable({}, { __newindex = other }) t.foo = 3 other.foo t.foo -- nil|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">other <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>
+t <span class="sy0">=</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span><span class="br0">&#125;</span>, <span class="br0">&#123;</span> __newindex <span class="sy0">=</span> other <span class="br0">&#125;</span><span class="br0">&#41;</span>
+t.foo <span class="sy0">=</span> <span class="nu0">3</span>
+other.foo <span class="co1">-- 3</span>
+t.foo <span class="co1">-- nil</span></pre></div></div>
+<p>As would be expected, if <b>__newindex</b> is a function, it will be called with the table, key, and value passed as parameters:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |t = setmetatable({}, { __newindex = function(t, key, value) if type(value) == "number" then rawset(t, key, value * value) else rawset(t, key, value) end end }) t.foo = "foo" print(t.foo) t.bar = 4 print(t.bar) t.la = 10 print(t.la) -- 100|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">t <span class="sy0">=</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span><span class="br0">&#125;</span>, <span class="br0">&#123;</span>
+    __newindex <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">&#40;</span>t, key, value<span class="br0">&#41;</span>
+        <span class="kw1">if</span> <span class="kw1">type</span><span class="br0">&#40;</span>value<span class="br0">&#41;</span> <span class="sy0">==</span> <span class="st0">&quot;number&quot;</span> <span class="kw1">then</span>
+            <span class="kw1">rawset</span><span class="br0">&#40;</span>t, key, value <span class="sy0">*</span> value<span class="br0">&#41;</span>
+        <span class="kw1">else</span>
+            <span class="kw1">rawset</span><span class="br0">&#40;</span>t, key, value<span class="br0">&#41;</span>
+        <span class="kw1">end</span>
+    <span class="kw1">end</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span>
+&#160;
+t.foo <span class="sy0">=</span> <span class="st0">&quot;foo&quot;</span>
+<span class="kw1">print</span><span class="br0">&#40;</span>t.foo<span class="br0">&#41;</span> <span class="co1">-- &quot;foo&quot;</span>
+&#160;
+t.bar <span class="sy0">=</span> <span class="nu0">4</span>
+<span class="kw1">print</span><span class="br0">&#40;</span>t.bar<span class="br0">&#41;</span> <span class="co1">-- 16</span>
+&#160;
+t.la <span class="sy0">=</span> <span class="nu0">10</span>
+<span class="kw1">print</span><span class="br0">&#40;</span>t.la<span class="br0">&#41;</span> <span class="co1">-- 100</span></pre></div></div>
+<p>When creating a new key in <b>t</b>, if the value is a number it will be squared, otherwise it will just be set using the default "__newindex" function, <b>rawset</b>.. This introduces us to our friends, <b>rawget</b> and <b>rawset</b>.
+</p>
+<h3><span class="mw-headline" id="rawget_and_rawset">rawget and rawset</span></h3>
+<p>There are times when you need get and set a table's keys without dealing with metatables. <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/manual.html#pdf-rawget">Rawget</a> and <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/manual.html#pdf-rawset">rawset</a> bypass metatables, if you didn't use these when actually getting a value from a table inside a metatable function, an infinite loop will occur. Rawset and rawget do not provide performance enhancements over regular methods, so people don't overuse it to try to gain a performance boost. You may have noticed that the __index arguments are exactly the same as the possible arguments for rawget - this is because rawget/rawset are actually the default metamethods for regular tables.
+</p>
+<h3><span class="mw-headline" id="Operators">Operators</span></h3>
+<p>Many of the metatable keys available have to do with operators (as in, <b>+</b>, <b>-</b>, etc.), allowing you to make tables support the use of operators on them. For example, say we wanted a table to support the multiplication operator (<b>*</b>), this is how we would do it:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |t = setmetatable({}, { __mul = function(t, other) new = {} for i = 1, other do for _, v in ipairs(t) do table.insert(new, v) end end return new end }) t[1] = "M" t[2] = "T" t[3] = "A" t[4] = 1.4 t = t * 2 -- { "M", "T", "A", 1.4, "M", "T", "A", 1.4 }|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">t <span class="sy0">=</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span><span class="br0">&#125;</span>, <span class="br0">&#123;</span>
+    __mul <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">&#40;</span>t, other<span class="br0">&#41;</span>
+        new <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>
+&#160;
+        <span class="kw1">for</span> i <span class="sy0">=</span> <span class="nu0">1</span>, other <span class="kw1">do</span>
+            <span class="kw1">for</span> _, v <span class="kw1">in</span> <span class="kw1">ipairs</span><span class="br0">&#40;</span>t<span class="br0">&#41;</span> <span class="kw1">do</span> <span class="kw1"><a href="Table.html" class="kw3"><span class="kw3">table</span></a>.insert</span><span class="br0">&#40;</span>new, v<span class="br0">&#41;</span> <span class="kw1">end</span>
+        <span class="kw1">end</span>
+&#160;
+        <span class="kw1">return</span> new
+    <span class="kw1">end</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span>
+t<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="st0">&quot;M&quot;</span>
+t<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="st0">&quot;T&quot;</span>
+t<span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="st0">&quot;A&quot;</span>
+t<span class="br0">&#91;</span><span class="nu0">4</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">1.4</span>
+t <span class="sy0">=</span> t <span class="sy0">*</span> <span class="nu0">2</span> <span class="co1">-- { &quot;M&quot;, &quot;T&quot;, &quot;A&quot;, 1.4, &quot;M&quot;, &quot;T&quot;, &quot;A&quot;, 1.4 }</span></pre></div></div>
+<p>This allows us to create a new table with the original replicated a certain amount of times using the multiplication operator. The corresponding key for multiplication is <b>__mul</b>; unlike <b>__index</b> and <b>__newindex</b> the keys for operators can only contain functions. The first parameter these functions always receive is the target table, and then the value on the right hand side (except for the unary - which has the key of <b>__unm</b>). Here's a list of the supported operators:
+</p>
+<ul>
+<li> __add: Addition (+)
+</li>
+<li> __sub: Subtraction (-)
+</li>
+<li> __mul: Multiplication (*)
+</li>
+<li> __div: Division (/)
+</li>
+<li> __mod: Modulos (%)
+</li>
+<li> __unm: Unary -, used for negation on numbers
+</li>
+<li> __concat: Concatenation (..)
+</li>
+<li> __eq: Equality (==)
+</li>
+<li> __lt: Less than (&lt;)
+</li>
+<li> __le: Less than or equal to (&lt;=)
+</li>
+</ul>
+<p>The operators <b>&gt;</b>, <b>&gt;=</b> and <b>~=</b> do not exist because these can be calculated by flipping the right values. Lua does this:
+</p>
+<ul>
+<li> <b>&gt;</b>: More than - <b>not __le</b>
+</li>
+<li> <b>~=</b>: Not equal to -- <b>not __eq</b>
+</li>
+<li> <b>&gt;=</b>: More than or equal to - <b>not __lt</b>
+</li>
+</ul>
+<h3><span class="mw-headline" id="call">__call</span></h3>
+<p>Next comes the <b>__call</b> key, which allows you to call tables as functions. A code example:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |t = setmetatable({}, { __call = function(t, a, b, c, multiplier) return (a + b + c) * multiplier end }) t(1, 2, 3, 4) -- 24|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">t <span class="sy0">=</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span><span class="br0">&#125;</span>, <span class="br0">&#123;</span>
+    __call <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">&#40;</span>t, a, b, c, multiplier<span class="br0">&#41;</span>
+        <span class="kw1">return</span> <span class="br0">&#40;</span>a + b + c<span class="br0">&#41;</span> <span class="sy0">*</span> multiplier
+    <span class="kw1">end</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span>
+&#160;
+t<span class="br0">&#40;</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span><span class="br0">&#41;</span> <span class="co1">-- 24</span></pre></div></div>
+<p>The function in __call passes the target table as usual, followed by the arguments we passed to it. <b>__call</b> is very useful for many things, it is often used to create new objects.
+</p>
+<h3><span class="mw-headline" id="tostring">__tostring</span></h3>
+<p>Last of all is <b>__tostring</b>. If implemented, it's used by <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/manual.html#pdf-tostring">tostring</a> to convert a table into a string, most handy when using a function like <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/manual.html#pdf-print">print</a>. Normally, when you try to convert a table to a string, you something in the format of "table: 0x&lt;hex-code-here&gt;", but you can change that using <b>__tostring</b>. An example:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |t = setmetatable({ 1, 2, 3 }, { __tostring = function(t) sum = 0 for _, v in pairs(t) do sum = sum + v end return "Sum: " .. sum end }) print(t) -- prints out "Sum: 6"|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">t <span class="sy0">=</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span> <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span> <span class="br0">&#125;</span>, <span class="br0">&#123;</span>
+    __tostring <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">&#40;</span>t<span class="br0">&#41;</span>
+        sum <span class="sy0">=</span> <span class="nu0">0</span>
+        <span class="kw1">for</span> _, v <span class="kw1">in</span> <span class="kw1">pairs</span><span class="br0">&#40;</span>t<span class="br0">&#41;</span> <span class="kw1">do</span> sum <span class="sy0">=</span> sum + v <span class="kw1">end</span>
+        <span class="kw1">return</span> <span class="st0">&quot;Sum: &quot;</span> .. sum
+    <span class="kw1">end</span>
+<span class="br0">&#125;</span><span class="br0">&#41;</span>
+&#160;
+<span class="kw1">print</span><span class="br0">&#40;</span>t<span class="br0">&#41;</span> <span class="co1">-- prints out &quot;Sum: 6&quot;</span></pre></div></div>
+<h3><span class="mw-headline" id="Building_the_Vector_Class">Building the Vector Class</span></h3>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Note:</b> This section is just an example, use the official <a href="Vector.html" title="Vector">Vector</a> functions instead.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<p>To wrap everything up, we'll write a class encapsulating a 2D vector. It's too large to put here, but you can see the full code at <a rel="nofollow" class="external text" href="https://gist.github.com/1055480">gist #1055480</a>. I've positioned all the stuff to do with metatables first in the file, as that's the most important stuff. (Be warned, this may be a bit confusing if you've never encountered Object-Oriented Programming before.)
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |Vector = {} Vector.__index = Vector|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">Vector <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>
+Vector.__index <span class="sy0">=</span> Vector</pre></div></div>
+<p>This code sets up the table for the <b>Vector</b> class, and sets the <b>__index</b> key to point back at itself. Now, what's going on here? You've probably noticed that we've put all the metatable methods inside the <b>Vector</b> class. What you're seeing is the simplest way to achieve OOP (Object-Oriented Programming) in Lua. The <b>Vector</b> table represents the class, which contains all the functions that instances can use. <b>Vector.new</b> (shown below) creates a new instance of this class.
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function Vector.new(x, y) return setmetatable({ x = x or 0, y = y or 0 }, Vector) end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> Vector.new<span class="br0">&#40;</span>x, y<span class="br0">&#41;</span>
+  <span class="kw1">return</span> <span class="kw1">setmetatable</span><span class="br0">&#40;</span><span class="br0">&#123;</span> x <span class="sy0">=</span> x <span class="kw1">or</span> <span class="nu0">0</span>, y <span class="sy0">=</span> y <span class="kw1">or</span> <span class="nu0">0</span> <span class="br0">&#125;</span>, Vector<span class="br0">&#41;</span>
+<span class="kw1">end</span></pre></div></div>
+<p>It creates a new table with <b>x</b> and <b>y</b> properties, and then sets the metatable to the <b>Vector</b> class. As we know, <b>Vector</b> contains all the metamethods and especially the <b>__index</b> key. This means that we can use all the functions we define in <b>Vector</b> through this new table. We'll come back to this in a moment.
+</p><p>Another important thing is the last line:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |setmetatable(Vector, { __call = function(_, ...) return Vector.new(...) end })|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">setmetatable</span><span class="br0">&#40;</span>Vector, <span class="br0">&#123;</span> __call <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">&#40;</span>_, ...<span class="br0">&#41;</span> <span class="kw1">return</span> Vector.new<span class="br0">&#40;</span>...<span class="br0">&#41;</span> <span class="kw1">end</span> <span class="br0">&#125;</span><span class="br0">&#41;</span></pre></div></div>
+<p>This means that we can create a new <b>Vector</b> instance by either calling <b>Vector.new</b> or just <b>Vector</b>.
+</p><p>The last important thing that you may not be aware of is the colon syntax. When we define a function with a colon, like this:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function t:method(a, b, c) end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> t:method<span class="br0">&#40;</span>a, b, c<span class="br0">&#41;</span>
+  <span class="co1">-- ...</span>
+<span class="kw1">end</span></pre></div></div>
+<p>What we are really doing is defining this function:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function t.method(self, a, b, c) end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> t.method<span class="br0">&#40;</span>self, a, b, c<span class="br0">&#41;</span>
+  <span class="co1">-- ...</span>
+<span class="kw1">end</span></pre></div></div>
+<p>This is syntactic sugar to help with OOP. We can then use the colon syntax when calling functions:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |t:method(1, 2, 3) t.method(t, 1, 2, 3)|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="co1">-- these are the same</span>
+t:method<span class="br0">&#40;</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span><span class="br0">&#41;</span>
+t.method<span class="br0">&#40;</span>t, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span><span class="br0">&#41;</span></pre></div></div>
+<p>Now, how do we use this <b>Vector</b> class? Here's a final example:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |a = Vector.new(10, 10) b = Vector(20, 11) c = a + b print(a:len()) print(a) print(c) print(a < c) print(a == b) -- false|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">a <span class="sy0">=</span> Vector.new<span class="br0">&#40;</span><span class="nu0">10</span>, <span class="nu0">10</span><span class="br0">&#41;</span>
+b <span class="sy0">=</span> Vector<span class="br0">&#40;</span><span class="nu0">20</span>, <span class="nu0">11</span><span class="br0">&#41;</span>
+c <span class="sy0">=</span> a + b
+<span class="kw1">print</span><span class="br0">&#40;</span>a:len<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="co1">-- 14.142135623731</span>
+<span class="kw1">print</span><span class="br0">&#40;</span>a<span class="br0">&#41;</span> <span class="co1">-- (10, 10)</span>
+<span class="kw1">print</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span> <span class="co1">-- (30, 21)</span>
+<span class="kw1">print</span><span class="br0">&#40;</span>a <span class="sy0">&lt;</span> c<span class="br0">&#41;</span> <span class="co1">-- true</span>
+<span class="kw1">print</span><span class="br0">&#40;</span>a <span class="sy0">==</span> b<span class="br0">&#41;</span> <span class="co1">-- false</span></pre></div></div>
+<p>Because of the <b>__index</b> in <b>Vector</b>, we can use all the methods defined in the class through the instances.
+</p>
+<h2><span class="mw-headline" id="Advanced_examples">Advanced examples</span></h2>
+<p>Overriding self's value:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |local array = {text = "none"} local array2 = {text = "none2"} function array:setKey (key, value) self[key] = value end function array:getKey (key) return self[key] end array.getKey(array2, "text") array.setKey(array2, "text", "something2") array.getKey(array2, "text") array:getKey("text") array.getKey(array, "text") -- same as above|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> array <span class="sy0">=</span> <span class="br0">&#123;</span>text <span class="sy0">=</span> <span class="st0">&quot;none&quot;</span><span class="br0">&#125;</span>
+<span class="kw1">local</span> array2 <span class="sy0">=</span> <span class="br0">&#123;</span>text <span class="sy0">=</span> <span class="st0">&quot;none2&quot;</span><span class="br0">&#125;</span>
+<span class="kw1">function</span> array:setKey <span class="br0">&#40;</span>key, value<span class="br0">&#41;</span>
+	self<span class="br0">&#91;</span>key<span class="br0">&#93;</span> <span class="sy0">=</span> value
+<span class="kw1">end</span>
+<span class="kw1">function</span> array:getKey <span class="br0">&#40;</span>key<span class="br0">&#41;</span>
+	<span class="kw1">return</span> self<span class="br0">&#91;</span>key<span class="br0">&#93;</span>
+<span class="kw1">end</span>
+array.getKey<span class="br0">&#40;</span>array2, <span class="st0">&quot;text&quot;</span><span class="br0">&#41;</span> <span class="co1">-- returns &quot;none2&quot;</span>
+array.setKey<span class="br0">&#40;</span>array2, <span class="st0">&quot;text&quot;</span>, <span class="st0">&quot;something2&quot;</span><span class="br0">&#41;</span> <span class="co1">-- sets array2's &quot;text&quot; value to 'something2'</span>
+array.getKey<span class="br0">&#40;</span>array2, <span class="st0">&quot;text&quot;</span><span class="br0">&#41;</span> <span class="co1">-- returns &quot;something&quot;</span>
+array:getKey<span class="br0">&#40;</span><span class="st0">&quot;text&quot;</span><span class="br0">&#41;</span> <span class="co1">-- returns &quot;none&quot;</span>
+array.getKey<span class="br0">&#40;</span>array, <span class="st0">&quot;text&quot;</span><span class="br0">&#41;</span> <span class="co1">-- same as above</span></pre></div></div>
+<p>A simple backpacks example:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |local backpack = {list = {}} function backpack:create (owner, slots) if self.list[owner] then return end local new = { items = {}, slots = slots or 100, owner = owner } setmetatable(new.items, { __newindex = function(table, key, value) if #table >= new.slots then return end return rawset(table, key, value) end } ) self.list[owner] = new end function backpack:addItem (player, item, value) if not self.list[player] then return end self.list[player][item] = value end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> backpack <span class="sy0">=</span> <span class="br0">&#123;</span>list <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><span class="br0">&#125;</span>
+<span class="kw1">function</span> backpack:create <span class="br0">&#40;</span>owner, slots<span class="br0">&#41;</span>
+	<span class="kw1">if</span> self.list<span class="br0">&#91;</span>owner<span class="br0">&#93;</span> <span class="kw1">then</span> <span class="kw1">return</span> <span class="kw1">end</span> <span class="co1">-- return false in case this player already owns a backpack</span>
+		<span class="kw1">local</span> new <span class="sy0">=</span> <span class="br0">&#123;</span>
+		items <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>,
+		slots <span class="sy0">=</span> slots <span class="kw1">or</span> <span class="nu0">100</span>,
+		owner <span class="sy0">=</span> owner
+	<span class="br0">&#125;</span>
+	<span class="kw1">setmetatable</span><span class="br0">&#40;</span>new.items, 
+	<span class="br0">&#123;</span>
+		__newindex <span class="sy0">=</span> <span class="kw1">function</span><span class="br0">&#40;</span><a href="Table.html" class="kw3"><span class="kw3">table</span></a>, key, value<span class="br0">&#41;</span> <span class="co1">-- this is called once a new value/item is added into the player's table/backpack</span>
+			<span class="kw1">if</span> #table <span class="sy0">&gt;=</span> new.slots <span class="kw1">then</span> <span class="kw1">return</span> <span class="kw1">end</span> <span class="co1">-- return false in case there isn't any free slot left</span>
+			<span class="kw1">return</span> <span class="kw1">rawset</span><span class="br0">&#40;</span><a href="Table.html" class="kw3"><span class="kw3">table</span></a>, key, value<span class="br0">&#41;</span>
+		<span class="kw1">end</span>
+	<span class="br0">&#125;</span>
+	<span class="br0">&#41;</span>
+	self.list<span class="br0">&#91;</span>owner<span class="br0">&#93;</span> <span class="sy0">=</span> new
+<span class="kw1">end</span>
+&#160;
+<span class="kw1">function</span> backpack:addItem <span class="br0">&#40;</span><a href="Player.html" class="kw3"><span class="kw3">player</span></a>, item, value<span class="br0">&#41;</span>
+	<span class="kw1">if</span> <span class="kw1">not</span> self.list<span class="br0">&#91;</span><a href="Player.html" class="kw3"><span class="kw3">player</span></a><span class="br0">&#93;</span> <span class="kw1">then</span> <span class="kw1">return</span> <span class="kw1">end</span>
+	self.list<span class="br0">&#91;</span><a href="Player.html" class="kw3"><span class="kw3">player</span></a><span class="br0">&#93;</span><span class="br0">&#91;</span>item<span class="br0">&#93;</span> <span class="sy0">=</span> value
+<span class="kw1">end</span></pre></div></div>
+<h1><span class="mw-headline" id="Useful_links">Useful links</span></h1>
+<ul>
+<li> <a href="OOP_Introduction.html" title="OOP Introduction">Official NRP OOP Introduction</a>
+</li>
+<li> <a href="OOP.html" title="OOP">OOP</a>
+</li>
+</ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.503 seconds
+Real time usage: 0.506 seconds
+Preprocessor visited node count: 287/1000000
+Preprocessor generated node count: 762/1000000
+Post‐expand include size: 970/2097152 bytes
+Template argument size: 297/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:8161-0!*!0!!en!*!* and timestamp 20150826141807
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=OOP_in_Lua&amp;oldid=44024">/index.php?title=OOP_in_Lua&amp;oldid=44024</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Tutorials.html" title="Category:Tutorials">Tutorials</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="OOP_in_Lua.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:OOP_in_Lua&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=OOP_in_Lua&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=OOP_in_Lua&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="User_75.81.255.html"Array class="new">75.81.255.73</a></li>
+				<li id="pt-anontalk"><a href="User_talk_75.81.255.html"Array class="new">Talk for this IP address</a></li>
+				<li id="pt-anonlogin"><a index.html?title=Special:UserLogin&amp;returnto=OOP+in+Lua"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/OOP_in_Lua.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/OOP_in_Lua.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=OOP_in_Lua&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=OOP_in_Lua&amp;oldid=44024"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 18 January 2015, at 13:49.</li>
+					<li id="viewcount">This page has been accessed 2,061 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.559 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/OOP_in_Lua by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:33:01 GMT -->
+</html>

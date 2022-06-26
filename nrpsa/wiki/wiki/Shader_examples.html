@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/Shader_examples by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:33:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="http://wiki.nexusrp.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.nexusrp.com/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" href="../wiki/Special:RecentChanges&amp;feed=atom" />		<title>Shader examples - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Shader_examples","wgTitle":"Shader examples","wgCurRevisionId":41385,"wgRevisionId":41385,"wgArticleId":5724,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Shader_examples","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Shader_examples","wgTitle":"Shader examples","wgCurRevisionId":41385,"wgRevisionId":41385,"wgArticleId":5724,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Shader_examples","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><style type="text/css">/*<![CDATA[*/
+.source-lua {line-height: normal;}
+.source-lua li, .source-lua pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for lua
+ * CSS class: source-lua, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.lua.source-lua .de1, .lua.source-lua .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.lua.source-lua  {font-family:monospace;}
+.lua.source-lua .imp {font-weight: bold; color: red;}
+.lua.source-lua li, .lua.source-lua .li1 {font-weight: normal; vertical-align:top;}
+.lua.source-lua .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.lua.source-lua .li2 {font-weight: bold; vertical-align:top;}
+.lua.source-lua .kw1 {color: #b1b100;}
+.lua.source-lua .co1 {color: #808080; font-style: italic;}
+.lua.source-lua .coMULTI {color: #808080; font-style: italic;}
+.lua.source-lua .es0 {color: #000099; font-weight: bold;}
+.lua.source-lua .br0 {color: #66cc66;}
+.lua.source-lua .sy0 {color: #66cc66;}
+.lua.source-lua .st0 {color: #00A600;}
+.lua.source-lua .nu0 {color: #cc66cc;}
+.lua.source-lua .me0 {color: #b1b100;}
+.lua.source-lua .ln-xtra, .lua.source-lua li.ln-xtra, .lua.source-lua div.ln-xtra {background-color: #ffc;}
+.lua.source-lua span.xtra { display:block; }
+
+/*]]>*/
+</style>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Shader_examples skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">Shader examples</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page contains some example shader resources to try. If you are looking to make your own, please be sure to read about the <a href="Shader.html" title="Shader" class="mw-redirect">shader element</a> as well.
+<br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Road_shine"><span class="tocnumber">1</span> <span class="toctext">Road shine</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Road_shine_2"><span class="tocnumber">2</span> <span class="toctext">Road shine 2</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Road_shine_3_.28Deluxe_edition.29"><span class="tocnumber">3</span> <span class="toctext">Road shine 3 (Deluxe edition)</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#UV_scroll"><span class="tocnumber">4</span> <span class="toctext">UV scroll</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#UV_scripted"><span class="tocnumber">5</span> <span class="toctext">UV scripted</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Car_paint"><span class="tocnumber">6</span> <span class="toctext">Car paint</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Water"><span class="tocnumber">7</span> <span class="toctext">Water</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Bloom"><span class="tocnumber">8</span> <span class="toctext">Bloom</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Block_world"><span class="tocnumber">9</span> <span class="toctext">Block world</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Texture_names"><span class="tocnumber">10</span> <span class="toctext">Texture names</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Skid_marks"><span class="tocnumber">11</span> <span class="toctext">Skid marks</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#HDR_contrast"><span class="tocnumber">12</span> <span class="toctext">HDR contrast</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Tessellation"><span class="tocnumber">13</span> <span class="toctext">Tessellation</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Radial_blur"><span class="tocnumber">14</span> <span class="toctext">Radial blur</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Detail"><span class="tocnumber">15</span> <span class="toctext">Detail</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Ped_morph"><span class="tocnumber">16</span> <span class="toctext">Ped morph</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Ped_shell"><span class="tocnumber">17</span> <span class="toctext">Ped shell</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Hud_mask"><span class="tocnumber">18</span> <span class="toctext">Hud mask</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Road_shine">Road shine</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_RoadShineScreen.html" class="image"><img alt="" src="../images/thumb/8/86/RoadShineScreen.jpg/200px-RoadShineScreen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/8/86/RoadShineScreen.jpg/300px-RoadShineScreen.jpg 1.5x, /images/8/86/RoadShineScreen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_RoadShineScreen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Road shine</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_roadshine.zip">Download shader_roadshine.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource creates a light reflection effect on the ground (looks best when moving). 
+It uses a custom flag in the effect file to generate <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Surface_normal">surface normals</a> for the ground model:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |int CUSTOMFLAGS < string createNormals = "yes"; >;|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><a href="Int.html" class="kw3"><span class="kw3">int</span></a> CUSTOMFLAGS
+<span class="sy0">&lt;</span>
+    <a href="String-3.html" class="kw3"><span class="kw3">string</span></a> createNormals <span class="sy0">=</span> <span class="st0">&quot;yes&quot;</span><span class="sy0">;</span>
+<span class="sy0">&gt;;</span></pre></div></div>
+<p>Surface normals are not usually present in the ground and building models, but are useful for creating lighting effects such as these.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Road_shine_2">Road shine 2</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_RoadShine2Screen.html" class="image"><img alt="" src="../images/thumb/0/0f/RoadShine2Screen.jpg/200px-RoadShine2Screen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/0/0f/RoadShine2Screen.jpg/300px-RoadShine2Screen.jpg 1.5x, /images/0/0f/RoadShine2Screen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_RoadShine2Screen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Road shine 2</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_roadshine2.zip">Download shader_roadshine2.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+Bit more complicated than the first Road shine, as it tracks the sun or moon to calculate the position of the highlight.
+The effect can be hard to see depending on the time of day.
+<br /><br />
+Best used with the play resource as the model it modifies is near the initial spawn point.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Road_shine_3_.28Deluxe_edition.29">Road shine 3 (Deluxe edition)</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_RoadShine3Screen.html" class="image"><img alt="" src="../images/thumb/c/ce/RoadShine3Screen.jpg/200px-RoadShine3Screen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/c/ce/RoadShine3Screen.jpg/300px-RoadShine3Screen.jpg 1.5x, /images/c/ce/RoadShine3Screen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_RoadShine3Screen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Road shine 3</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_roadshine3.zip">Download shader_roadshine3.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource shows how to:
+</p>
+<ul>
+<li> Stop a wild card match shader from being applied to certain world textures.
+</li>
+<li> Use isLineOfSightClear to stop an effect when something is not visible (The sun in this case).
+</li>
+<li> Use a shader maxDrawDistance setting to avoid GPU overload.
+</li>
+</ul>
+<p>The final effect is a faster shader with less rendering issues than the previous two road shine examples.
+<br /><br />
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="UV_scroll">UV scroll</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_UVScollScreen.html" class="image"><img alt="" src="../images/thumb/6/62/UVScollScreen.jpg/200px-UVScollScreen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/6/62/UVScollScreen.jpg/300px-UVScollScreen.jpg 1.5x, /images/6/62/UVScollScreen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_UVScollScreen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>UV scroll</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_uv_scroll.zip">Download shader_uv_scroll.zip</a>
+<br /><br />
+This resource scrolls a texture from left to right. It doesn't use vertex or pixels shaders, so it should work on all hardware.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="UV_scripted">UV scripted</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_UVScriptedScreen.html" class="image"><img alt="" src="../images/thumb/6/64/UVScriptedScreen.jpg/200px-UVScriptedScreen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/6/64/UVScriptedScreen.jpg/300px-UVScriptedScreen.jpg 1.5x, /images/6/64/UVScriptedScreen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_UVScriptedScreen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>UV scripted</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_uv_scripted.zip">Download shader_uv_scripted.zip</a>
+<br /><br />
+This resource controls a texture's UVs using Lua. It shows that anything is possible if you can imagine it.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Car_paint">Car paint</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_CarPaintScreen.html" class="image"><img alt="" src="../images/thumb/8/82/CarPaintScreen.jpg/200px-CarPaintScreen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/8/82/CarPaintScreen.jpg/300px-CarPaintScreen.jpg 1.5x, /images/8/82/CarPaintScreen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_CarPaintScreen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Car paint</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_car_paint.zip">Download shader_car_paint.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource shows you how to apply a shader to the vehicle models. The shader itself is not that great, so don't get your hopes up.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Water">Water</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_WaterScreen.html" class="image"><img alt="" src="../images/thumb/f/f1/WaterScreen.jpg/200px-WaterScreen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/f/f1/WaterScreen.jpg/300px-WaterScreen.jpg 1.5x, /images/f/f1/WaterScreen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_WaterScreen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Water</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_water.zip">Download shader_water.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource applies a shader to the GTA world water. The Lua script shows how to use a timer to transfer the conventional water color setting to the shader.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Bloom">Bloom</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_BloomScreen.html" class="image"><img alt="" src="../images/thumb/2/25/BloomScreen.jpg/200px-BloomScreen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/2/25/BloomScreen.jpg/300px-BloomScreen.jpg 1.5x, /images/2/25/BloomScreen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_BloomScreen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Bloom</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_bloom.zip">Download shader_bloom.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource shows you how 'bounce' full screen effects using a render target pool. It uses the <i>onClientHUDRender</i> event to exclude the HUD from the effect.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Block_world">Block world</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_BlockWorld.html" class="image"><img alt="" src="../images/thumb/b/b6/BlockWorld.jpg/200px-BlockWorld.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/b/b6/BlockWorld.jpg/300px-BlockWorld.jpg 1.5x, /images/b/b6/BlockWorld.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_BlockWorld.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Block world</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_block_world.zip">Download shader_block_world.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource makes the textures look all blocky. It also changes colors when the 'k' key is pressed.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Texture_names">Texture names</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_TexNames.html" class="image"><img alt="" src="../images/thumb/7/73/TexNames.jpg/200px-TexNames.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/7/73/TexNames.jpg/300px-TexNames.jpg 1.5x, /images/7/73/TexNames.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_TexNames.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Texture names</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_tex_names.zip">Download shader_tex_names.zip</a>
+<br /><br />
+This resource is only a tool, and doesn't do anything pretty. It shows a list of the current visible texture names, and highlights the selected texture. Ideal for finding a texture name to use with <a href="EngineApplyShaderToWorldTexture.html" title="EngineApplyShaderToWorldTexture">engineApplyShaderToWorldTexture</a>.
+</p><p>num_8 shows/hides the texture list, num_7 and num_9 step through the list, and 'k' copies the current texture name to the clipboard.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Skid_marks">Skid marks</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_SkidMarks.html" class="image"><img alt="" src="../images/thumb/e/ec/SkidMarks.jpg/200px-SkidMarks.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/e/ec/SkidMarks.jpg/300px-SkidMarks.jpg 1.5x, /images/e/ec/SkidMarks.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_SkidMarks.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Skid marks</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_skidmarks.zip">Download shader_skidmarks.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource shows you how to do multiple passes in a shader, and input different variables to the vertex shader for each pass.
+Use the command <b>/skidmarks 1-4</b> to see the different effects. (You have skid a car to see it!)
+<br /><br />
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="HDR_contrast">HDR contrast</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_ShaderContrast.html" class="image"><img alt="" src="../images/thumb/f/fc/ShaderContrast.jpg/200px-ShaderContrast.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/f/fc/ShaderContrast.jpg/300px-ShaderContrast.jpg 1.5x, /images/f/fc/ShaderContrast.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_ShaderContrast.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>HDR contrast</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_contrast.zip">Download shader_contrast.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource applies a 'High Dynamic Range' contrast effect. It uses a 1 pixel render target to sample the whole scene, and then uses that to brighten or darken the next frame.
+So going into somewhere dark will automatically brighten the scene, and visa versa
+<br /><br />
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Tessellation">Tessellation</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_Shader_flag.html" class="image"><img alt="" src="../images/thumb/4/48/Shader_flag.jpg/200px-Shader_flag.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/4/48/Shader_flag.jpg/300px-Shader_flag.jpg 1.5x, /images/4/48/Shader_flag.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_Shader_flag.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Tessellation action</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_flag.zip">Download shader_flag.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource shows how to use shader tessellation to animate the shape of a dxDrawImage and use shader transform to give it a 3rd dimension.
+</p><p>The example has a GUI (press numpad-8) so you can fiddle with the settings.
+<br /><br />
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Radial_blur">Radial blur</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_Shader_radial_blur.html" class="image"><img alt="" src="../images/thumb/c/ce/Shader_radial_blur.jpg/200px-Shader_radial_blur.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/c/ce/Shader_radial_blur.jpg/300px-Shader_radial_blur.jpg 1.5x, /images/c/ce/Shader_radial_blur.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_Shader_radial_blur.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Radial blur</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_radial_blur.zip">Download shader_radial_blur.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource sort of looks a little bit like the GTAIV motion blur you get when you move the mouse quickly, or drive a fast car. The fast car effect is a bit more subtle than the screen shot would suggest, as it leaves the center of the screen nice and clear so you can see where you are going.
+</p><p>It also has the option of suspending the effect during times of low FPS. Check the two settings at the top of <i><b>c_radial_blur.lua</b></i>.
+<br /><br />
+The file <i><b>c_switch.lua</b></i> contains information on how to toggle the effect from another resource using events.
+<br /><br />
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Detail">Detail</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_Shader_detail.html" class="image"><img alt="" src="../images/thumb/4/4e/Shader_detail.jpg/200px-Shader_detail.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/4/4e/Shader_detail.jpg/300px-Shader_detail.jpg 1.5x, /images/4/4e/Shader_detail.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_Shader_detail.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Detail</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_detail.zip">Download shader_detail.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+Applies a few monochrome detail textures, at various scales, to (parts of) the world.
+</p><p>(Not finished and probably never will be.)
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Ped_morph">Ped morph</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_PedMorphScreen.html" class="image"><img alt="" src="../images/thumb/b/ba/PedMorphScreen.jpg/200px-PedMorphScreen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/b/ba/PedMorphScreen.jpg/300px-PedMorphScreen.jpg 1.5x, /images/b/ba/PedMorphScreen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_PedMorphScreen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Ped morph</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_ped_morph.zip">Download shader_ped_morph.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource uses a vertex shader to modify the geometry of a ped model as it is rendered.
+<br /><br />
+When the resource has started, use the 'k' and 'l' keys to change morph size.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Ped_shell">Ped shell</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_PedShellScreen.html" class="image"><img alt="" src="../images/thumb/a/ab/PedShellScreen.jpg/200px-PedShellScreen.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/a/ab/PedShellScreen.jpg/300px-PedShellScreen.jpg 1.5x, /images/a/ab/PedShellScreen.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_PedShellScreen.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Ped shell</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_ped_shell.zip">Download shader_ped_shell.zip</a> &#160; <i>Requires Shader Model 2 graphics card</i>
+<br /><br />
+This resource draws a translucent effect as a shader layer. The first pass is done by GTA, and the vertex shader is only applied in the second to add the effect 'on top' of the standard output.
+<br /><br />
+When the resource has started, use the 'm' key to see the shell effect.
+</p>
+</td></tr></table>
+<h2><span class="mw-headline" id="Hud_mask">Hud mask</span></h2>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="File_Shader_hud_mask.html" class="image"><img alt="" src="../images/thumb/2/24/Shader_hud_mask.jpg/200px-Shader_hud_mask.jpg" width="200" height="125" class="thumbimage" srcset="/images/thumb/2/24/Shader_hud_mask.jpg/300px-Shader_hud_mask.jpg 1.5x, /images/2/24/Shader_hud_mask.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_Shader_hud_mask.html" class="internal" title="Enlarge"><img src="../skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Hud mask</div></div></div>
+<table border="0"><tr><td valign="top" height="170">
+<p><a rel="nofollow" class="external text" href="http://nightly.nrp.us.to/files/shaders/shader_hud_mask.zip">Download shader_hud_mask.zip</a>
+<br /><br />
+This resource shows how to draw a hud texture with a shape mask.
+</p>
+</td></tr></table>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.090 seconds
+Real time usage: 0.119 seconds
+Preprocessor visited node count: 116/1000000
+Preprocessor generated node count: 168/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:5724-0!*!0!!en!2!* and timestamp 20150826132036
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=Shader_examples&amp;oldid=41385">/index.php?title=Shader_examples&amp;oldid=41385</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Shader_examples.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a href="../wiki/Talk:Shader_examples&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a href="../wiki/Shader_examples&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a href="../wiki/Shader_examples&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="User_75.81.255.html"Array class="new">75.81.255.73</a></li>
+				<li id="pt-anontalk"><a href="User_talk_75.81.255.html"Array class="new">Talk for this IP address</a></li>
+				<li id="pt-anonlogin"><a href="../wiki/Special:UserLogin&amp;returnto=Shader+examples"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="http://wiki.nexusrp.com/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Shader_examples.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Shader_examples.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a href="../wiki/Shader_examples&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a href="../wiki/Shader_examples&amp;oldid=41385"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 15 August 2014, at 11:32.</li>
+					<li id="viewcount">This page has been accessed 54,086 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.041 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/Shader_examples by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:33:28 GMT -->
+</html>

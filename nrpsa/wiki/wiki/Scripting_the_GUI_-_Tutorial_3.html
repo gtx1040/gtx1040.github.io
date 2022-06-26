@@ -1,0 +1,646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/Scripting_the_GUI_-_Tutorial_3 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:33:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />		<title>Scripting the GUI - Tutorial 3 - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Scripting_the_GUI_-_Tutorial_3","wgTitle":"Scripting the GUI - Tutorial 3","wgCurRevisionId":26154,"wgRevisionId":26154,"wgArticleId":5026,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Scripting_the_GUI_-_Tutorial_3","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Scripting_the_GUI_-_Tutorial_3","wgTitle":"Scripting the GUI - Tutorial 3","wgCurRevisionId":26154,"wgRevisionId":26154,"wgArticleId":5026,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Scripting_the_GUI_-_Tutorial_3","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><style type="text/css">/*<![CDATA[*/
+.source-lua {line-height: normal;}
+.source-lua li, .source-lua pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for lua
+ * CSS class: source-lua, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.lua.source-lua .de1, .lua.source-lua .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.lua.source-lua  {font-family:monospace;}
+.lua.source-lua .imp {font-weight: bold; color: red;}
+.lua.source-lua li, .lua.source-lua .li1 {font-weight: normal; vertical-align:top;}
+.lua.source-lua .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.lua.source-lua .li2 {font-weight: bold; vertical-align:top;}
+.lua.source-lua .kw1 {color: #b1b100;}
+.lua.source-lua .co1 {color: #808080; font-style: italic;}
+.lua.source-lua .coMULTI {color: #808080; font-style: italic;}
+.lua.source-lua .es0 {color: #000099; font-weight: bold;}
+.lua.source-lua .br0 {color: #66cc66;}
+.lua.source-lua .sy0 {color: #66cc66;}
+.lua.source-lua .st0 {color: #00A600;}
+.lua.source-lua .nu0 {color: #cc66cc;}
+.lua.source-lua .me0 {color: #b1b100;}
+.lua.source-lua .ln-xtra, .lua.source-lua li.ln-xtra, .lua.source-lua div.ln-xtra {background-color: #ffc;}
+.lua.source-lua span.xtra { display:block; }
+
+/*]]>*/
+</style>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Scripting_the_GUI_-_Tutorial_3 skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">Scripting the GUI - Tutorial 3</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>Scripting the GUI - Tutorial 3 (Scrolling News Feed)</b>
+</p><p>In this tutorial we will explore how to create a simple scrolling news feed GUI, 
+allowing you to quickly and easily show server updates and other server information to your players.
+We will store all news items in a clientside xml file and use some simple xml reading to load them into the game.
+</p><p>We will then animate the news item to scroll along the bottom of the screen, updating the news text once it has scrolled beyond the edge of the screen.
+</p><p><b>Note that this tutorial assumes you are familiar with all the content covered in the <a href="Introduction_to_Scripting_GUI.html" title="Introduction to Scripting GUI" class="mw-redirect">GUI Scripting Introduction</a>.</b>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Setting_up_the_News_Feed"><span class="tocnumber">1</span> <span class="toctext">Setting up the News Feed</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Creating_the_GUI"><span class="tocnumber">1.1</span> <span class="toctext">Creating the GUI</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Writing_the_News"><span class="tocnumber">1.2</span> <span class="toctext">Writing the News</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Collecting_the_News"><span class="tocnumber">1.3</span> <span class="toctext">Collecting the News</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Updating_the_News"><span class="tocnumber">2</span> <span class="toctext">Updating the News</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Sizing_the_Label"><span class="tocnumber">2.1</span> <span class="toctext">Sizing the Label</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Positioning_the_Label"><span class="tocnumber">2.2</span> <span class="toctext">Positioning the Label</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Scrolling_the_News"><span class="tocnumber">3</span> <span class="toctext">Scrolling the News</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Looking_at_Frames"><span class="tocnumber">3.1</span> <span class="toctext">Looking at Frames</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Moving_the_News"><span class="tocnumber">3.2</span> <span class="toctext">Moving the News</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Looping_around"><span class="tocnumber">3.3</span> <span class="toctext">Looping around</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Improving_the_code"><span class="tocnumber">4</span> <span class="toctext">Improving the code</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#GUI_Customisation"><span class="tocnumber">4.1</span> <span class="toctext">GUI Customisation</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Multiple_News_Items"><span class="tocnumber">4.2</span> <span class="toctext">Multiple News Items</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Globally_controlled_scroll_speed"><span class="tocnumber">4.3</span> <span class="toctext">Globally controlled scroll speed</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Setting_up_the_News_Feed">Setting up the News Feed</span></h2>
+<p>To begin, open up a clientside lua file (if you have been following the <a href="Introduction_to_Scripting_GUI.html" title="Introduction to Scripting GUI" class="mw-redirect">GUI Scripting Introduction</a>, this is gui.lua) to work with.
+</p>
+<h3><span class="mw-headline" id="Creating_the_GUI">Creating the GUI</span></h3>
+<p>As with the previous tutorial, you should be suitably familiar with GUI creation already so we will not go into too much detail here. 
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function createNewsFeed() local sWidth, sHeight = guiGetScreenSize() local Width,Height = 800,45 local X = (sWidth/2) - (Width/2) local Y = sHeight - (Height/2) newsGridlist = guiCreateGridList(X,Y,Width,Height,false) newsLabel = guiCreateLabel(X,Y,Width,Height/2,"Test text",false,newsGridlist) loadNews() updateNewsItem(1) currentItem = 1 end addEventHandler("onClientResourceStart",resourceRoot,createNewsFeed)|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> createNewsFeed<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="co1">-- get the screen width and height</span>
+	<span class="kw1">local</span> sWidth, sHeight <span class="sy0">=</span> <a href="GuiGetScreenSize.html" class="kw4"><span class="kw4">guiGetScreenSize</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- create the gridlist, using some maths to find the bottom-centre of the screen</span>
+	<span class="kw1">local</span> Width,Height <span class="sy0">=</span> <span class="nu0">800</span>,<span class="nu0">45</span>
+	<span class="kw1">local</span> X <span class="sy0">=</span> <span class="br0">&#40;</span>sWidth<span class="sy0">/</span><span class="nu0">2</span><span class="br0">&#41;</span> - <span class="br0">&#40;</span>Width<span class="sy0">/</span><span class="nu0">2</span><span class="br0">&#41;</span>
+	<span class="kw1">local</span> Y <span class="sy0">=</span> sHeight - <span class="br0">&#40;</span>Height<span class="sy0">/</span><span class="nu0">2</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- the gridlist will act as the background to our news reel</span>
+	newsGridlist <span class="sy0">=</span> <a href="GuiCreateGridList.html" class="kw4"><span class="kw4">guiCreateGridList</span></a><span class="br0">&#40;</span>X,Y,Width,Height,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- create the label in the same place, but as a child of the gridlist</span>
+	<span class="co1">-- also make it half the height of the gridlist, as half of the gridlist is off the bottom of the screen</span>
+	newsLabel <span class="sy0">=</span> <a href="GuiCreateLabel.html" class="kw4"><span class="kw4">guiCreateLabel</span></a><span class="br0">&#40;</span>X,Y,Width,Height<span class="sy0">/</span><span class="nu0">2</span>,<span class="st0">&quot;Test text&quot;</span>,<span class="kw1">false</span>,newsGridlist<span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- call our function to read the news out of the xml file</span>
+	loadNews<span class="br0">&#40;</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- load the first news item in the table</span>
+	updateNewsItem<span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- define a global variable called 'currentItem' with the value 1</span>
+	currentItem <span class="sy0">=</span> <span class="nu0">1</span>
+<span class="kw1">end</span>
+&#160;
+<a href="AddEventHandler.html" class="kw2"><span class="kw2">addEventHandler</span></a><span class="br0">&#40;</span><span class="st0">&quot;onClientResourceStart&quot;</span>,resourceRoot,createNewsFeed<span class="br0">&#41;</span></pre></div></div>
+<p>Note that the label is created as a child of the gridlist. 
+Not only is this good practice in general, but it means that we can freely move parts of the label beyond the edge of the gridlist without them showing, which is critical to the visual effect of this tutorial.
+</p><p>Also notice the use of the 'resourceRoot' variable. This is an NRP variable that holds the root element value of the resource you are using it in.
+</p><p>The 'currentItem' variable is what we will use to keep track of which news item we are currently showing
+</p>
+<h3><span class="mw-headline" id="Writing_the_News">Writing the News</span></h3>
+<p>Now that we have our GUI created, we need some news to fill it with.
+To do this, we will read our news items out of a clientside xml file.
+</p><p>So, navigate to your resource directory and create a new xml file called newsfeed.xml (don't forget to add it to your meta.xml with the appropriate client tag).
+</p><p>Inside this file enter the following information:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |<root> <news>This is an example news item.</news> <news>From the 'Scripting the GUI' tutorial.</news> <news>Showing scrolling news text.</news> <news>Written on a GUI news feed.</news> </root>|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="sy0">&lt;</span>root<span class="sy0">&gt;</span>
+	<span class="sy0">&lt;</span>news<span class="sy0">&gt;</span>This is an example news item.<span class="sy0">&lt;/</span>news<span class="sy0">&gt;</span>
+	<span class="sy0">&lt;</span>news<span class="sy0">&gt;</span>From the <span class="st0">'Scripting the GUI'</span> tutorial.<span class="sy0">&lt;/</span>news<span class="sy0">&gt;</span>
+	<span class="sy0">&lt;</span>news<span class="sy0">&gt;</span>Showing scrolling news text.<span class="sy0">&lt;/</span>news<span class="sy0">&gt;</span>
+	<span class="sy0">&lt;</span>news<span class="sy0">&gt;</span>Written on a GUI news feed.<span class="sy0">&lt;/</span>news<span class="sy0">&gt;</span>
+<span class="sy0">&lt;/</span>root<span class="sy0">&gt;</span></pre></div></div>
+<p>As you can see, each news item is defined as a &lt;news&gt; node with the value being the news text you want to display.
+There is no limit on how many news items you can add.
+</p>
+<h3><span class="mw-headline" id="Collecting_the_News">Collecting the News</span></h3>
+<p>Once we have written all our news items, we will need to collect them all and store them in a table on the client.
+We will do this when the resource starts, saving us from having to repeatedly access the xml for new news items.
+</p><p>First, we need to define a table to store the items in:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |local newsItems = {}|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> newsItems <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span></pre></div></div>
+<p>Add this line to the top of your script.
+Make sure it is not inside a function otherwise it will not exist outside of that function (as denoted by the prefix "local").
+When defined in the main body of the script it will exist in all functions.
+</p><p><br />
+Next, we will need to load the xml file:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function loadNews() local newsfile = xmlLoadFile("newsfeed.xml") if newsfile then xmlUnloadFile(newsfile) end end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> loadNews<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="co1">-- load our &quot;newsfeed.xml&quot; file</span>
+	<span class="kw1">local</span> newsfile <span class="sy0">=</span> <a href="XmlLoadFile.html" class="kw2"><span class="kw2">xmlLoadFile</span></a><span class="br0">&#40;</span><span class="st0">&quot;newsfeed.xml&quot;</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- if it was successfully loaded</span>
+	<span class="kw1">if</span> newsfile <span class="kw1">then</span>
+&#160;
+		<span class="co1">-- always remember to unload files once you are finished</span>
+		<a href="XmlUnloadFile.html" class="kw2"><span class="kw2">xmlUnloadFile</span></a><span class="br0">&#40;</span>newsfile<span class="br0">&#41;</span>
+	<span class="kw1">end</span>
+<span class="kw1">end</span></pre></div></div>
+<p><b>Always remember to unload files once you are finished using them.</b>
+</p><p>Finally, we can add some more code to our loadNews function to read the news items into our newsItems table:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function loadNews() local newsfile = xmlLoadFile("newsfeed.xml") if newsfile then for index,itemNode in ipairs(xmlNodeGetChildren(newsfile)) do local item = xmlNodeGetValue(itemNode) table.insert(newsItems,item) end xmlUnloadFile(newsfile) end end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> loadNews<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="kw1">local</span> newsfile <span class="sy0">=</span> <a href="XmlLoadFile.html" class="kw2"><span class="kw2">xmlLoadFile</span></a><span class="br0">&#40;</span><span class="st0">&quot;newsfeed.xml&quot;</span><span class="br0">&#41;</span>
+&#160;
+	<span class="kw1">if</span> newsfile <span class="kw1">then</span>
+		<span class="co1">-- loop through all the children of the root node (the &quot;news&quot; nodes)</span>
+		<span class="kw1">for</span> index,itemNode <span class="kw1">in</span> <span class="kw1">ipairs</span><span class="br0">&#40;</span><a href="XmlNodeGetChildren.html" class="kw2"><span class="kw2">xmlNodeGetChildren</span></a><span class="br0">&#40;</span>newsfile<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="kw1">do</span>
+			<span class="co1">-- get the text (the news item) from the node</span>
+			<span class="kw1">local</span> item <span class="sy0">=</span> <a href="XmlNodeGetValue.html" class="kw2"><span class="kw2">xmlNodeGetValue</span></a><span class="br0">&#40;</span>itemNode<span class="br0">&#41;</span>
+&#160;
+			<span class="co1">-- insert it into our newsItems table</span>
+			<span class="kw1"><a href="Table.html" class="kw3"><span class="kw3">table</span></a>.insert</span><span class="br0">&#40;</span>newsItems,item<span class="br0">&#41;</span>
+		<span class="kw1">end</span>
+&#160;
+		<a href="XmlUnloadFile.html" class="kw2"><span class="kw2">xmlUnloadFile</span></a><span class="br0">&#40;</span>newsfile<span class="br0">&#41;</span>
+	<span class="kw1">end</span>
+<span class="kw1">end</span></pre></div></div>
+<p>We now have a table called 'newsItems' holding all of our news text from the xml file.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Updating_the_News">Updating the News</span></h2>
+<p>Now that we have our GUI created and our news items ready, we need to write some code to update the news item being shown to players.
+As stated earlier, our news items will be shown on our 'newsLabel' GUI label.
+</p><p>To do this, we will write a simple function to get the next news item from our 'newsItems' table and display it in our label.
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function updateNewsItem(newIndex) local item = newsItems[newIndex] guiSetText(newsLabel,item) currentItem = newIndex end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="co1">-- define our function with a newIndex parameter, so that we can pass which news item we want to show</span>
+<span class="kw1">function</span> updateNewsItem<span class="br0">&#40;</span>newIndex<span class="br0">&#41;</span>
+	<span class="co1">-- get the new news item from the table</span>
+	<span class="kw1">local</span> item <span class="sy0">=</span> newsItems<span class="br0">&#91;</span>newIndex<span class="br0">&#93;</span>
+&#160;
+	<span class="co1">-- update the label text</span>
+	<a href="GuiSetText.html" class="kw4"><span class="kw4">guiSetText</span></a><span class="br0">&#40;</span>newsLabel,item<span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- update the 'currentItem' global variable</span>
+	currentItem <span class="sy0">=</span> newIndex
+<span class="kw1">end</span></pre></div></div>
+<h3><span class="mw-headline" id="Sizing_the_Label">Sizing the Label</span></h3>
+<p>To make our news scrolling as accurate as possible, we need to be able to make the GUI label the same size as the news item text it is showing.
+</p><p>While this may seem like a tricky thing to do, it is made very easy with the function <a href="GuiLabelGetTextExtent.html" title="GuiLabelGetTextExtent">guiLabelGetTextExtent</a>.
+This will tell us the extent, or width, of the text currently shown in our label.
+So with a few modifications to our 'updateNewsItems' function, we get:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function updateNewsItem(newIndex) local item = newsItems[newIndex] guiSetText(newsLabel,item) currentItem = newIndex local width,height = guiGetSize(newsLabel,false) local extent = guiLabelGetTextExtent(newsLabel) guiSetSize(newsLabel,extent,height,false) end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> updateNewsItem<span class="br0">&#40;</span>newIndex<span class="br0">&#41;</span>
+	<span class="kw1">local</span> item <span class="sy0">=</span> newsItems<span class="br0">&#91;</span>newIndex<span class="br0">&#93;</span>
+&#160;
+	<a href="GuiSetText.html" class="kw4"><span class="kw4">guiSetText</span></a><span class="br0">&#40;</span>newsLabel,item<span class="br0">&#41;</span>
+&#160;
+	currentItem <span class="sy0">=</span> newIndex
+&#160;
+	<span class="co1">-- get the current dimensions of the gui label</span>
+	<span class="kw1">local</span> width,height <span class="sy0">=</span> <a href="GuiGetSize.html" class="kw4"><span class="kw4">guiGetSize</span></a><span class="br0">&#40;</span>newsLabel,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- get the text width of the label</span>
+	<span class="kw1">local</span> extent <span class="sy0">=</span> <a href="GuiLabelGetTextExtent.html" class="kw4"><span class="kw4">guiLabelGetTextExtent</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- update the size of the label with the new width (we do not change the height)</span>
+	<a href="GuiSetSize.html" class="kw4"><span class="kw4">guiSetSize</span></a><span class="br0">&#40;</span>newsLabel,extent,height,<span class="kw1">false</span><span class="br0">&#41;</span>
+<span class="kw1">end</span></pre></div></div>
+<h3><span class="mw-headline" id="Positioning_the_Label">Positioning the Label</span></h3>
+<p>Now that our GUI label is the correct width, we need to move it to a position where it is ready to scroll onto the screen.
+</p><p>Again, we can do this with a small modification to our 'updateNewsItems' function:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function updateNewsItem(newIndex) local item = newsItems[newIndex] guiSetText(newsLabel,item) currentItem = newIndex local width,height = guiGetSize(newsLabel,false) local extent = guiLabelGetTextExtent(newsLabel) guiSetSize(newsLabel,extent,height,false) guiSetPosition(newsLabel,1,0,true) end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> updateNewsItem<span class="br0">&#40;</span>newIndex<span class="br0">&#41;</span>
+	<span class="kw1">local</span> item <span class="sy0">=</span> newsItems<span class="br0">&#91;</span>newIndex<span class="br0">&#93;</span>
+&#160;
+	<a href="GuiSetText.html" class="kw4"><span class="kw4">guiSetText</span></a><span class="br0">&#40;</span>newsLabel,item<span class="br0">&#41;</span>
+&#160;
+	currentItem <span class="sy0">=</span> newIndex
+&#160;
+	<span class="kw1">local</span> width,height <span class="sy0">=</span> <a href="GuiGetSize.html" class="kw4"><span class="kw4">guiGetSize</span></a><span class="br0">&#40;</span>newsLabel,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<span class="kw1">local</span> extent <span class="sy0">=</span> <a href="GuiLabelGetTextExtent.html" class="kw4"><span class="kw4">guiLabelGetTextExtent</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#41;</span>
+&#160;
+	<a href="GuiSetSize.html" class="kw4"><span class="kw4">guiSetSize</span></a><span class="br0">&#40;</span>newsLabel,extent,height,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- set the positon to the far right side of the gridlist, ready to scroll on to the left</span>
+	<a href="GuiSetPosition.html" class="kw4"><span class="kw4">guiSetPosition</span></a><span class="br0">&#40;</span>newsLabel,<span class="nu0">1</span>,<span class="nu0">0</span>,<span class="kw1">true</span><span class="br0">&#41;</span>
+<span class="kw1">end</span></pre></div></div>
+<p>Note the use of <b>relative</b> position values in the final line of the function. 
+</p><p>In this case, it is far easier than calculating pixel values.
+</p><p>You can use both relative and absolute in the same script if you want to, the only limitation is that you cannot mix them in the same function call. The type of values you are using is defined by the final argument (true or false).
+</p><p>This means you cannot do the following and have it set to 400 pixels in, but 0.5% down
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |guiSetPosition(yourElement,400,0.5,false)|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><a href="GuiSetPosition.html" class="kw4"><span class="kw4">guiSetPosition</span></a><span class="br0">&#40;</span>yourElement,<span class="nu0">400</span>,<span class="nu0">0.5</span>,<span class="kw1">false</span><span class="br0">&#41;</span></pre></div></div>
+<p>The final argument "false" means both 400 and 0.5 will be read as pixel values.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Scrolling_the_News">Scrolling the News</span></h2>
+<p>The next step is to animate our news feed.
+</p>
+<h3><span class="mw-headline" id="Looking_at_Frames">Looking at Frames</span></h3>
+<p>To do this, we will introduce a new event: <a href="OnClientRender.html" title="OnClientRender">onClientRender</a>.
+As stated on the <a href="OnClientRender.html" title="OnClientRender">onClientRender</a> wiki page, this event is called every time GTA renders a new frame (ie: very often).
+</p><p>As usual, to use this event we will need to create an event handler for it:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |addEventHandler("onClientRender",root,scrollNews)|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><a href="AddEventHandler.html" class="kw2"><span class="kw2">addEventHandler</span></a><span class="br0">&#40;</span><span class="st0">&quot;onClientRender&quot;</span>,root,scrollNews<span class="br0">&#41;</span></pre></div></div>
+<p>This will call our scrollNews function every frame, which we will then use to update the position of our news item.
+</p><p><b>Make sure you add this handler after you have defined your scrollNews function.</b>
+</p><p>For our purposes, <a href="OnClientRender.html" title="OnClientRender">onClientRender</a> has one main advantage over, for example, <a href="SetTimer.html" title="SetTimer">setTimer</a>.
+As it is called every frame (and therefore is dependant on the players FPS), the movement of the news item will always appear to be completely smooth,
+unlike using a timer which would often appear to lag.
+</p>
+<h3><span class="mw-headline" id="Moving_the_News">Moving the News</span></h3>
+<p>In our 'updateNewsItem' function, we position the 'newsLabel' to the far right, so we will scroll in from the right to the left.
+</p><p>For this we will simply move the X position by -1 every frame:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function scrollNews() if newsLabel then local x,y = guiGetPosition(newsLabel,false) guiSetPosition(newsLabel,x-1,y,false) end end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> scrollNews<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="co1">-- if the newsLabel exists</span>
+	<span class="kw1">if</span> newsLabel <span class="kw1">then</span>
+		<span class="co1">-- get the current position of the label</span>
+		<span class="kw1">local</span> x,y <span class="sy0">=</span> <a href="GuiGetPosition.html" class="kw4"><span class="kw4">guiGetPosition</span></a><span class="br0">&#40;</span>newsLabel,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+		<span class="co1">-- set the new x position of the label as the old position -1</span>
+		<a href="GuiSetPosition.html" class="kw4"><span class="kw4">guiSetPosition</span></a><span class="br0">&#40;</span>newsLabel,x-<span class="nu0">1</span>,y,<span class="kw1">false</span><span class="br0">&#41;</span>
+	<span class="kw1">end</span>
+<span class="kw1">end</span></pre></div></div>
+<h3><span class="mw-headline" id="Looping_around">Looping around</span></h3>
+<p>Now that our news scrolls across the screen, we need to be able to check when it has scrolled too far to the left
+so we can start scrolling from the far-right side again.
+</p><p>We will also need to update the news item, so we should check the next item exists, and if it doesn't, go back to the first.
+</p><p>For this we will use some simple maths in a modification to our 'scrollNews' function:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function scrollNews() local x,y = guiGetPosition(newsLabel,false) local labelWidth, labelHeight = guiGetSize(newsLabel,false) if ((x-1) + labelWidth) >= 0 then if x <= 0 then x = x - 1 end guiSetPosition(newsLabel,x-1,y,false) else local totalItems = #newsItems if (currentItem + 1) > totalItems then updateNewsItem(1) else updateNewsItem(currentItem + 1) end end end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> scrollNews<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="kw1">local</span> x,y <span class="sy0">=</span> <a href="GuiGetPosition.html" class="kw4"><span class="kw4">guiGetPosition</span></a><span class="br0">&#40;</span>newsLabel,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<span class="kw1">local</span> labelWidth, labelHeight <span class="sy0">=</span> <a href="GuiGetSize.html" class="kw4"><span class="kw4">guiGetSize</span></a><span class="br0">&#40;</span>newsLabel,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- if the far right position of the label (x + labelWidth) is greater than or equal to 0 (ie: still showing on the gridlist)</span>
+	<span class="kw1">if</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>x-<span class="nu0">1</span><span class="br0">&#41;</span> + labelWidth<span class="br0">&#41;</span> <span class="sy0">&gt;=</span> <span class="nu0">0</span> <span class="kw1">then</span>
+		<span class="co1">-- compensate for a small off-by-one bug in NRP</span>
+		<span class="kw1">if</span> x <span class="sy0">&lt;=</span> <span class="nu0">0</span> <span class="kw1">then</span> x <span class="sy0">=</span> x - <span class="nu0">1</span> <span class="kw1">end</span>
+&#160;
+		<span class="co1">-- update the position as normal</span>
+		<a href="GuiSetPosition.html" class="kw4"><span class="kw4">guiSetPosition</span></a><span class="br0">&#40;</span>newsLabel,x-<span class="nu0">1</span>,y,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- otherwise, we move on to the next item and reset the position</span>
+	<span class="kw1">else</span>
+		<span class="co1">-- get the total number of items in the 'newsItems' table</span>
+		<span class="kw1">local</span> totalItems <span class="sy0">=</span> #newsItems
+&#160;
+		<span class="co1">-- if the next item on our list does not exist in our table</span>
+		<span class="kw1">if</span> <span class="br0">&#40;</span>currentItem + <span class="nu0">1</span><span class="br0">&#41;</span> <span class="sy0">&gt;</span> totalItems <span class="kw1">then</span>
+			<span class="co1">-- loop back to the first item in the list</span>
+			updateNewsItem<span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>
+		<span class="kw1">else</span>
+			<span class="co1">-- otherwise move onto the next item in the list</span>
+			updateNewsItem<span class="br0">&#40;</span>currentItem + <span class="nu0">1</span><span class="br0">&#41;</span>
+		<span class="kw1">end</span>
+	<span class="kw1">end</span>
+<span class="kw1">end</span></pre></div></div>
+<p>Notice the use of the '#' symbol to get the size of the 'newsItems' table. 
+This is the Lua length operator, but it only works on tables that have numerical indexes (like an array or a list).
+It also works on strings, eg: #"hello" would return 5.
+</p><p>That completes this section of the tutorial.
+For ideas on how to further improve and advance this code, continue reading the next section.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Improving_the_code">Improving the code</span></h2>
+<p>This section will detail several ways to improve upon the code you now have.
+</p>
+<h3><span class="mw-headline" id="GUI_Customisation">GUI Customisation</span></h3>
+<p>To give your GUI a more unique feel, you have the ability to customise some aspects of your GUI elements.
+</p><p>For ideas on what is possible, browse the <a href="Client_Scripting_Functions.html#GUI_functions" title="Client Scripting Functions">NRP GUI functions</a>.
+</p><p>For the purposes of this tutorial, we will be using Font, Colour and Alpha.
+</p><p>To start, we will change the alpha of the background gridlist GUI element we are using.
+To set the alpha, use <a href="GuiSetAlpha.html" title="GuiSetAlpha">guiSetAlpha</a> and pass a value between 1 and 0; 1 being fully opaque and 0 being fully transparent.
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |guiSetAlpha(newsGridlist,0.8)|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><a href="GuiSetAlpha.html" class="kw4"><span class="kw4">guiSetAlpha</span></a><span class="br0">&#40;</span>newsGridlist,<span class="nu0">0.8</span><span class="br0">&#41;</span></pre></div></div>
+<p>Place this line of code in your 'createNewsFeed' function, after your gridlist has been created.
+</p><p>I find an alpha level of 0.8 looks best, however this is personal preference and you can experiment to suit your needs.
+</p><p><br />
+Next, we will look at the font of the label text.
+To set the font, use <a href="GuiSetFont.html" title="GuiSetFont">guiSetFont</a> and pass the string name of the font you want to use (available to see on the <a href="Standard_GUI_Font_Names.html" title="Standard GUI Font Names">Standard GUI Font Names</a> page).
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |guiSetFont(newsLabel,"default-bold-small")|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><a href="GuiSetFont.html" class="kw4"><span class="kw4">guiSetFont</span></a><span class="br0">&#40;</span>newsLabel,<span class="st0">&quot;default-bold-small&quot;</span><span class="br0">&#41;</span></pre></div></div>
+<p>Place this line of code in your 'createNewsFeed' function, after your label has been created.
+</p><p><br />
+Finally, we will look at setting the colour of the label text.
+To set the colour, use <a href="GuiLabelSetColor.html" title="GuiLabelSetColor">guiLabelSetColor</a> and pass the individual red,green and blue values.
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |guiLabelSetColor(newsLabel,255,70,0)|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><a href="GuiLabelSetColor.html" class="kw4"><span class="kw4">guiLabelSetColor</span></a><span class="br0">&#40;</span>newsLabel,<span class="nu0">255</span>,<span class="nu0">70</span>,<span class="nu0">0</span><span class="br0">&#41;</span></pre></div></div>
+<p>Place this line of code in your 'createNewsFeed' function, after your label has been created.
+</p><p>This will give your news items an orange-red colour.
+</p>
+<h3><span class="mw-headline" id="Multiple_News_Items">Multiple News Items</span></h3>
+<p>In its current form, this code is only capable of showing one news item at a time.
+However, with a few modifications we can show multiple news items at once, one after another.
+</p><p>To begin with, we need to make sure we have a 'newItems' table defined at the very start of our script,
+as well as a 'distance' variable that will control the pixel distance between each news item:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |local newsItems = {} local distance = 30|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> newsItems <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>
+<span class="kw1">local</span> distance <span class="sy0">=</span> <span class="nu0">30</span></pre></div></div>
+<p>So put these lines at the top of the file.
+</p><p>Next, we will not know how many items we have (and consequently, how many labels we need) until we have loaded the file.
+With that in mind, we will move around some of the code in our 'createNewsFeed' function to support this:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function createNewsFeed() local sWidth, sHeight = guiGetScreenSize() local Width,Height = 800,45 local X = (sWidth/2) - (Width/2) local Y = sHeight - (Height/2) newsGridlist = guiCreateGridList(X,Y,Width,Height,false) guiSetAlpha(newsGridlist,0.8) loadNews() newsLabel = {} for index,item in ipairs(newsItems) do newsLabel[index] = guiCreateLabel(0,0,Width,Height/2,item,false,newsGridlist) guiSetFont(newsLabel[index],"default-bold-small") guiLabelSetColor(newsLabel[index],255,70,0) local extent = guiLabelGetTextExtent(newsLabel[index]) guiSetSize(newsLabel[index],extent,Height/2,false) local x,y = guiGetSize(newsGridlist,false) for i=1, index-1, 1 do local width = guiGetSize(newsLabel[i],false) x = x + width end x = x + (distance*(index-1)) guiSetPosition(newsLabel[index],x,0,false) end end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> createNewsFeed<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="co1">-- get the screen width and height</span>
+	<span class="kw1">local</span> sWidth, sHeight <span class="sy0">=</span> <a href="GuiGetScreenSize.html" class="kw4"><span class="kw4">guiGetScreenSize</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- create the gridlist, using some maths to find the bottom-centre of the screen</span>
+	<span class="kw1">local</span> Width,Height <span class="sy0">=</span> <span class="nu0">800</span>,<span class="nu0">45</span>
+	<span class="kw1">local</span> X <span class="sy0">=</span> <span class="br0">&#40;</span>sWidth<span class="sy0">/</span><span class="nu0">2</span><span class="br0">&#41;</span> - <span class="br0">&#40;</span>Width<span class="sy0">/</span><span class="nu0">2</span><span class="br0">&#41;</span>
+	<span class="kw1">local</span> Y <span class="sy0">=</span> sHeight - <span class="br0">&#40;</span>Height<span class="sy0">/</span><span class="nu0">2</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- the gridlist will act as the background to our news reel</span>
+	newsGridlist <span class="sy0">=</span> <a href="GuiCreateGridList.html" class="kw4"><span class="kw4">guiCreateGridList</span></a><span class="br0">&#40;</span>X,Y,Width,Height,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<a href="GuiSetAlpha.html" class="kw4"><span class="kw4">guiSetAlpha</span></a><span class="br0">&#40;</span>newsGridlist,<span class="nu0">0.8</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- call our function to read the news out of the xml file, before we create the labels</span>
+	loadNews<span class="br0">&#40;</span><span class="br0">&#41;</span>
+&#160;
+	<span class="co1">-- define a table to hold our labels</span>
+	newsLabel <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>
+&#160;
+	<span class="co1">-- now we can loop all our news items, and create a label for each one</span>
+	<span class="kw1">for</span> index,item <span class="kw1">in</span> <span class="kw1">ipairs</span><span class="br0">&#40;</span>newsItems<span class="br0">&#41;</span> <span class="kw1">do</span>
+&#160;
+		<span class="co1">-- because we now have one label for every item, we can just set the text here and it wont need to be changed again.</span>
+		newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span> <span class="sy0">=</span> <a href="GuiCreateLabel.html" class="kw4"><span class="kw4">guiCreateLabel</span></a><span class="br0">&#40;</span><span class="nu0">0</span>,<span class="nu0">0</span>,Width,Height<span class="sy0">/</span><span class="nu0">2</span>,item,<span class="kw1">false</span>,newsGridlist<span class="br0">&#41;</span>
+&#160;
+		<a href="GuiSetFont.html" class="kw4"><span class="kw4">guiSetFont</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,<span class="st0">&quot;default-bold-small&quot;</span><span class="br0">&#41;</span>
+&#160;
+		<a href="GuiLabelSetColor.html" class="kw4"><span class="kw4">guiLabelSetColor</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,<span class="nu0">255</span>,<span class="nu0">70</span>,<span class="nu0">0</span><span class="br0">&#41;</span>		
+&#160;
+		<span class="co1">-- modify the width of the label to fit the text</span>
+		<span class="kw1">local</span> extent <span class="sy0">=</span> <a href="GuiLabelGetTextExtent.html" class="kw4"><span class="kw4">guiLabelGetTextExtent</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span><span class="br0">&#41;</span>		
+		<a href="GuiSetSize.html" class="kw4"><span class="kw4">guiSetSize</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,extent,Height<span class="sy0">/</span><span class="nu0">2</span>,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+&#160;
+		<span class="co1">-- get the size of the gridlist</span>
+		<span class="kw1">local</span> x,y <span class="sy0">=</span> <a href="GuiGetSize.html" class="kw4"><span class="kw4">guiGetSize</span></a><span class="br0">&#40;</span>newsGridlist,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+		<span class="co1">-- loop from 1 until index-1 in steps of 1</span>
+		<span class="co1">-- this allows us to loop every label before the label we are currently on</span>
+		<span class="kw1">for</span> i<span class="sy0">=</span><span class="nu0">1</span>, index-<span class="nu0">1</span>, <span class="nu0">1</span> <span class="kw1">do</span>
+			<span class="co1">-- tally up the sizes of all labels before our current one and store them in x</span>
+			<span class="kw1">local</span> width <span class="sy0">=</span> <a href="GuiGetSize.html" class="kw4"><span class="kw4">guiGetSize</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>i<span class="br0">&#93;</span>,<span class="kw1">false</span><span class="br0">&#41;</span>
+			x <span class="sy0">=</span> x + width
+		<span class="kw1">end</span>
+&#160;
+		<span class="co1">-- put a 'distance' pixel gap between each news item</span>
+		x <span class="sy0">=</span> x + <span class="br0">&#40;</span>distance<span class="sy0">*</span><span class="br0">&#40;</span>index-<span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+&#160;
+		<span class="co1">-- set the positon to the far right side of the gridlist, ready to scroll on to the left</span>
+		<a href="GuiSetPosition.html" class="kw4"><span class="kw4">guiSetPosition</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,x,<span class="nu0">0</span>,<span class="kw1">false</span><span class="br0">&#41;</span>	
+	<span class="kw1">end</span>	
+<span class="kw1">end</span></pre></div></div>
+<p><br />
+Now we need to update our 'updateNewsItem' function to account for having multiple labels:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function updateNewsItem(newIndex) local index = newIndex - 1 if index == 0 then index = #newsItems end local x = guiGetPosition(newsLabel[index],false) local width = guiGetSize(newsLabel[index],false) x = x + width x = x + distance local gridlistWidth = guiGetSize(newsGridlist,false) if x < gridlistWidth then x = gridlistWidth end guiSetPosition(newsLabel[newIndex],x,0,false) end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> updateNewsItem<span class="br0">&#40;</span>newIndex<span class="br0">&#41;</span>
+	<span class="co1">-- find the index of the news item directly infront (in the looping order) of the newIndex item</span>
+	<span class="kw1">local</span> index <span class="sy0">=</span> newIndex - <span class="nu0">1</span>
+	<span class="kw1">if</span> index <span class="sy0">==</span> <span class="nu0">0</span> <span class="kw1">then</span> index <span class="sy0">=</span> #newsItems <span class="kw1">end</span>
+&#160;
+	<span class="co1">-- find the position of the right-edge of the label directly infront of the newIndex label</span>
+	<span class="kw1">local</span> x <span class="sy0">=</span> <a href="GuiGetPosition.html" class="kw4"><span class="kw4">guiGetPosition</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,<span class="kw1">false</span><span class="br0">&#41;</span> 
+	<span class="kw1">local</span> width <span class="sy0">=</span> <a href="GuiGetSize.html" class="kw4"><span class="kw4">guiGetSize</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,<span class="kw1">false</span><span class="br0">&#41;</span>
+	x <span class="sy0">=</span> x + width
+&#160;
+	<span class="co1">-- add a 'distance' pixel gap in</span>
+	x <span class="sy0">=</span> x + distance
+&#160;
+	<span class="co1">-- check the new position isnt actually on the gridlist (ie: so it wont suddenly appear in the centre of the list)</span>
+	<span class="kw1">local</span> gridlistWidth <span class="sy0">=</span> <a href="GuiGetSize.html" class="kw4"><span class="kw4">guiGetSize</span></a><span class="br0">&#40;</span>newsGridlist,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+	<span class="kw1">if</span> x <span class="sy0">&lt;</span> gridlistWidth <span class="kw1">then</span>
+		<span class="co1">-- if it is, simple move it back to the edge</span>
+		x <span class="sy0">=</span> gridlistWidth
+	<span class="kw1">end</span>
+&#160;
+	<span class="co1">-- set the new position</span>
+	<a href="GuiSetPosition.html" class="kw4"><span class="kw4">guiSetPosition</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>newIndex<span class="br0">&#93;</span>,x,<span class="nu0">0</span>,<span class="kw1">false</span><span class="br0">&#41;</span>
+<span class="kw1">end</span></pre></div></div>
+<p><br />
+Finally, we need to make some small adjustments to our 'scrollNews' function:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function scrollNews() if newsItems then for index,item in ipairs(newsItems) do local x,y = guiGetPosition(newsLabel[index],false) local labelWidth, labelHeight = guiGetSize(newsLabel[index],false) if ((x-1) + labelWidth) >= 0 then if x <= 0 then x = x - 1 end guiSetPosition(newsLabel[index],x-1,y,false) else updateNewsItem(index) end end end end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> scrollNews<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="kw1">if</span> newsItems <span class="kw1">then</span>
+		<span class="co1">-- loop every news item</span>
+		<span class="kw1">for</span> index,item <span class="kw1">in</span> <span class="kw1">ipairs</span><span class="br0">&#40;</span>newsItems<span class="br0">&#41;</span> <span class="kw1">do</span>
+			<span class="kw1">local</span> x,y <span class="sy0">=</span> <a href="GuiGetPosition.html" class="kw4"><span class="kw4">guiGetPosition</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+			<span class="kw1">local</span> labelWidth, labelHeight <span class="sy0">=</span> <a href="GuiGetSize.html" class="kw4"><span class="kw4">guiGetSize</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+			<span class="co1">-- if the far right position of the label (x + labelWidth) is greater than or equal to 0 (ie: still showing on the gridlist)</span>
+			<span class="kw1">if</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>x-<span class="nu0">1</span><span class="br0">&#41;</span> + labelWidth<span class="br0">&#41;</span> <span class="sy0">&gt;=</span> <span class="nu0">0</span> <span class="kw1">then</span>
+				<span class="co1">-- compensate for a small off-by-one bug in NRP</span>
+				<span class="kw1">if</span> x <span class="sy0">&lt;=</span> <span class="nu0">0</span> <span class="kw1">then</span> x <span class="sy0">=</span> x - <span class="nu0">1</span> <span class="kw1">end</span>
+&#160;
+				<span class="co1">-- update the position as normal</span>
+				<a href="GuiSetPosition.html" class="kw4"><span class="kw4">guiSetPosition</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,x-<span class="nu0">1</span>,y,<span class="kw1">false</span><span class="br0">&#41;</span>
+&#160;
+			<span class="co1">-- otherwise, we move on to the next item and reset the position</span>
+			<span class="kw1">else</span>
+				updateNewsItem<span class="br0">&#40;</span>index<span class="br0">&#41;</span>
+			<span class="kw1">end</span>
+		<span class="kw1">end</span>
+	<span class="kw1">end</span>
+<span class="kw1">end</span></pre></div></div>
+<p>You should now have multiple news items scrolling along your news feed simultaneously.
+</p>
+<h3><span class="mw-headline" id="Globally_controlled_scroll_speed">Globally controlled scroll speed</span></h3>
+<p>As with the 'distance' variable above, we can set a global variable for controlling the scroll speed of the news items as well.
+Note that the speed will still be dependant on the players FPS (ie: lower FPS means slightly slower scrolling).
+</p><p>To do this, we simply need to create the variable at the start of our code:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |local scrollSpeed = 1|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">local</span> scrollSpeed <span class="sy0">=</span> <span class="nu0">1</span></pre></div></div>
+<p>Put this line at the top of your file.
+</p><p>Then, we just replace the instance of "x-1" in our 'scrollNews' function with "x-scrollSpeed":
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |function scrollNews() ... guiSetPosition(newsLabel[index],x-scrollSpeed,y,false) ... end end|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">function</span> scrollNews<span class="br0">&#40;</span><span class="br0">&#41;</span>
+		...
+				<span class="co1">-- update the position as normal</span>
+				<a href="GuiSetPosition.html" class="kw4"><span class="kw4">guiSetPosition</span></a><span class="br0">&#40;</span>newsLabel<span class="br0">&#91;</span>index<span class="br0">&#93;</span>,x-scrollSpeed,y,<span class="kw1">false</span><span class="br0">&#41;</span>
+		...
+	<span class="kw1">end</span>
+<span class="kw1">end</span></pre></div></div>
+<p>That concludes this section of the tutorial.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.505 seconds
+Real time usage: 0.507 seconds
+Preprocessor visited node count: 236/1000000
+Preprocessor generated node count: 484/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:5026-0!*!0!!en!*!* and timestamp 20150826134844
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=Scripting_the_GUI_-_Tutorial_3&amp;oldid=26154">/index.php?title=Scripting_the_GUI_-_Tutorial_3&amp;oldid=26154</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Scripting_the_GUI_-_Tutorial_3.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:Scripting_the_GUI_-_Tutorial_3&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=Scripting_the_GUI_-_Tutorial_3&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=Scripting_the_GUI_-_Tutorial_3&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="User_75.81.255.html"Array class="new">75.81.255.73</a></li>
+				<li id="pt-anontalk"><a href="User_talk_75.81.255.html"Array class="new">Talk for this IP address</a></li>
+				<li id="pt-anonlogin"><a index.html?title=Special:UserLogin&amp;returnto=Scripting+the+GUI+-+Tutorial+3"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Scripting_the_GUI_-_Tutorial_3.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Scripting_the_GUI_-_Tutorial_3.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=Scripting_the_GUI_-_Tutorial_3&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=Scripting_the_GUI_-_Tutorial_3&amp;oldid=26154"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 24 June 2011, at 19:32.</li>
+					<li id="viewcount">This page has been accessed 7,606 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.049 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/Scripting_the_GUI_-_Tutorial_3 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:33:03 GMT -->
+</html>

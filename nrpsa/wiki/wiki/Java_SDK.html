@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	
+<!-- Mirrored from wiki.nexusrp.com/wiki/Java_SDK by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:32:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="MediaWiki 1.22.13" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Nexus RP: Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="Nexus RP: Wiki Atom feed" index.html?title=Special:RecentChanges&amp;feed=atom" />		<title>Java SDK - Nexus RP: Wiki</title>
+		<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<link rel="stylesheet" href="../skins/nrpbook/main11b9.css?303" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/skins/nrpbook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/skins/nrpbook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/nrpbook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=nrpbook&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-css:7:68ffccca97fd0532df6141dcbaf256b6 */</style>
+
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?303"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_SDK","wgTitle":"Java SDK","wgCurRevisionId":20658,"wgRevisionId":20658,"wgArticleId":2721,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Scripting Concepts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_SDK","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script>
+		<script type="text/javascript" src="../skins/common/wikibits11b9.js?303"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_SDK","wgTitle":"Java SDK","wgCurRevisionId":20658,"wgRevisionId":20658,"wgArticleId":2721,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Scripting Concepts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransforNRPble":["",""],"wgDigitTransforNRPble":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_SDK","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"nrpbook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: nrp_wiki_1_22_13-wiki_dev_:resourceloader:filter:minify-js:7:925126ceab977200cdcc48193642dea0 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><style type="text/css">/*<![CDATA[*/
+.source-java5 {line-height: normal;}
+.source-java5 li, .source-java5 pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for java5
+ * CSS class: source-java5, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.java5.source-java5 .de1, .java5.source-java5 .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.java5.source-java5  {font-family:monospace;}
+.java5.source-java5 .imp {font-weight: bold; color: red;}
+.java5.source-java5 li, .java5.source-java5 .li1 {font-weight: normal; vertical-align:top;}
+.java5.source-java5 .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.java5.source-java5 .li2 {font-weight: bold; vertical-align:top;}
+.java5.source-java5 .kw1 {color: #000000;  font-weight: bold;}
+.java5.source-java5 .kw2 {color: #000000; font-weight: bold;}
+.java5.source-java5 .kw3 {color: #006600; font-weight: bold;}
+.java5.source-java5 .kw4 {color: #006600; font-weight: bold;}
+.java5.source-java5 .kw5 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw6 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw7 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw8 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw9 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw10 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw11 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw12 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw13 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw14 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw15 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw16 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw17 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw18 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw19 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw20 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw21 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw22 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw23 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw24 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw25 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw26 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw27 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw28 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw29 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw30 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw31 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw32 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw33 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw34 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw35 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw36 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw37 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw38 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw39 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw40 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw41 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw42 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw43 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw44 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw45 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw46 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw47 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw48 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw49 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw50 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw51 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw52 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw53 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw54 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw55 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw56 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw57 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw58 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw59 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw60 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw61 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw62 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw63 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw64 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw65 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw66 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw67 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw68 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw69 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw70 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw71 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw72 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw73 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw74 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw75 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw76 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw77 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw78 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw79 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw80 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw81 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw82 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw83 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw84 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw85 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw86 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw87 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw88 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw89 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw90 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw91 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw92 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw93 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw94 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw95 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw96 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw97 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw98 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw99 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw100 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw101 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw102 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw103 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw104 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw105 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw106 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw107 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw108 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw109 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw110 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw111 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw112 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw113 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw114 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw115 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw116 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw117 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw118 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw119 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw120 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw121 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw122 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw123 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw124 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw125 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw126 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw127 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw128 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw129 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw130 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw131 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw132 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw133 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw134 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw135 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw136 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw137 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw138 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw139 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw140 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw141 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw142 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw143 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw144 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw145 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw146 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw147 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw148 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw149 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw150 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw151 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw152 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw153 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw154 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw155 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw156 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw157 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw158 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw159 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw160 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw161 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw162 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw163 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw164 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw165 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw166 {color: #003399; font-weight: bold;}
+.java5.source-java5 .co1 {color: #666666; font-style: italic;}
+.java5.source-java5 .co2 {color: #006699;}
+.java5.source-java5 .co3 {color: #008000; font-style: italic; font-weight: bold;}
+.java5.source-java5 .coMULTI {color: #666666; font-style: italic;}
+.java5.source-java5 .es0 {color: #000099; font-weight: bold;}
+.java5.source-java5 .br0 {color: #009900;}
+.java5.source-java5 .sy0 {color: #339933;}
+.java5.source-java5 .st0 {color: #0000ff;}
+.java5.source-java5 .nu0 {color: #cc66cc;}
+.java5.source-java5 .me1 {color: #006633;}
+.java5.source-java5 .me2 {color: #006633;}
+.java5.source-java5 .ln-xtra, .java5.source-java5 li.ln-xtra, .java5.source-java5 div.ln-xtra {background-color: #ffc;}
+.java5.source-java5 span.xtra { display:block; }
+
+/*]]>*/
+</style>	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Java_SDK skin-nrpbook">
+	<div id="globalWrapper">
+		
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+			<h1 id="firstHeading" class="firstHeading">Java SDK</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Nexus RP: Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This SDK allows you to call exported NRP functions from Java over HTTP.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Getting_Started"><span class="tocnumber">1</span> <span class="toctext">Getting Started</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Syntax"><span class="tocnumber">2</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#More_complex_example"><span class="tocnumber">4</span> <span class="toctext">More complex example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Caveats"><span class="tocnumber">5</span> <span class="toctext">Caveats</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Download"><span class="tocnumber">6</span> <span class="toctext">Download</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Getting_Started">Getting Started</span></h2>
+<p>To use it, you need to make sure you need to have the following packages:
+</p>
+<ul>
+<li> <i>com.nexusrp</i>
+</li>
+<li> <i>org.json.simple</i>
+</li>
+<li> <i>org.json.simple.parser</i>
+</li>
+</ul>
+<p>These are all included in the zip file below.
+</p><p>To get started, import com.nexusrp.NRPRPC.
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<p>This class has one public static function, <i>callFunction</i>. The syntax is as follows:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |Object[] callFunction ( String serverHTTPAddress, String resourceName, String functionName, Object[] args )|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> callFunction <span class="br0">&#40;</span> <span class="kw21">String</span> serverHTTPAddress, <span class="kw21">String</span> resourceName, <span class="kw21">String</span> functionName, <span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> args <span class="br0">&#41;</span></pre></div></div>
+<ul>
+<li> <b>serverHTTPAddress:</b> The server's HTTP address, in the form hostname:port (without "http://" prefixed)
+</li>
+<li> <b>resourceName:</b> The name of the resource that has exported the function you want to call
+</li>
+<li> <b>functionName:</b> The name of the function you want to call
+</li>
+<li> <b>args:</b> An array of arguments you wish to pass. Most basic types are accepted - String, Integer, Double, Boolean, null etc, as well as the special classes com.nexusrp.Element and com.nexusrp.Resource.
+</li>
+</ul>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<p>This tests the resource functions exported from the 'echobot' resource:
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |Object[] ret = NRPRPC.callFunction ( SERVER_HTTP_ADDRESS, "echobot", "getThisResource", null ); Resource resource = (Resource)ret[0]; Object[] arguments = {resource}; ret = NRPRPC.callFunction ( SERVER_HTTP_ADDRESS, "echobot", "getResourceName", arguments ); String resourceName = (String)ret[0]; System.out.println("Resource name: " + resourceName );|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> ret = NRPRPC.<span class="me1">callFunction</span> <span class="br0">&#40;</span> SERVER_HTTP_ADDRESS, <span class="st0">&quot;echobot&quot;</span>, <span class="st0">&quot;getThisResource&quot;</span>, <span class="kw4">null</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+Resource resource = <span class="br0">&#40;</span>Resource<span class="br0">&#41;</span>ret<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy0">;</span>
+<span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> arguments = <span class="br0">&#123;</span>resource<span class="br0">&#125;</span><span class="sy0">;</span>
+ret = NRPRPC.<span class="me1">callFunction</span> <span class="br0">&#40;</span> SERVER_HTTP_ADDRESS, <span class="st0">&quot;echobot&quot;</span>, <span class="st0">&quot;getResourceName&quot;</span>, arguments <span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw21">String</span> resourceName = <span class="br0">&#40;</span><span class="kw21">String</span><span class="br0">&#41;</span>ret<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy0">;</span>
+<span class="kw21">System</span>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;Resource name: &quot;</span> + resourceName <span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<p>This example tests the element functions exported from the 'echobot' resource:	
+</p>
+<!-- PLAIN TEXT CODE FOR BOTS |// call getRootElement Object[] ret = NRPRPC.callFunction ( SERVER_HTTP_ADDRESS, "echobot", "getRootElement", null ); Element rootElement = (Element)ret[0]; // call getElementType Object[] arguments = {rootElement}; ret = NRPRPC.callFunction ( SERVER_HTTP_ADDRESS, "echobot", "getElementType", arguments ); String rootElementType = (String)ret[0]; System.out.println("Root element type: " + rootElementType );|--><div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="java5 source-java5"><pre class="de1"><span class="co1">// call getRootElement</span>
+<span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> ret = NRPRPC.<span class="me1">callFunction</span> <span class="br0">&#40;</span> SERVER_HTTP_ADDRESS, <span class="st0">&quot;echobot&quot;</span>, <span class="st0">&quot;getRootElement&quot;</span>, <span class="kw4">null</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw166">Element</span> rootElement = <span class="br0">&#40;</span><span class="kw166">Element</span><span class="br0">&#41;</span>ret<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy0">;</span>
+&#160;
+<span class="co1">// call getElementType</span>
+<span class="kw166">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> arguments = <span class="br0">&#123;</span>rootElement<span class="br0">&#125;</span><span class="sy0">;</span>
+ret = NRPRPC.<span class="me1">callFunction</span> <span class="br0">&#40;</span> SERVER_HTTP_ADDRESS, <span class="st0">&quot;echobot&quot;</span>, <span class="st0">&quot;getElementType&quot;</span>, arguments <span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw21">String</span> rootElementType = <span class="br0">&#40;</span><span class="kw21">String</span><span class="br0">&#41;</span>ret<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy0">;</span>
+&#160;
+<span class="kw21">System</span>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;Root element type: &quot;</span> + rootElementType <span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h2><span class="mw-headline" id="More_complex_example">More complex example</span></h2>
+<p><a href="File_Nrp_java_sdk_example.html" class="image"><img alt="Nrp java sdk example.png" src="../images/d/db/Nrp_java_sdk_example.png" width="640" height="480" /></a>
+</p><p>The zip file contains an example program (NRPJavaTest.java) that implements a console that allows you to see events on a server and chat to the players there. This allows you to see how you can handle multiple returns.
+</p>
+<h2><span class="mw-headline" id="Caveats">Caveats</span></h2>
+<ul>
+<li> You cannot currently compare two Resource or Element objects that you expect to be identical - you need to do a "deep compare", comparing either the "id" fields or the "name" fields.
+</li>
+</ul>
+<h2><span class="mw-headline" id="Download">Download</span></h2>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://misc.opencoding.net/nrp/nrpjavasdk_0.1.zip">Download Version 0.1</a>
+</li>
+</ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.162 seconds
+Real time usage: 0.162 seconds
+Preprocessor visited node count: 50/1000000
+Preprocessor generated node count: 88/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key nrp_wiki_1_22_13-wiki_dev_:pcache:idhash:2721-0!*!*!!en!2!* and timestamp 20150826140844
+ -->
+</div><div class="printfooter">
+Retrieved from "<a index.html?title=Java_SDK&amp;oldid=20658">/index.php?title=Java_SDK&amp;oldid=20658</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Scripting_Concepts.html" title="Category:Scripting Concepts">Scripting Concepts</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="Java_SDK.html"Array>Page</a></li>
+				 <li id="ca-talk" class="new"><a index.html?title=Talk:Java_SDK&amp;action=edit&amp;redlink=1"Array>Discussion</a></li>
+				 <li id="ca-viewsource"><a index.html?title=Java_SDK&amp;action=edit"Array>View source</a></li>
+				 <li id="ca-history"><a index.html?title=Java_SDK&amp;action=history"Array>History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="User_75.81.255.html"Array class="new">75.81.255.73</a></li>
+				<li id="pt-anontalk"><a href="User_talk_75.81.255.html"Array class="new">Talk for this IP address</a></li>
+				<li id="pt-anonlogin"><a index.html?title=Special:UserLogin&amp;returnto=Java+SDK"Array></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url();" href="Main_Page.html"Array></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Home"><a href="Main_Page.html"Array>Home</a></li>
+				<li id="n-How-you-can-help"><a href="How_you_can_help.html"Array>How you can help</a></li>
+				<li id="n-recentchanges"><a href="Special_RecentChanges.html"Array>Recent changes</a></li>
+				<li id="n-randompage"><a href="OnElementDataChange.html"Array>Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-reference'>
+		<h5>reference</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html"Array>Client Functions</a></li>
+				<li id="n-Client-Events"><a href="Client_Scripting_Events.html"Array>Client Events</a></li>
+				<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html"Array>Server Functions</a></li>
+				<li id="n-Server-Events"><a href="Server_Scripting_Events.html"Array>Server Events</a></li>
+				<li id="n-Useful-Functions"><a href="Useful_Functions.html"Array>Useful Functions</a></li>
+				<li id="n-NRP-Classes"><a href="NRP_Classes.html"Array>NRP Classes</a></li>
+				<li id="n-NRP-Elements"><a href="Element.html"Array>NRP Elements</a></li>
+				<li id="n-Element-Tree"><a href="Element_tree.html"Array>Element Tree</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		
+		<div id="searchBody" class="pBody">
+			<form action="/index.php" id="searchform"><div>
+				
+				
+				
+				
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Java_SDK.html"Array>What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Java_SDK.html"Array>Related changes</a></li>
+<li id="t-specialpages"><a href="Special_SpecialPages.html"Array>Special pages</a></li>
+				<li id="t-print"><a index.html?title=Java_SDK&amp;printable=yes" rel="alternate"Array>Printable version</a></li>				<li id="t-permalink"><a index.html?title=Java_SDK&amp;oldid=20658"Array>Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../skins/common/images/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31" /></a></div>
+	<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 18 July 2009, at 17:55.</li>
+					<li id="viewcount">This page has been accessed 6,893 times.</li>
+					<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+					<li id="privacy"><a href="Nexus_RP__Wiki_Privacy_policy.html" title="Nexus RP: Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="Nexus_RP__Wiki_About.html" title="Nexus RP: Wiki:About">About Nexus RP: Wiki</a></li>
+					<li id="disclaimer"><a href="Nexus_RP__Wiki_General_disclaimer.html" title="Nexus RP: Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cite"],null,true);
+}</script>
+<script src="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=nrpbook&amp;*"></script>
+<!-- Served in 0.214 secs. --></body>
+<!-- Mirrored from wiki.nexusrp.com/wiki/Java_SDK by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2015 07:32:10 GMT -->
+</html>
